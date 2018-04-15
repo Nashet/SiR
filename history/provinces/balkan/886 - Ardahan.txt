@@ -1,0 +1,11 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = CAU
+add_core = GEO
+trade_goods = wool
+life_rating = 35
+1914.1.1 = { 
+owner = RUS
+controller = RUS
+}

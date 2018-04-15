@@ -1,0 +1,13 @@
+owner = ORI
+controller = ORI
+add_core = MUG
+add_core = ORI
+add_core = HND
+trade_goods = grain
+life_rating = 35
+colonial = yes
+1914.1.1 = { 
+owner = ENG
+controller = ENG 
+colonial = yes 
+} 

@@ -1,0 +1,518 @@
+# Sphere of Influence
+MEX = {
+value = 75 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+ECU = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+PEU = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+BOL = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+CHL = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+PRG = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+COL = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+BRZ = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+URU = {
+value = 75 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+POR = {
+value = 100 # relation
+level = 3 # 3 = cordial, 4 = friendly, five sphere
+influence_value = 25
+}
+
+navy = {
+name = "North Squadron"
+location = 474
+ship = {
+name = "Sagunto"
+type = cruiser
+}
+
+ship = {
+name = "Ventsedora"
+type = cruiser
+}
+
+ship = {
+name = "Extremadura"
+type = cruiser
+}
+
+ship = {
+name = "Lepanto"
+type = cruiser
+}
+
+ship = {
+name = "Navarre"
+type = cruiser
+}
+
+ship = {
+name = "Reina Mercedes"
+type = cruiser
+}
+
+}
+
+navy = {
+name = "North 2nd Squadron"
+location = 512
+ship = {
+name = "Francesco"
+type = ironclad
+}
+
+ship = {
+name = "Esperides"
+type = ironclad
+}
+
+ship = {
+name = "Porter"
+type = ironclad
+}
+
+}
+
+navy = {
+name = "Mediterranean squadron"
+location = 498
+ship = {
+name = "1st transport flotilla"
+type = clipper_transport
+}
+
+ship = {
+name = "2nd transport flotilla"
+type = clipper_transport
+}
+
+ship = {
+name = "3rd Transport Flotilla"
+type = clipper_transport
+}
+
+ship = {
+name = "4th Transport Flotilla"
+type = clipper_transport
+}
+
+ship = {
+name = "5th transport flotilla"
+type = clipper_transport
+}
+
+ship = {
+name = "6th transport flotilla"
+type = clipper_transport
+}
+
+ship = {
+name = "7th transport flotilla"
+type = clipper_transport
+}
+
+ship = {
+name = "8th transport flotilla"
+type = clipper_transport
+}
+
+}
+
+army = {
+name = "Northern Army"
+location = 498
+regiment = {
+name = "1st Infantry Division"
+type = infantry
+home = 479
+}
+
+regiment = {
+name = "2nd Infantry Division"
+type = infantry
+home = 480
+}
+
+regiment = {
+name = "3rd Infantry Division"
+type = infantry
+home = 481
+}
+
+regiment = {
+name = "4th Infantry Division"
+type = infantry
+home = 481
+}
+
+regiment = {
+name = "5th Infantry Division"
+type = infantry
+home = 483
+}
+
+regiment = {
+name = "6th Infantry Division"
+type = infantry
+home = 484
+}
+
+regiment = {
+name = "7th Infantry Division"
+type = infantry
+home = 485
+}
+
+regiment = {
+name = "8th Infantry Division"
+type = infantry
+home = 488
+}
+
+regiment = {
+name = "9th Infantry Division"
+type = infantry
+home = 488
+}
+
+regiment = {
+name = "10th Infantry Division"
+type = infantry
+home = 489
+}
+
+regiment = {
+name = "11th Infantry Division"
+type = artillery
+home = 489
+}
+
+regiment = {
+name = "12th Infantry Division"
+type = artillery
+home = 489
+}
+
+regiment = {
+name = "1 st Caribbean Division"
+type = cavalry
+home = 494
+}
+
+regiment = {
+name = "2nd Division Caribbean"
+type = cavalry
+home = 487
+}
+
+regiment = {
+name = "3rd Division Caribbean"
+type = cavalry
+home = 498
+}
+
+regiment = {
+name = "4th Caribbean Division"
+type = hussar
+home = 498
+}
+}
+
+army = {
+name = "Western Army"
+location = 503
+regiment = {
+name = "13th Infantry Division"
+type = infantry
+home = 513
+}
+
+regiment = {
+name = "14th Infantry Division"
+type = infantry
+home = 513
+}
+
+regiment = {
+name = "15th Infantry Division"
+type = infantry
+home = 514
+}
+
+regiment = {
+name = "16th Infantry Division"
+type = infantry
+home = 512
+}
+
+regiment = {
+name = "17th Infantry Division"
+type = infantry
+home = 489
+}
+
+regiment = {
+name = "18th Infantry Division"
+type = infantry
+home = 510
+}
+
+regiment = {
+name = "19th Infantry Division"
+type = infantry
+home = 509
+}
+
+regiment = {
+name = "20th Infantry Division"
+type = infantry
+home = 509
+}
+
+regiment = {
+name = "21th Infantry Division"
+type = infantry
+home = 478
+}
+
+regiment = {
+name = "22th Infantry Division"
+type = infantry
+home = 474
+}
+
+regiment = {
+name = "23rd Infantry Division"
+type = infantry
+home = 474
+}
+
+regiment = {
+name = "24th Infantry Division"
+type = infantry
+home = 475
+}
+
+regiment = {
+name = "25th Infantry Division"
+type = infantry
+home = 476
+}
+
+regiment = {
+name = "26th Infantry Division"
+type = infantry
+home = 477
+}
+
+regiment = {
+name = "22th Infantry Division"
+type = cavalry
+home = 487
+}
+
+regiment = {
+name = "23rd Infantry Division"
+type = cavalry
+home = 487
+}
+
+regiment = {
+name = "24th Infantry Division"
+type = cavalry
+home = 487
+}
+
+regiment = {
+name = "25th Infantry Division"
+type = artillery
+home = 487
+}
+
+regiment = {
+name = "26th Infantry Division"
+type = artillery
+home = 490
+}
+
+}
+
+army = {
+name = "Army of Africa"
+location = 1686
+regiment = {
+name = "1st colonial regiment"
+type = infantry
+home = 482
+}
+
+regiment = {
+name = "2nd colonial regiment"
+type = infantry
+home = 1686
+}
+
+regiment = {
+name = "3rd colonial regiment"
+type = infantry
+home = 1687
+}
+
+regiment = {
+name = "the 1st Cavalry Regiment"
+type = hussar
+home = 1688
+}
+
+regiment = {
+name = "4th colonial regiment"
+type = infantry
+home = 491
+}
+
+regiment = {
+name = "5 th colonial regiment"
+type = infantry
+home = 495
+}
+
+regiment = {
+name = "6th colonial regiment"
+type = infantry
+home = 497
+}
+
+regiment = {
+name = "7th colonial regiment"
+type = cavalry
+home = 499
+}
+
+regiment = {
+name = "8th colonial regiment"
+type = cavalry
+home = 502
+}
+
+regiment = {
+name = "9th colonial regiment"
+type = cavalry
+home = 503
+}
+
+}
+
+army = {
+name = "Southern Army"
+location = 509
+regiment = {
+name = "1st Infantry Division"
+type = infantry
+home = 503
+}
+
+regiment = {
+name = "2nd Infantry Division"
+type = infantry
+home = 505
+}
+
+regiment = {
+name = "3rd Infantry Division"
+type = infantry
+home = 508
+}
+
+regiment = {
+name = "4th Infantry Division"
+type = infantry
+home = 509
+}
+
+regiment = {
+name = "5th Infantry Division"
+type = infantry
+home = 509
+}
+
+regiment = {
+name = "6th Infantry Division"
+type = infantry
+home = 510
+}
+
+regiment = {
+name = "7th Infantry Division"
+type = infantry
+home = 512
+}
+
+regiment = {
+name = "8th Infantry Division"
+type = infantry
+home = 513
+}
+
+regiment = {
+name = "9th Infantry Division"
+type = cavalry
+home = 513
+}
+
+regiment = {
+name = "10th Infantry Division"
+type = cavalry
+home = 514
+}
+
+regiment = {
+name = "11th Infantry Division"
+type = artillery
+home = 514
+}
+
+regiment = {
+name = "12th Infantry Division"
+type = artillery
+home = 515
+}
+
+regiment = {
+name = "13th Infantry Division"
+type = artillery
+home = 516
+}
+
+}

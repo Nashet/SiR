@@ -1,0 +1,13 @@
+trade_owner = MAL
+controller = MAL
+add_core = MAL
+goods = grain
+life_rating = 10
+
+
+1914.1.1 = { 
+owner = FRA 
+controller = FRA 
+colonial = yes 
+} 
+

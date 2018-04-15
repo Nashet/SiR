@@ -1,0 +1,740 @@
+csa_cores_title; izngnany Yankees from the land of the free South; X
+csa_cores_desc; Now that the Yanks no longer boots tramples the free lands of the South, in the neighboring northern states began an active movement to join the Confederacy. Taking advantage of the situation, we will be able to overthrow these liberal idiots in Washington and restore the unity of the American nation!; X
+dop_csa; Samterskaya rage; X
+circassian; Circassians; X
+sephardic; Sephardic; X
+cossacian; Cossacks; X
+welsh; Welsh; X
+scottish; Scots; X
+cornish; Cornish; X
+maronitian; Maronites; X
+montenegrian; Montenegrins; X
+macedonian; Macedonians; X
+osetian; Ossetians; X
+avarian; Dagestanis; X
+abkhazian; Abkhazians; X
+caucasian; Caucasians; X
+arabic; Arabs; X
+indonesian; Indonesians; X
+occitan; Occitans; X
+breton; Bretons; X
+norman; Normans; X
+burgund; Burgundians; X
+picardian; Pikardian; X
+french; French; X
+corsican; Corsicans; X
+iranian_arian; Irano-Aryans; X
+andean; Andean; X
+soviet; Russians; X
+nippon; Japanese; X
+inkeri; Ingra; X
+magreb; Magreb; X
+ABK; Abkhazia; X
+KOS; Kosovo; X
+WHA; Wales; X
+KER; Cornwall; X
+LEB; Lebanon; X
+GRA; Granada; X
+BSQ; Basque Country; X
+GAL; Galicia; X
+MCD; Macedonia; X
+ARA; Aragon; X
+CAS; Castile; X
+OSE; Ossetia-Alania; X
+CRC; Circassia; X
+ICH; Chechnya; X
+DAG; Dagestan; X
+ARB; Arab Caliphate; X
+IDO; Indonesia; X
+BHR; Bahrain; X
+QAT; Qatar; X
+SUD; Sudan; X
+ERI; Eritrea; X
+MAV; Mauritania; X
+MAL; Mali; X
+LIV; Libya; X
+MLT; Malta; X
+IDF; Ile-de-France; X
+BRT; Brittany; X
+NRM; Normandy; X
+CHA; Champagne; X
+BRG; Burgundy; X
+COR; Corsica; X
+OCC; Occitania; X
+EZO; Ezo; X
+TKD; Takeda; X
+TKG; Tokugawa; X
+CHO; Choshu; X
+TOS; Tosa; X
+SAC; Satsuma; X
+RYU; Ryukyu; X
+NRD; Severorusiya; X
+ZLS; Zalesie; X
+IDL; Idel-Ural; X
+URA; Urals; X
+SIB; Siberia; X
+YAK; Yakutia; X
+BKL; Transbaykal; X
+NMR; Naryan-Mar; X
+PRI; Far Eastern kingdom; X
+INK; Ingria; X
+GCL; Gran Colombia; X
+MEN; Mentszyan; X
+KAZ; Kazakhstan; X
+KYR; Kyrgyzstan; X
+TAJ; Tajikistan; X
+UZB; Uzbekistan; X
+TKM; Turkmenistan; X
+TRK; Turkestan; X
+DJI; Djibouti; X
+IOR; Transjordan; X
+SEN; Senegal; X
+GAM; Gambia; X
+SOM; Somalia; X
+KEN; Kenya; X
+MLD; Maldives; X
+CEY; Ceylon; X
+BEN; Bengal; X
+GUY; Guyana; X
+BLZ; Belize; X
+SLS; Silesia; X
+RHE; Confederation of the Rhine; X
+PMR; Pomerania; X
+BLK; Chernozem; X
+ASS; Assam; X
+MGR; Maghreb; X
+KNM; Kanem-Bornu; X
+AMZ; Amazonia; X
+GRL; Greenland; X
+FRR; Faroe Islands; X
+TIR; Tyrol; X
+RPL; Rzeczpospolita; X
+DNB; Danubian Federation; X
+BLT; Baltic Duchy; X
+DUR; Durrani Empire; X
+FER; Ferrara; X
+CSC; Cascadia; X
+ABK_ADJ; Abkhaz.; X
+KOS_ADJ; Kosovar.; X
+WHA_ADJ; Welsh; X
+KER_ADJ; Cornish.; X
+LEB_ADJ; Lebanese.; X
+GRA_ADJ; Granada.; X
+BSQ_ADJ; Baskonsk.; X
+GAL_ADJ; Galician.; X
+MCD_ADJ; Macedonian.; X
+ARA_ADJ; Aragon.; X
+CAS_ADJ; Castile.; X
+OSE_ADJ; Ossetia.; X
+CRC_ADJ; Circassian coat.; X
+ICH_ADJ; Chechnya.; X
+DAG_ADJ; Dagestan.; X
+ARB_ADJ; Arab Emirates.; X
+IDO_ADJ; Indonesian.; X
+BHR_ADJ; Bahrain.; X
+QAT_ADJ; Qatar.; X
+SUD_ADJ; Sudan.; X
+ERI_ADJ; Eritrea.; X
+MAV_ADJ; Moorish.; X
+MAL_ADJ; Malian.; X
+LIV_ADJ; Libyan.; X
+MLT_ADJ; Malta.; X
+IDF_ADJ; Parisian.; X
+BRT_ADJ; Breton.; X
+NRM_ADJ; Channel.; X
+CHA_ADJ; Champagne.; X
+BRG_ADJ; Burgundy.; X
+COR_ADJ; Corsican.; X
+OCC_ADJ; Occitan.; X
+EZO_ADJ; Ainu.; X
+TKD_ADJ; Northjaponian; X
+TKG_ADJ; Tokyo.; X
+CHO_ADJ; Tesyuysk.; X
+TOS_ADJ; Tosiysk.; X
+SAC_ADJ; Satsumsk.; X
+RYU_ADJ; Ryukiysk.; X
+NRD_ADJ; Severorusk.; X
+ZLS_ADJ; Zalessk.; X
+IDL_ADJ; Idel-Uralsk.; X
+URA_ADJ; Uralsk.; X
+SIB_ADJ; Sibirsk.; X
+YAK_ADJ; Yakutsk.; X
+BKL_ADJ; Baikalsk.; X
+NMR_ADJ; Nenets.; X
+PRI_ADJ; Fareast.; X
+INK_ADJ; Ingrian.; X
+GCL_ADJ; Columbian.; X
+MEN_ADJ; Mongolian.; X
+KAZ_ADJ; Kazakh.; X
+KYR_ADJ; Kyrgyzsk.; X
+TAJ_ADJ; Tajik.; X
+UZB_ADJ; Uzbekistan.; X
+TKM_ADJ; Turkmen.; X
+TRK_ADJ; Turkestan.; X
+DJI_ADJ; Djibouti.; X
+IOR_ADJ; Jordanian.; X
+SEN_ADJ; Senegalese.; X
+GAM_ADJ; Gambia.; X
+SOM_ADJ; Somali.; X
+KEN_ADJ; Kenya.; X
+MLD_ADJ; Maldives.; X
+BEN_ADJ; Bengal.; X
+GUY_ADJ; Guyanese.; X
+BLZ_ADJ; Belize.; X
+SLS_ADJ; Silesia.; X
+RHE_ADJ; Rhine.; X
+PMR_ADJ; Pomeranian.; X
+BLK_ADJ; Chernozemsk.; X
+ASS_ADJ; Assamese.; X
+MGR_ADJ; Maghreb.; X
+KNM_ADJ; Kanemsk.; X
+AMZ_ADJ; Amazon.; X
+GRL_ADJ; Greenland.; X
+FRR_ADJ; Faeroe.; X
+TIR_ADJ; Tyrolean.; X
+RPL_ADJ; Pospolitsk.; X
+DNB_ADJ; Dunaisk.; X
+BLT_ADJ; Baltiysk.; X
+DUR_ADJ; Durrani.; X
+FER_ADJ; Ferrara.; X
+CSC_ADJ; Kaskadsk.; X
+RUS_1095; Abkhazia; X
+TUR_798; Southern Serbia; X
+TUR_823; Eastern Macedonia; X
+GRE_826; Ionian Islands; X
+AUS_950; Carpathians; X
+form_rzeczpospolita_title; Union of Lublin; X
+form_rzeczpospolita_desc; Although the Polish-Lithuanian Commonwealth was destroyed and torn to pieces by Russia, Austria and Prussia in 1795, developed a national consciousness of its people allowed to proclaim the independence of our country, who returned its former power. Now, raising the banner of Tadeusz Kosciuszko, we can reconstruct the Rzeczpospolita, confidently stating, the fourth section will not happen!; X
+form_spain_title; Viva la muerte!; X
+form_spain_desc; enemies of the unity of the Spanish have their own, destroying the Great Spain. Dwarfs would have arisen easy prey for the French and Italians, had not our wise policy, which allowed Spain to unite again.; X
+form_france_title; Great Restoration; X
+form_france_desc; Tricolor again hung on all public buildings, and crowds of French people from all over the streets of the state updated. In the center of Paris, solemnly carried through a front standard. Viva la France!; X
+form_danubia_title; Proclamation of the Federation of the Danube; X
+form_danubia_desc; Our great and mighty empire, but in recent years have been very strong centrifugal tendencies, because many people feel oppressed. To empire collapsed under its own weight, you need to take steps to decentralize the state apparatus and to find a compromise solution acceptable to all nations; X
+form_baltica_title; Baltic Entente; X
+form_baltica_desc; Finno-Ugric peoples of the Baltic throughout the history of ever becoming the object of conquest for the more powerful neighbors. After surviving a devastating German yoke and a relatively mild form vladychechtva Sweden and Russia, we are entering a new era as a people, who had returned to their national pride. Today, to protect themselves against the encroachments of other powers, we conclude an agreement on the formation of a single federation of the Baltic States.; X
+baltic_gewerkschaft_title; Baltic union; X
+baltic_gewerkschaft_desc; dream of Baltic Duchy is as old as the existence of the Baltic Germans. Now that Russia has lost control over the Baltics, and the newly formed nation states are too weak to realize the dream into reality would be easy.; X
+form_durrani_empire_title; revival of the Durrani Empire; X
+form_durrani_empire_desc; Although the empire created by Ahmad Shah, broke into pieces, a small emirate rulers Ganzi was once again unite the scattered tribes. New unifying force made the emerging capitalist class, who helped the governor to eliminate the rebel lords, for that matter, and the faithful. Today we proclaim the re-establishment of the Durrani Empire - the power that goes with the times.; X
+TUR_890; Wang; X
+RUS_1054; Ossetia-Alania; X
+RUS_1056; Circassia; X
+RUS_1055; Chechnya; X
+RUS_1100; Karabakh; X
+CHI_1532; Inner Mongolia; X
+SPA_495; Aragon; X
+SPA_475; Asturias, Cantabria; X
+SPA_506; Murcia; X
+MEX_2139; Baja California; X
+MEX_2147; Coahuila; X
+MEX_2149; Tamaulipas; X
+MEX_2156; Sinaloa; X
+MEX_2167; Guanajuato, Queretaro; X
+MEX_2172; Fed.Okrug Mexico; X
+MEX_2171; Michoacan; X
+MEX_2177; Oaxaca; X
+MEX_2164; Veracruz; X
+MEX_2175; Puebla, Hidalgo; X
+MEX_2182; Chiapas; X
+MEX_2184; Tabasco-Campeche; X
+UCA_2192; El Salvador; X
+USA_205; South Carolina; X
+MEX_97; Utah; X
+USA_197; West Florida; X
+USA_247; New Hampshire, Vermont; X
+USA_241; Connecticut, Rhode Island; X
+CLM_2255; Magdalena; X
+VNZ_2274; Apure; X
+ECU_2280; Guayaquil; X
+PEU_2307; Iquique; X
+PEU_2301; Cuzco; X
+PEU_2292; Trujillo; X
+BOL_2309; Antofagasta; X
+SPA_1773; Western Sahara; X
+BRZ_2600; Tocantins; X
+BRZ_2426; Piaui; X
+BRZ_2434; Sergipe Alagoas-; X
+BRZ_2430; Ceara; X
+BRZ_2449; Espirito Santo; X
+BRZ_2459; Santa Catarina; X
+BRZ_2421; Goias; X
+BRZ_2419; Mato Grosso do Sul; X
+CHL_2323; Coquimbo; X
+CHL_2325; Valparaiso; X
+CHL_2330; Maule; X
+CHL_2333; Magallanes; X
+ARG_2360; Entre Rios; X
+ARG_2366; Formosa; X
+ARG_2376; Santiago del Estero; X
+ARG_2348; Fed.Stol.Buenos Aires; X
+ARG_2372; Salta; X
+ARG_2374; Catamarca, Tucuman; X
+ARG_2385; La Rioja; X
+ARG_2383; San Luis; X
+ARG_2389; Mendoza; X
+ARG_2396; Chubut; X
+ARG_2400; Tierra del Fuego; X
+NET_2240; Suriname; X
+FRA_2241; Guiana; X
+AUS_648; Eastern Hungary; X
+AUS_772; Krajina; X
+TUR_785; Banja Luka; X
+ENG_71; New-Scotland; X
+ENG_70; O in Prince Edward; X
+KOK_1202; Kokand; X
+KHI_1198; Bukhara; X
+JAP_1667; Shikoku; X
+JAP_1642; Hokkaido; X
+JAP_1672; Tohoku; X
+JAP_1649; Kanto; X
+JAP_1675; Chubu; X
+JAP_1655; Kansai; X
+JAP_1654; Bonin; X
+JAP_1660; Kyushu; X
+JAP_1640; Chugoku; X
+JAP_1678; Ryukyu; X
+CHI_1553; Manchuria; X
+HAI_2214; Dominican Republic; X
+PRU_546; Eastern Pomerania; X
+PRU_681; Kustrin; X
+SAR_724; Liguria; X
+form_caucas_title; Confederation of Peoples of the Caucasus; X
+form_caucas_desc; small Caucasian nations were of old bloody war with each other, but when they found themselves caught between two empires - the Russian and Ottoman, the peoples of the Caucasus at an accelerated pace began to seek a compromise that would accept all. Now, when we control most of our mountains, one Caucasian state can materialize from a dream into reality.; X
+form_arabia_title; Arab unity; X
+form_arabia_desc; idea of pan-Arabism, advanced by thinkers and religious leaders, has always excited the minds of the emirs and sultans of the Middle East. Now, when the Ottoman Empire weakened, and is not an insurmountable obstacle, and the threat of invasion by the Christian invaders makes you forget about the internal conflict, the restoration of a unified Arab state is only a matter of time.; X
+form_indonesia_title; Establish Indonesia; X
+form_indonesia_desc; After the liberation of the East Indies from the Dutch rule immediately threatened by the United Kingdom, Portugal and Japan, and the decrepit Qing Empire was not against easy prey. To maintain its independence, the small island Asians have created a single state - Indonesia.; X
+form_gran_columbia_title; Revival of the Great Colombia; X
+form_gran_columbia_desc; Gran Colombia was founded in 1819 by South American colonists that ended Spanish rule, but the selfish interests of local politicians took over the supporters of the revolutionary unity. Today we continue the case of Simon Bolivar and revives a single state in the name of freedom of all South America!; X
+form_maghreb_title; unity of the Maghreb; X
+form_maghreb_desc; Exile expeditionary corps of the European powers became public holiday, but the war has revealed a huge technical and cultural backwardness of the Maghreb countries of the European powers and the Ottoman Empire. To survive, we must close the gap and the first step would be to base a unified Maghreb states.; X
+KOS_reactionary; Neoabsolyutistskaya Party; X
+KOS_conservative; Alliance for the Future; X
+KOS_liberal; Democratic League; X
+KOS_anarcho_liberal; self-determination; X
+KOS_socialist; Left Democratic Party; X
+KOS_communist; Radical Workers' Party; X
+KOS_fascist; Rezistens; X
+KER_conservative; Unionist Party; X
+KER_liberal; Sons of Cornwall; X
+KER_reactionary; Count Party; X
+KER_anarcho_liberal; Independence Party; X
+KER_socialist; Socialist Alliance; X
+KER_communist; Federation kornuollskih councils; X
+KER_fascist; Union of Fascists in Cornwall; X
+WHA_conservative; Party of Wales; X
+WHA_liberal; Freedom Party; X
+WHA_reactionary; Union of Welsh people; X
+WHA_anarcho_liberal; Independence Party; X
+WHA_socialist; Next, Wales; X
+WHA_communist; Red Wales; X
+WHA_fascist; free Wales Army; X
+LEB_liberal; Free Patriotic Movement; X
+LEB_reactionary; Amal; X
+LEB_anarcho_liberal; libertarian right-wing party; X
+LEB_socialist; the Progressive Socialist Party; X
+LEB_communist; Communist Party; X
+LEB_fascist; Kataib; X
+LEB_conservative; Mustaqbal; X
+GRA_liberal; Freedom Party; X
+GRA_reactionary; Sunni party; X
+GRA_anarcho_liberal; Antiislamskkaya Party; X
+GRA_socialist; the Popular Front; X
+GRA_communist; regional-federal party; X
+GRA_fascist; fundamentalist party; X
+GRA_conservative; National Front; X
+BSQ_liberal; the Popular Front; X
+BSQ_reactionary; Carlist Party; X
+BSQ_anarcho_liberal; Independence Party; X
+BSQ_socialist; Herry Batasuna; X
+BSQ_communist; Basque Country and Freedom; X
+BSQ_fascist; National Socialist Party; X
+BSQ_conservative; Nationalist Party; X
+GAL_liberal; nationalist bloc; X
+GAL_reactionary; right block; X
+GAL_anarcho_liberal; Radical Republican Party; X
+GAL_socialist; Socialist Party; X
+GAL_communist; Communist Party; X
+GAL_fascist; Welfare Party; X
+GAL_conservative; People's Party; X
+MCD_liberal; National Democratic Party; X
+MCD_reactionary; absolutist party; X
+MCD_anarcho_liberal; Freedom Party; X
+MCD_socialist; Social Democratic Union; X
+MCD_communist; Communist Party; X
+MCD_fascist; VMORO; X
+MCD_conservative; Orthodox party; X
+OSE_liberal; Freedom Party; X
+OSE_reactionary; Independence Party; X
+OSE_anarcho_liberal; radical right-wing party; X
+OSE_socialist; Social Democratic Alliance; X
+OSE_communist; Communist Party; X
+OSE_fascist; National Socialist Party; X
+OSE_conservative; party unity; X
+CRC_liberal; National Democratic Party; X
+CRC_reactionary; Party Sunnah; X
+CRC_anarcho_liberal; National Radical Party; X
+CRC_socialist; Socialist Alternative; X
+CRC_communist; Communist Party; X
+CRC_fascist; National Party justice; X
+CRC_conservative; Freedom Party; X
+ICH_conservative; Sunni party; X
+ICH_liberal; federalist Democratic Party; X
+ICH_reactionary; Party adat; X
+ICH_anarcho_liberal; Freedom Party; X
+ICH_socialist; Justice Party; X
+ICH_communist; Marxist party; X
+ICH_fascist; Caucasus Emirate; X
+DAG_conservative; Party of Sharia; X
+DAG_liberal; Freedom Party; X
+DAG_reactionary; Party adat; X
+DAG_anarcho_liberal; fraternity party; X
+DAG_socialist; Justice Party; X
+DAG_communist; Equality Party; X
+DAG_fascist; Jamaat Shariat; X
+ABK_conservative; Orthodox, Conservative Party; X
+ABK_liberal; Party of the free market; X
+ABK_reactionary; Alliance Abkhazian tradition; X
+ABK_anarcho_liberal; Social-Darwinian Party; X
+ABK_socialist; Federation of Independent Trade Unions; X
+ABK_communist; revolutionary alternative; X
+ABK_fascist; Union of National Socialists; X
+ARB_conservative; Sunni Arab party; X
+ARB_liberal; National Democratic Party; X
+ARB_reactionary; Muslim Brotherhood; X
+ARB_anarcho_liberal; Movement of Free Officers; X
+ARB_socialist; Baath; X
+ARB_communist; Communist Party of the action; X
+ARB_fascist; Wahhabi jihad party; X
+IDO_conservative; National Awakening Party; X
+IDO_liberal; Democratic Party; X
+IDO_reactionary; Party national mandate; X
+IDO_anarcho_liberal; Freedom Party; X
+IDO_socialist; Party of functional groups; X
+IDO_communist; Party of People's Conscience; X
+IDO_fascist; corporate party unity; X
+BHR_conservative; faction hanky; X
+BHR_liberal; faction of reformers; X
+BHR_reactionary; fraction of the Sultan; X
+BHR_anarcho_liberal; fraction of radicals; X
+BHR_socialist; Baath; X
+BHR_communist; Cells communist offensive; X
+BHR_fascist; fraction of the Imam; X
+SUD_conservative; Progressive Party; X
+SUD_liberal; National Democratic Party; X
+SUD_reactionary; Legitimist party; X
+SUD_anarcho_liberal; People's Liberation Army; X
+SUD_socialist; Baath; X
+SUD_communist; People's Revolutionary Party; X
+SUD_fascist; National Islamic Front; X
+ERI_conservative; Party of National Unity; X
+ERI_liberal; Free Development Party; X
+ERI_reactionary; absolutist party; X
+ERI_anarcho_liberal; Party of the Free Market; X
+ERI_socialist; National Congress; X
+ERI_communist; PFDJ; X
+ERI_fascist; National Union; X
+MAV_conservative; royalist party; X
+MAV_liberal; National Union; X
+MAV_reactionary; Sunni party; X
+MAV_anarcho_liberal; movement of the future; X
+MAV_socialist; Baath; X
+MAV_communist; Union of Workers; X
+MAV_fascist; Mauritanian People's Party; X
+MAL_conservative; Pan-African Union; X
+MAL_liberal; Alliance for Democracy; X
+MAL_reactionary; Party allegiance to the king; X
+MAL_anarcho_liberal; radical renewal movement; X
+MAL_socialist; party solidarity and justice; X
+MAL_communist; League of Communists; X
+MAL_fascist; Party of the new order; X
+LIV_conservative; Party of sustainable development; X
+LIV_liberal; National Democratic Party; X
+LIV_reactionary; Order senusitov; X
+LIV_anarcho_liberal; Republican Alliance; X
+LIV_socialist; Baath; X
+LIV_communist; General People's Congress; X
+LIV_fascist; National Islamic Front; X
+MLT_conservative; Maltese party center; X
+MLT_liberal; Progressive Constitutional Party; X
+MLT_reactionary; Nationalist Party; X
+MLT_anarcho_liberal; Freedom Party; X
+MLT_socialist; Labor Party; X
+MLT_communist; Communist Party; X
+MLT_fascist; National Fascist Party; X
+IDF_conservative; Girondins; X
+IDF_liberal; Jacobins; X
+IDF_reactionary; Felyany; X
+IDF_anarcho_liberal; Ebertisty; X
+IDF_socialist; sans-culottes; X
+IDF_communist; Paris Commune; X
+IDF_fascist; three Council; X
+BRT_liberal; black and white; X
+BRT_reactionary; royalist party; X
+BRT_anarcho_liberal; Liberation Front of Brittany; X
+BRT_socialist; Socialist Front Breton; X
+BRT_communist; Breton Revolutionary Army; X
+BRT_fascist; Breton National Party; X
+BRT_conservative; Club Breton; X
+NRM_liberal; Democratic Party; X
+NRM_reactionary; Movement them. St. Olaf; X
+NRM_anarcho_liberal; Front for the Liberation of Normandy; X
+NRM_socialist; left alternative; X
+NRM_communist; Federation of Independent Trade Unions; X
+NRM_fascist; Viking fascist movement; X
+NRM_conservative; Unionist Party; X
+CHA_conservative; Girondins; X
+CHA_liberal; Jacobins; X
+CHA_reactionary; Felyany; X
+CHA_anarcho_liberal; Ebertisty; X
+CHA_socialist; sans-culottes; X
+CHA_communist; Babouvists; X
+CHA_fascist; Chouans; X
+BRG_liberal; National Democratic Party; X
+BRG_reactionary; royalist party; X
+BRG_anarcho_liberal; Republican alternative; X
+BRG_socialist; Union of the Left; X
+BRG_communist; Federation of Independent Trade Unions; X
+BRG_fascist; phalanx of Burgundy; X
+BRG_conservative; Conservative Party; X
+COR_liberal; National Front; X
+COR_reactionary; Genoese party; X
+COR_anarcho_liberal; National Liberation Front; X
+COR_socialist; Federation of Independent Trade Unions; X
+COR_communist; Revolutionary Army of Corsica; X
+COR_fascist; Corsican People's Party; X
+COR_conservative; Paolistskaya Party; X
+OCC_liberal; Occitan League; X
+OCC_reactionary; Gascogne ducal party; X
+OCC_anarcho_liberal; Republican right-wing party; X
+OCC_socialist; Federation of Independent Trade Unions; X
+OCC_communist; Occitania Revolutionary Army; X
+OCC_fascist; Fascist Union; X
+OCC_conservative; Occitan right-wing party; X
+TKG_liberal; Freedom Party; X
+TKG_reactionary; isolationist party; X
+TKG_anarcho_liberal; Republican alternative; X
+TKG_socialist; party left the course; X
+TKG_communist; Federation of Independent Trade Unions; X
+TKG_fascist; Party of honor; X
+TKG_conservative; party support for the shogun; X
+SAC_liberal; Freedom Party; X
+SAC_reactionary; loyalty to the Union the daimyo; X
+SAC_anarcho_liberal; Union Tokushima radicals; X
+SAC_socialist; Union of popular government; X
+SAC_communist; Federation of Independent Trade Unions; X
+SAC_fascist; Union military rule; X
+SAC_conservative; Union sustainable development; X
+NRD_liberal; National Democratic Alliance; X
+NRD_reactionary; royal party rule; X
+NRD_anarcho_liberal; Northern Brotherhood; X
+NRD_socialist; People's Socialist Party; X
+NRD_communist; Party Kronstadt rebellion; X
+NRD_fascist; Union of National Socialists; X
+NRD_conservative; Constitutional-Democratic Party; X
+ZLS_liberal; National Democratic Alliance; X
+ZLS_reactionary; royal party rule; X
+ZLS_anarcho_liberal; Northern Brotherhood; X
+ZLS_socialist; Union of the Left; X
+ZLS_communist; RSDLP (b); X
+ZLS_fascist; National Socialist Party; X
+ZLS_conservative; Conservative Party; X
+IDL_liberal; Ittifaq al-Muslimin; X
+IDL_reactionary; Party kadimistov; X
+IDL_anarcho_liberal; National Liberation Front; X
+IDL_socialist; Muslim Socialist Committee; X
+IDL_communist; RSDLP (b); X
+IDL_fascist; Volga Legion; X
+IDL_conservative; Party dzhadidistov; X
+URA_liberal; Democratic Party; X
+URA_reactionary; right League of Urals; X
+URA_anarcho_liberal; Freedom Party; X
+URA_socialist; Komuch; X
+URA_communist; Left SRs; X
+URA_fascist; UFO; X
+URA_conservative; Transformation of the Urals; X
+SIB_liberal; National Democratic Alliance; X
+SIB_reactionary; fraction of Omsk; X
+SIB_anarcho_liberal; radical Republican Union; X
+SIB_socialist; Socialist-Revolutionary Party; X
+SIB_communist; RSDLP (b); X
+SIB_fascist; party rule supreme; X
+SIB_conservative; Ufa fraction; X
+YAK_liberal; pro-American party; X
+YAK_reactionary; traditionalist party; X
+YAK_anarcho_liberal; Freedom Party; X
+YAK_socialist; Justice Party; X
+YAK_communist; Equality Party; X
+YAK_fascist; party unity; X
+YAK_conservative; pro-Russian Party; X
+NMR_liberal; National Democratic Alliance; X
+NMR_reactionary; royal party rule; X
+NMR_anarcho_liberal; Northern Brotherhood; X
+NMR_socialist; Socialist-Revolutionary Party; X
+NMR_communist; RSDLP (b); X
+NMR_fascist; Union of National Socialists; X
+NMR_conservative; People's Union; X
+PRI_liberal; Green Wedge; X
+PRI_reactionary; Right League; X
+PRI_anarcho_liberal; National Radical Party; X
+PRI_socialist; Union of Social Democrats; X
+PRI_communist; Revolutionary Workers Party; X
+PRI_fascist; the National Imperial Party; X
+PRI_conservative; Unionist Party; X
+MEN_liberal; Reformist faction; X
+MEN_reactionary; royalist factions; X
+MEN_anarcho_liberal; radical faction; X
+MEN_socialist; League of Social Democrats; X
+MEN_communist; Communist Party of China; X
+MEN_fascist; Fascist Party; X
+MEN_conservative; traditionalist faction; X
+KAZ_liberal; Otan; X
+KAZ_reactionary; Schur-Islami; X
+KAZ_anarcho_liberal; Party of Patriots of Kazakhstan; X
+KAZ_socialist; Ush Horde; X
+KAZ_communist; Communist Party of Kazakhstan; X
+KAZ_fascist; Alash Party; X
+KAZ_conservative; Azat Party; X
+TRK_liberal; movement for autonomy; X
+TRK_reactionary; Shura-e-Ulema; X
+TRK_anarcho_liberal; Turkestan military organization; X
+TRK_socialist; Social Democratic Alliance; X
+TRK_communist; Red Basmachism; X
+TRK_fascist; Union of National Socialists; X
+TRK_conservative; White Basmachism; X
+IOR_conservative; Hashemite Party; X
+IOR_liberal; National Democratic Party; X
+IOR_reactionary; Muslim Brotherhood; X
+IOR_anarcho_liberal; Movement of Free Officers; X
+IOR_socialist; Baath; X
+IOR_communist; Kommunistecheskaya Party; X
+IOR_fascist; Islamic Action Front; X
+SOM_conservative; Somali Congress; X
+SOM_liberal; National Alliance; X
+SOM_reactionary; Al-Shabaab; X
+SOM_anarcho_liberal; Democratic Front; X
+SOM_socialist; the Northern Alliance; X
+SOM_communist; SRSP; X
+SOM_fascist; Union of Islamic Courts; X
+KEN_conservative; National Union; X
+KEN_liberal; Party of National Development; X
+KEN_reactionary; royalist movement; X
+KEN_anarcho_liberal; Freedom Party; X
+KEN_socialist; Social Democratic Party; X
+KEN_communist; Communist Party; X
+KEN_fascist; Pan-African Union; X
+MLD_conservative; party development; X
+MLD_liberal; People's Alliance; X
+MLD_reactionary; Dhivehi Kuamee; X
+MLD_anarcho_liberal; Republican Party; X
+MLD_socialist; Social Democratic Party; X
+MLD_communist; Communist Party; X
+MLD_fascist; Sunni radical party; X
+CEY_conservative; United National Party; X
+CEY_liberal; Freedom Party; X
+CEY_reactionary; alliance of traditionalists; X
+CEY_anarcho_liberal; People's Revolutionary Union; X
+CEY_socialist; Socialist Party; X
+CEY_communist; Communist Party; X
+CEY_fascist; Union of Fascists; X
+BEN_conservative; Nationalist Party; X
+BEN_liberal; Awami League; X
+BEN_reactionary; Islamic Front; X
+BEN_anarcho_liberal; Civic Alliance; X
+BEN_socialist; Workers' and Peasants League; X
+BEN_communist; Revolutionary Workers Party; X
+BEN_fascist; Jatiya; X
+GUY_conservative; party unity; X
+GUY_liberal; National Democratic Party; X
+GUY_reactionary; Patriots Alliance of Guyana; X
+GUY_anarcho_liberal; Federation of free radicals; X
+GUY_socialist; People's National Congress; X
+GUY_socialist_2; alliance of working people; X
+GUY_communist; People's Progressive Party; X
+GUY_fascist; Integralistskaya Party; X
+BLZ_conservative; People's United Party; X
+BLZ_liberal; United Democratic Party; X
+BLZ_reactionary; Roman Catholic party; X
+BLZ_anarcho_liberal; kontornoe Independent Association; X
+BLZ_socialist; Social Democratic Party; X
+BLZ_communist; Revolutionary Workers Party; X
+BLZ_fascist; Integralistskaya Party; X
+BLK_liberal; Democratic Union; X
+BLK_reactionary; Orthodox Brotherhood; X
+BLK_anarcho_liberal; National Radical Party; X
+BLK_socialist; Socialist Party; X
+BLK_communist; Communist Party; X
+BLK_fascist; Union of Fascists; X
+BLK_conservative; People's Labor Union; X
+ASS_conservative; motion fidelity; X
+ASS_liberal; National Front; X
+ASS_reactionary; Brahmin movement; X
+ASS_anarcho_liberal; radical renewal of the Alliance; X
+ASS_socialist; Labor union workers and peasants; X
+ASS_communist; League of Communists; X
+ASS_fascist; Integralistskoe movement; X
+MGR_conservative; Party of sustainable development; X
+MGR_liberal; federalist Democratic Party; X
+MGR_reactionary; Order senusitov; X
+MGR_anarcho_liberal; Republican People's Party; X
+MGR_socialist; Baath; X
+MGR_communist; Communist Party of the action; X
+MGR_fascist; Order marinitov; X
+KNM_conservative; fraction of the King; X
+KNM_liberal; faction of reformers; X
+KNM_reactionary; faction leaders; X
+KNM_anarcho_liberal; Radical Alliance; X
+KNM_socialist; National Congress; X
+KNM_communist; League of Communists; X
+KNM_fascist; fraction of the imperialists; X
+AMZ_liberal; Liberal Party; X
+AMZ_conservative; Unionist Party; X
+AMZ_reactionary; Catholic party; X
+AMZ_anarcho_liberal; Freedom Party; X
+AMZ_socialist; Socialist Workers Party; X
+AMZ_communist; Communist Party; X
+AMZ_fascist; Integralistskaya Party; X
+GRL_liberal; Democratic Party; X
+GRL_conservative; Conservative Party; X
+GRL_reactionary; isolationist party; X
+GRL_anarcho_liberal; Freedom Party; X
+GRL_socialist; Social Democratic Party; X
+GRL_communist; Communist Party; X
+GRL_fascist; National Socialist Party; X
+GRL_liberal; Democratic Party; X
+TIR_conservative; Conservative Party; X
+TIR_liberal; National Democratic Party; X
+TIR_reactionary; Catholic party; X
+TIR_anarcho_liberal; National Radical Party; X
+TIR_socialist; left Labor Party; X
+TIR_communist; Communist Party; X
+TIR_fascist; National Fascist Party; X
+RPL_conservative; Homeland Union; X
+RPL_liberal; Liberal Democratic Party; X
+RPL_reactionary; Christian right-wing party; X
+RPL_anarcho_liberal; New Democrats; X
+RPL_socialist; Social Democratic Party; X
+RPL_communist; Communist Party; X
+RPL_fascist; National-Radical Camp; X
+DNB_conservative; Federal-clerical party; X
+DNB_liberal; Democratic Party; X
+DNB_reactionary; Conservative right-wing party; X
+DNB_anarcho_liberal; Union of March 15; X
+DNB_socialist; Christian Socialist Party; X
+DNB_communist; Communist Party; X
+DNB_fascist; Arrow Cross Party; X
+DUR_conservative;-Muslim Federal Party; X
+DUR_liberal; the Liberal Reform Party; X
+DUR_reactionary; absolutist party; X
+DUR_anarcho_liberal; Republican People's Party; X
+DUR_socialist; Baath; X
+DUR_communist; Communist Party of the action; X
+DUR_fascist; Nazi Party Pack; X
+CSC_conservative; Republican Party; X
+CSC_liberal; Democratic Party; X
+CSC_reactionary; Catholic party; X
+CSC_anarcho_liberal; Unionist Party; X
+CSC_socialist; Socialist Alliance; X
+CSC_communist; Communist Party; X
+CSC_fascist; National Socialist Movement; X

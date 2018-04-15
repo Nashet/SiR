@@ -1,0 +1,12 @@
+owner = AUS
+controller = AUS
+add_core = POL
+add_core = UKR
+add_core = RUT
+trade_goods = coal
+life_rating = 35
+
+1914.1.1 = { 
+owner = KUK 
+controller = KUK 
+} 

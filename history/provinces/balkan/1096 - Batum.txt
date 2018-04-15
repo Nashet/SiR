@@ -1,0 +1,8 @@
+owner = RUS
+controller = RUS
+add_core = CAU
+add_core = GEO
+add_core = ABK
+trade_goods = tea
+life_rating = 35
+colonial = yes 

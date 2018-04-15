@@ -1,0 +1,14 @@
+owner = SPA
+controller = SPA
+add_core = MAV
+add_core = MOR
+trade_goods = fish
+life_rating = 10
+
+
+1914.1.1 = { 
+owner = SPA
+controller = SPA
+colonial = yes 
+} 
+

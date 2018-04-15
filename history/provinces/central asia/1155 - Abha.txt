@@ -1,0 +1,14 @@
+owner = HDJ
+controller = HDJ
+add_core = ARB
+add_core = HDJ
+#add_core = TUR
+add_core = ASR
+trade_goods = wool
+life_rating = 35
+
+
+1914.1.1 = { 
+owner = TUR
+controller = TUR
+}

@@ -1,0 +1,219 @@
+# Sphere of Influence
+PER = {
+value = 75
+}
+GRE = {
+value = -200
+}
+SER = {
+value = -200
+}
+TUR = {
+value = 200
+}
+RUS = {
+value = -200
+}
+FRA = {
+value = -200
+}
+ENG = {
+value = -200
+}
+ROM = {
+value = -200
+}
+MON = {
+value = -200
+}
+BEL = {
+value = -200
+}
+LUX = {
+value = -200
+}
+SER = {
+value = -200
+}
+GER = {
+value = 200
+}
+KUK = {
+value = 200
+}
+
+leader = {
+name = "Vladimir Vazov"
+type = land
+date = "1914.1.1"
+personality = bold
+background = school_of_the_bayonet
+picture = "personal_vladimir_vazov"
+}
+
+leader = {
+name = "Nicola Zhekov"
+type = land
+date = "1914.1.1"
+personality = cautious
+background = toady
+picture = "personal_nikola_zhekov"
+}
+
+leader = {
+name = "Clement Boyadjiev"
+type = land
+date = "1914.1.1"
+personality = efficient
+background = school_of_firepower
+picture = "personal_kliment_boyadzhiev"
+}
+
+leader = {
+name = "Stefan Toshev"
+type = land
+date = "1914.1.1"
+personality = brash
+background = hated
+picture = "personal_stefan_toshev"
+}
+
+leader = {
+name = "Stefan Stoyanov, Todorov"
+type = land
+date = "1914.1.1"
+personality = heroic
+background = spoiled
+picture = "personal_georgi_todorov"
+}
+
+army = {
+name = "Bulgarian Army"
+location = 809
+regiment = {
+name = "1st Infantry. Division"
+type = infantry
+home = 809
+}
+
+regiment = {
+name = "2nd Infantry. Division"
+type = infantry
+home = 809
+}
+
+regiment = {
+name = "3rd Infantry. Division"
+type = infantry
+home = 809
+}
+
+regiment = {
+name = "4th Infantry. Division"
+type = infantry
+home = 810
+}
+
+regiment = {
+name = "5th Infantry. Division"
+type = infantry
+home = 810
+}
+
+regiment = {
+name = "6th Infantry. Division"
+type = infantry
+home = 811
+}
+
+regiment = {
+name = "7th Infantry. Division"
+type = infantry
+home = 811
+}
+
+regiment = {
+name = "8th Infantry. Division"
+type = infantry
+home = 812
+}
+
+regiment = {
+name = "9th Infantry. Division"
+type = infantry
+home = 812
+}
+
+regiment = {
+name = "10th Infantry. Division"
+type = infantry
+home = 813
+}
+
+regiment = {
+name = "11th Infantry. Division"
+type = artillery
+home = 813
+}
+
+regiment = {
+name = "12th Infantry. Division"
+type = artillery
+home = 814
+}
+
+regiment = {
+name = "13th Infantry. Division"
+type = artillery
+home = 814
+}
+
+regiment = {
+name = "14th Infantry. Division"
+type = artillery
+home = 815
+}
+
+regiment = {
+name = "15th Infantry. Division"
+type = hussar
+home = 816
+}
+
+regiment = {
+name = "16th Infantry. Division"
+type = hussar
+home = 816
+}
+
+regiment = {
+name = "17th Infantry. Division"
+type = hussar
+home = 817
+}
+
+regiment = {
+name = "18th Infantry. Division"
+type = hussar
+home = 817
+}
+
+
+}
+
+navy = {
+name = "Bulgarian fleet"
+location = 829
+ship = {
+name = "Yantra"
+type = cruiser
+}
+ship = {
+name = "Bulgaria"
+type = cruiser
+}
+ship = {
+name = "Iskar"
+type = cruiser
+}
+}

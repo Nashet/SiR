@@ -1,0 +1,8 @@
+add_core = IDO
+add_core = ETS
+owner = POR
+controller = POR
+add_core = POR
+trade_goods = timber
+life_rating = 35
+colonial = yes

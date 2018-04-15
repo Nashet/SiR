@@ -1,0 +1,12 @@
+add_core = IDO
+owner = BAL
+controller = BAL
+add_core = BAL
+trade_goods = fish
+life_rating = 30
+
+1914.1.1 = { 
+owner = NET
+controller = NET
+colonial = yes 
+} 

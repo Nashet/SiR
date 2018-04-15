@@ -1,0 +1,10 @@
+add_core = SOM
+trade_goods = grain
+life_rating = 15
+
+
+1914.1.1 = {
+owner = ENG
+controller = ENG
+colonial = yes
+} 

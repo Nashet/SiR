@@ -1,0 +1,21 @@
+owner = ENG
+controller = ENG
+add_core = AST
+trade_goods = wool
+life_rating = 30
+colonial = yes
+1861.1.1 = {
+	colonial = yes
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 1 }
+
+1914.1.1 = { 
+owner = ENG
+controller = ENG
+colonial = yes 
+} 

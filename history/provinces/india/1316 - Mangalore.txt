@@ -1,0 +1,13 @@
+owner = ENG
+controller = ENG
+add_core = MYS
+add_core = HND
+add_core = TRA
+trade_goods = fruit
+life_rating = 35
+colonial = yes
+1914.1.1 = { 
+owner = ENG
+controller = ENG 
+colonial = yes 
+} 

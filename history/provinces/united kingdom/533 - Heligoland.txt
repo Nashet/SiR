@@ -1,0 +1,11 @@
+owner = ENG
+controller = ENG
+trade_goods = fish
+life_rating = 35
+
+
+1914.1.1 = { 
+owner = GER 
+controller = GER 
+add_core=GER
+} 

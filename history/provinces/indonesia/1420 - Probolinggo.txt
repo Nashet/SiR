@@ -1,0 +1,13 @@
+add_core = IDO
+owner = NET
+controller = NET
+add_core = JAV
+trade_goods = sulphur
+life_rating = 30
+colonial = yes
+
+1914.1.1 = { 
+owner = NET
+controller = NET
+colonial = yes 
+} 

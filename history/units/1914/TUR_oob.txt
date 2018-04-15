@@ -1,0 +1,469 @@
+#Sphere of Influence
+PER = {
+	value = 75
+}
+GRE = {
+	value = -200
+}
+SER = {
+	value = -200
+}
+ROM = {
+	value = -200
+}
+MON = {
+	value = -200
+}
+ARM = {
+	value = -200
+}
+BEL = {
+	value = -200
+}
+LUX = {
+	value = -200
+}
+BUL = {
+	value = 200
+}
+RUS = {
+	value = 0
+}
+FRA = {
+	value = 0
+}
+ENG = {
+	value = 0
+}
+GER = {
+	value = 100
+}
+KUK = {
+	value = 200
+}
+leader = {
+name = "Ismail Enver"
+type = land
+date = "1914.1.1"
+personality = audacious
+background = drillmaster
+picture = "personal_enver_pasha"
+}
+
+leader = {
+name = "Mustafa Kemal"
+type = land
+date = "1914.1.1"
+personality = charismatic
+background = politician
+picture = "personal_mustafa_kemal"
+}
+
+leader = {
+name = "Ahmad Jamal"
+type = land
+date = "1914.1.1"
+personality = merciless
+background = warmonger
+picture = "personal_ahmet_cemal"
+}
+
+leader = {
+name = "Fakhreddin Pasha"
+type = land
+date = "1914.1.1"
+personality = coolminded
+background = cartographer
+picture = "personal_fahreddin_pasha"
+}
+
+leader = {
+name = "Halil Kut"
+type = land
+date = "1914.1.1"
+personality = efficient
+background = war_college
+picture = "personal_halil_kut"
+}
+army = {
+	name = "1. Order"
+	location = 860
+	regiment = {
+		name= "1.1. Piyade Tümeni"
+		type = infantry
+		home = 861
+	}
+
+	regiment = {
+		name= "2.1. Piyade Tümeni"
+		type = infantry
+		home = 883
+	}
+
+	regiment = {
+		name= "3.1. Piyade Tümeni"
+		type = infantry
+		home = 884
+	}
+
+	regiment = {
+		name= "4.1. Piyade Tümeni"
+		type = engineer
+		home = 860
+	}
+
+	regiment = {
+		name= "1.2. Piyade Tümeni"
+		type = infantry
+		home = 809
+	}
+
+	regiment = {
+		name= "2.2. Piyade Tümeni"
+		type = infantry
+		home = 810
+	}
+
+	regiment = {
+		name= "3.2. Piyade Tümeni"
+		type = infantry
+		home = 812
+	}
+
+	regiment = {
+		name= "1.1. Süvari Tümeni"
+		type = cavalry
+		home = 860
+	}
+
+	regiment = {
+		name= "2.1. Süvari Tümeni"
+		type = cavalry
+		home = 876
+	}
+
+	regiment = {
+		name= "3.1. Süvari Tümeni"
+		type = cavalry
+		home = 882
+	}
+
+}
+
+army = {
+	name = "2. Order"
+	location = 799
+	regiment = {
+		name= "1.3. Piyade Tümeni"
+		type = infantry
+		home = 879
+	}
+
+	regiment = {
+		name= "2.3. Piyade Tümeni"
+		type = infantry
+		home = 887
+	}
+
+	regiment = {
+		name= "3.3. Piyade Tümeni"
+		type = infantry
+		home = 888
+	}
+
+	regiment = {
+		name= "1.4. Piyade Tümeni"
+		type = infantry
+		home = 811
+	}
+
+	regiment = {
+		name= "2.4. Piyade Tümeni"
+		type = infantry
+		home = 813
+	}
+
+	regiment = {
+		name= "3.4. Piyade Tümeni"
+		type = infantry
+		home = 814
+	}
+
+	regiment = {
+		name= "1.2. Süvari Tümeni"
+		type = cavalry
+		home = 863
+	}
+
+	regiment = {
+		name= "2.2. Süvari Tümeni"
+		type = cavalry
+		home = 849
+	}
+
+	regiment = {
+		name= "3.2. Süvari Tümeni"
+		type = cavalry
+		home = 818
+	}
+
+}
+
+army = {
+	name = "3. Order"
+	location = 869
+	regiment = {
+		name= "1.5. Piyade Tümeni"
+		type = infantry
+		home = 869
+	}
+
+	regiment = {
+		name= "2.5. Piyade Tümeni"
+		type = infantry
+		home = 824
+	}
+
+	regiment = {
+		name= "3.5. Piyade Tümeni"
+		type = infantry
+		home = 851
+	}
+
+	regiment = {
+		name= "1.6. Piyade Tümeni"
+		type = infantry
+		home = 828
+	}
+
+	regiment = {
+		name= "2.6. Piyade Tümeni"
+		type = infantry
+		home = 850
+	}
+
+	regiment = {
+		name= "3.6. Piyade Tümeni"
+		type = infantry
+		home = 803
+	}
+
+}
+
+army = {
+	name = "4. Order"
+	location = 873
+	regiment = {
+		name= "1.7. Piyade Tümeni"
+		type = infantry
+		home = 873
+	}
+
+	regiment = {
+		name= "2.7. Piyade Tümeni"
+		type = infantry
+		home = 887
+	}
+
+	regiment = {
+		name= "3.7. Piyade Tümeni"
+		type = infantry
+		home = 888
+	}
+
+	regiment = {
+		name= "1.8. Piyade Tümeni"
+		type = infantry
+		home = 859
+	}
+
+	regiment = {
+		name= "2.8. Piyade Tümeni"
+		type = infantry
+		home = 674
+	}
+
+	regiment = {
+		name= "3.8. Piyade Tümeni"
+		type = infantry
+		home = 798
+	}
+
+}
+
+army = {
+	name = "5. Order"
+	location = 926
+	regiment = {
+		name= "1.9. Piyade Tümeni"
+		type = irregular
+		home = 926
+	}
+
+	regiment = {
+		name= "2.9. Piyade Tümeni"
+		type = irregular
+		home = 925
+	}
+
+	regiment = {
+		name= "3.9. Piyade Tümeni"
+		type = irregular
+		home = 923
+	}
+
+}
+
+army = {
+	name = "6. Order"
+	location = 933
+	regiment = {
+		name= "1.10. Piyade Tümeni"
+		type = irregular
+		home = 925
+	}
+
+	regiment = {
+		name= "2.10. Piyade Tümeni"
+		type = irregular
+		home = 804
+	}
+
+	regiment = {
+		name= "3.10. Piyade Tümeni"
+		type = irregular
+		home = 799
+	}
+
+	regiment = {
+		name= "1.3. Süvari Tümeni"
+		type = cavalry
+		home = 923
+	}
+
+	regiment = {
+		name= "2.3. Süvari Tümeni"
+		type = cavalry
+		home = 806
+	}
+
+	regiment = {
+		name= "3.3. Süvari Tümeni"
+		type = cavalry
+		home = 807
+	}
+
+	regiment = {
+		name= "1.4. Süvari Tümeni"
+		type = cavalry
+		home = 923
+	}
+
+	regiment = {
+		name= "2.4. Süvari Tümeni"
+		type = cavalry
+		home = 802
+	}
+
+	regiment = {
+		name= "3.4. Süvari Tümeni"
+		type = cavalry
+		home = 803
+	}
+
+}
+
+navy = {
+name = "The fleet of Turkey"
+location = 860
+ship = {
+name = "Fethiye"
+type = ironclad
+}
+
+ship = {
+name = "Kosovo"
+type = ironclad
+}
+
+ship = {
+name = "Pake and Zafer"
+type = ironclad
+}
+
+ship = {
+name = "Sadiye"
+type = ironclad
+}
+
+ship = {
+name = "Ertugrul"
+type = cruiser
+}
+
+ship = {
+name = "Hadvandigar"
+type = cruiser
+}
+
+ship = {
+name = "Kervan and Bahri"
+type = cruiser
+}
+
+ship = {
+name = "Mubiru and Serour"
+type = cruiser
+}
+
+ship = {
+name = "Edirne"
+type = cruiser
+}
+
+ship = {
+name = "Sevres"
+type = cruiser
+}
+
+ship = {
+name = "Bursa"
+type = cruiser
+}
+
+ship = {
+name = "Midilli"
+type = cruiser
+}
+
+ship = {
+name = "Feyzi and Bahri"
+type = commerce_raider
+}
+
+ship = {
+name = "Mekidiye"
+type = commerce_raider
+}
+
+ship = {
+name = "SAIC and Sadie"
+type = commerce_raider
+}
+
+ship = {
+name = "Taif"
+type = commerce_raider
+}
+
+}
+
+navy = {
+name = "1st Transport Squadron"
+location = 860
+ship = {
+name = "1st transport flotilla"
+type = steam_transport
+}
+
+}

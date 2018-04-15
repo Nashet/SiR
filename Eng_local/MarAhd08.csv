@@ -1,0 +1,136 @@
+RUS_355; Latgale; X
+RUS_364; Samogitia; X
+RUS_940; Polesie; X
+RUS_987; Komi; X
+RUS_1029; Udmurtia; X
+RUS_1042; Bashkiria; X
+RUS_1078; Buryatia; X
+RUS_1062; Khanty-Mansi; X
+BOE; Boer Federation; X
+BOE_ADJ; Bursky.; X
+ETS; East Timor; X
+ETS_ADJ; Timor.; X
+KLM; Kalmykia; X
+KLM_ADJ; Kalmykian.; X
+KMI; Komi; X
+KMI_ADJ; Komi Zyriansky; X
+TAT; Tartary; X
+TAT_ADJ; Tatarian; X
+BSK; Bashkiria; X
+BSK_ADJ; Bashkirian; X
+CHV; Chuvashia; X
+CHV_ADJ; Chuvash; X
+UDM; Udmurtia; X
+UDM_ADJ; Udmurtian; X
+YGR; Ugra; X
+YGR_ADJ; Khanty-Mansiysk.; X
+ORN; Orenburg; X
+ORN_ADJ; Orenburgian; X
+ALT; Altai; X
+ALT_ADJ; Altai; X
+BRY; Buryatia; X
+BRY_ADJ; Buriatian; X
+BOE_conservative; Voortrekker Party; X
+BOE_conservative_2; Unionist Party; X
+BOE_liberal; Democratic Party; X
+BOE_reactionary; Afrikaner Party; X
+BOE_anarcho_liberal; Confederate Party; X
+BOE_socialist; Party ells; X
+BOE_communist; Communist Party; X
+BOE_fascist; Alliance for a new state; X
+ETS_conservative; Party kabralist; X
+ETS_liberal; Democratic Party; X
+ETS_reactionary; Christian National Party; X
+ETS_anarcho_liberal; Radical-Democratic Party; X
+ETS_socialist; Social Democratic Party; X
+ETS_communist; Revolutionary Front; X
+ETS_fascist; Integralistskaya Party; X
+AKH_conservative; Party dzhadidistov; X
+AKH_liberal; National Democratic Party; X
+AKH_reactionary; Party kadimistov; X
+AKH_anarcho_liberal; Freedom Party; X
+AKH_socialist; Socialist Committee; X
+AKH_communist; Socialist-Revolutionary Party; X
+AKH_fascist; Volga Legion; X
+BSK_conservative; Party dzhadidistov; X
+BSK_liberal; Ittifaq al-Muslimin; X
+BSK_reactionary; Party kadimistov; X
+BSK_anarcho_liberal; Kurultai; X
+BSK_socialist; Muslim Socialist Committee; X
+BSK_communist; Revolutionary Communist Party; X
+BSK_fascist; Volga Legion; X
+KLM_conservative; Constitutional-Democratic Party; X
+KLM_liberal; National Liberal Party; X
+KLM_reactionary; Order crimson lotus; X
+KLM_anarcho_liberal; Freedom Party; X
+KLM_socialist; Socialist-Revolutionary Party; X
+KLM_communist; RSDLP (b); X
+KLM_fascist; Alliance for a New State; X
+KMI_conservative; Party of National Revival; X
+KMI_liberal; Progressive Party; X
+KMI_reactionary; traditionalist party; X
+KMI_anarcho_liberal; Radical-Democratic Party; X
+KMI_socialist; People's Socialist Party; X
+KMI_communist; RSDLP (b); X
+KMI_fascist; Party of National Unity; X
+TAT_conservative; Party dzhadidistov; X
+TAT_liberal; Ittifaq al-Muslimin; X
+TAT_reactionary; Party kadimistov; X
+TAT_anarcho_liberal; Tatar Public Center; X
+TAT_socialist; Muslim Socialist Committee; X
+TAT_communist; Revolutionary Communist Party; X
+TAT_fascist; Volga Legion; X
+CHV_conservative; Constitutional-Democratic Party; X
+CHV_liberal; Progressive Party; X
+CHV_reactionary; fraction of Kappel; X
+CHV_anarcho_liberal; National Radical Party; X
+CHV_socialist; Socialist-Revolutionary Party; X
+CHV_communist; Revolutionary Communist Party; X
+CHV_fascist; Volga Legion; X
+UDM_conservative; Constitutional-Democratic Party; X
+UDM_liberal; Progressive Party; X
+UDM_reactionary; fraction of Kappel; X
+UDM_anarcho_liberal; National Radical Party; X
+UDM_socialist; Socialist-Revolutionary Party; X
+UDM_communist; Revolutionary Communist Party; X
+UDM_fascist; National Socialist Party; X
+YGR_conservative; Unionist Party; X
+YGR_liberal; Progressive Party; X
+YGR_reactionary; traditionalist party; X
+YGR_anarcho_liberal; National Radical Party; X
+YGR_socialist; Socialist-Revolutionary Party; X
+YGR_communist; Revolutionary Communist Party; X
+YGR_fascist; National Socialist Party; X
+ALT_conservative; Peace Party; X
+ALT_liberal; Progressive Party; X
+ALT_reactionary; Order of the White Lotus; X
+ALT_anarcho_liberal; National Radical Party; X
+ALT_socialist; People's Socialist Party; X
+ALT_communist; Communist Party; X
+ALT_fascist; Bogd Khan's faction; X
+BRY_conservative; Peace Party; X
+BRY_liberal; Progressive Party; X
+BRY_reactionary; Order of the White Lotus; X
+BRY_anarcho_liberal; National Radical Party; X
+BRY_socialist; Socialist-Revolutionary Party; X
+BRY_communist; Communist Party; X
+BRY_fascist; Bogd Khan's faction; X
+ORN_conservative; fraction Dutov; X
+ORN_liberal; Constitutional-Democratic Party; X
+ORN_reactionary; fraction of Omsk; X
+ORN_anarcho_liberal; Freedom Party; X
+ORN_socialist; Socialist-Revolutionary Party; X
+ORN_communist; RSDLP (b); X
+ORN_fascist; NSRP; X
+karelian; Karelians; X
+kalmyk; Kalmyks; X
+nenets; Nenets; X
+komi; Komi Zyrians; X
+bashkir; Bashkirs; X
+chuvash; Chuvash; X
+udmurt; Udmurts; X
+khanty; Khanty; X
+mansi; Muncie; X
+altay; Altaians; X
+buryat; Buryats; X
+tuvan; Tuvans; X

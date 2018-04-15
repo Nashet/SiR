@@ -1,0 +1,19 @@
+owner = MCK
+controller = MCK
+add_core = CHI
+add_core = MCK
+add_core = PRI
+trade_goods = coal
+life_rating = 35
+1861.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = yes
+	add_core = RUS
+}
+1914.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = yes
+	add_core = RUS
+}

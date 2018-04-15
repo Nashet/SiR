@@ -1,0 +1,924 @@
+political_decisions = {
+
+deport_aliens = {
+	alert = no
+		potential = {
+			OR = {
+				government = proletarian_dictatorship	
+				government = fascist_dictatorship
+				government = presidential_dictatorship 
+				government = absolute_monarchy 
+			}
+			NOT = {has_country_flag = deport_aliens }
+		}
+		allow = {
+			NOT = {has_country_flag = dont_emigrate }
+		}
+		
+		effect = 
+		{
+
+			set_country_flag = deport_aliens 
+			badboy = 10
+			prestige = -30	
+			
+		}
+		ai_will_do = {factor =0	}
+	}
+stop_deportation = {
+	alert = no
+
+		potential = {
+			has_country_flag = deport_aliens 
+			
+		}
+		allow = {
+
+		}
+		
+		effect = 
+		{
+
+			clr_country_flag = deport_aliens 
+			badboy = -5
+			
+		}
+		ai_will_do = {
+			factor =0			
+		}
+	}
+prohibit_emigration = {
+	alert = no
+
+		potential = {
+			OR = {	
+				government = proletarian_dictatorship	
+				government = fascist_dictatorship
+			}
+			NOT = {has_country_flag = dont_emigrate }			
+		}
+		allow = {
+			NOT = {has_country_flag = deport_aliens }
+		}
+		
+		effect = 
+		{
+
+			set_country_flag = dont_emigrate 
+			badboy = 4
+			prestige = -10	
+			
+		}
+		ai_will_do = {factor =1	}
+	}
+legalize_emigration = {
+	alert = no
+
+		potential = {
+			has_country_flag = dont_emigrate
+			
+		}
+		allow = {
+			
+		}
+		
+		effect = 
+		{
+
+			clr_country_flag = dont_emigrate
+			
+		}
+		ai_will_do = {
+			factor =0
+			modifier = {
+				factor = 1
+				NOT = {
+					OR={government = proletarian_dictatorship	
+					government = fascist_dictatorship}
+				}
+			}
+		}
+	}
+
+
+LetsDoKolhoz = {
+	alert = no
+
+		potential = {
+			
+		government = proletarian_dictatorship
+			
+		}
+		allow = {
+		slavery = no_slavery
+		
+		}
+		
+		effect = 
+		{
+
+			political_reform = yes_slavery
+		
+		}
+		ai_will_do = {
+			factor = 0.006
+			modifier = {
+				factor = 0
+				NOT = {industrial_score=5000}
+			}
+		}
+
+		
+	}
+Enact = {
+	alert = no
+
+		potential = {
+			
+			government = fascist_dictatorship
+			
+		}
+		allow = { NOT = {
+		slavery = yes_slavery }
+		
+		}
+		
+		effect = 
+		{
+			political_reform = yes_slavery
+			badboy = 10
+			
+		}
+		ai_will_do = {
+			factor = 0.006
+			modifier = {
+				factor = 0
+				NOT = {industrial_score=5000}
+			}
+		}
+	}
+Anshlus= {
+		potential = {
+			
+		government = fascist_dictatorship
+			
+		}
+		allow = {
+		is_greater_power = yes
+		any_neighbor_country = {
+				
+					
+					#
+					
+					OR={
+						substate_of = THIS
+						is_substate = no
+					}
+					OR={
+						is_our_vassal=yes
+						is_vassal = no
+					}
+
+					in_sphere = THIS
+					is_culture_group = THIS
+					NOT = {
+						tag = THIS
+					}
+					
+				
+			}
+		}
+		
+		effect = 
+		{
+			any_neighbor_country={
+				limit =	{
+					in_sphere = THIS
+					is_culture_group = THIS
+					NOT = {
+						tag = THIS
+					}
+					ai=yes	
+				}
+			
+				annex_to = THIS
+			}
+			badboy = 10
+		}
+	}
+WorldWideRevlution = {
+		potential = {
+			tag = SOV
+			
+			
+		}
+		allow = {
+		government = proletarian_dictatorship
+		any_neighbor_country = {government = proletarian_dictatorship}
+		war=no
+		}
+		
+		effect = 
+		{
+			any_neighbor_country= 
+			{
+			limit = 
+				{
+				government = proletarian_dictatorship
+				war=no
+				ai=yes
+				}
+			
+			annex_to = THIS
+			}
+			#badboy=-4
+		}
+	}
+provocate_comi = {
+	alert = no
+
+		potential = {
+		is_ideology_enabled = communist 	
+		
+			
+		}
+		allow = {
+			Ai = no
+			invention = dogma_of_mass_action
+			money=100000
+		}
+		
+		effect = 
+		{
+
+			money = -100000
+			#random = {
+			#chance = 50
+			#country_event =999987
+			random_country={
+				limit = {
+						NOT = {
+							relation = { who = THIS value = -190 }
+							government = proletarian_dictatorship
+						}
+					}
+				add_country_modifier = {
+					name = provoke_comi 
+					duration = 365
+				}
+				
+				any_pop = {
+					limit ={
+						OR = {		
+							pop_majority_ideology = communist
+							pop_majority_ideology = socialist
+							pop_type = soldiers
+						}
+					}
+					#pop_type = soldiers
+				
+					consciousness = 10
+					militancy = 10
+					money = 300
+				}
+				# маскировать это
+				any_pop={	
+					limit={
+						OR={
+							pop_type = soldiers
+							pop_type = craftsmen
+							pop_type = labourers
+						}
+						militancy = 4
+						
+					}
+					ideology = {
+						factor = 0.95
+						value = communist 
+					}
+				}
+				random_list = {
+					50 = { 
+						country_event = 999988	
+						relation = {
+							who = THIS			
+							value = -400
+						}
+						leave_alliance = THIS
+						end_guarantee = THIS
+						end_military_access = THIS
+						prestige = -20						
+					}
+					50 = { }
+				}
+				#random = {		
+				#	chance = 50
+					
+				#}				
+			}
+			#}
+			
+		}
+		ai_will_do = {
+			factor =0
+			modifier = {
+				factor = -1
+				NOT = {money=500000}
+			}
+			modifier = {
+				factor = 1
+				military_score = 400
+			}
+		}
+	}
+provocate_liberals = {
+	alert = no
+
+		potential = {
+			is_ideology_enabled = communist 	
+			NOT = {government = proletarian_dictatorship}
+			
+		}
+		allow = {
+			Ai = no
+			invention = dogma_of_mass_action
+			money=100000
+		}
+		
+		effect = 
+		{
+
+			money = -100000
+			setrandom = 123
+			#random = {
+			#chance = 50
+			country_event =999987
+			random_country={
+				
+				limit = {
+						NOT = {	relation = { who = THIS value = -190 }	}
+						government = proletarian_dictatorship
+					}
+				add_country_modifier = {
+					name = provoke_liberals 
+					duration = 180
+				}
+				any_pop = {
+					limit ={
+						OR = {		
+							pop_majority_ideology = liberal 
+							pop_majority_ideology = anarcho_liberal 
+							pop_type = soldiers
+						}
+					}
+					#pop_type = soldiers
+				
+					consciousness = 10
+					militancy = 10
+					money = 200
+				}
+				setrandom = 235
+				random = {		
+					chance = 30
+					country_event = 999988	
+					relation = {
+						who = THIS			
+						value = -400
+					}
+					leave_alliance = THIS
+					end_guarantee = THIS
+					end_military_access = THIS
+					prestige = -20
+				}				
+			#}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {money=500000}
+			}
+		}
+	}
+ExcludeFromSOI = {
+	alert = no
+
+	potential = {
+		is_greater_power = yes	
+	}
+	allow = {
+		
+		#any_country={			
+		#	limit={sphere_owner = {tag = THIS}}
+		#	num_of_cities =1		
+		#}
+	}
+	
+	effect = 
+	{
+		random_country={
+			limit = {
+					NOT = {	relation = { who = THIS value = -190 }	}
+					in_sphere = THIS
+				}
+			relation = {
+					who = THIS			
+					value = -200
+			}
+			country_event = 999992
+			end_guarantee = THIS					
+			prestige = -20
+							
+		}
+		
+	}
+	ai_will_do = {
+		factor =0
+	}
+}
+FreeVassal = {
+	alert = no
+
+	potential = {
+		OR={
+			num_of_substates=1
+			num_of_vassals_no_substates=1
+		}
+	}
+	allow = {
+		
+		#any_country={			
+		#	limit={sphere_owner = {tag = THIS}}
+		#	num_of_cities =1		
+		#}
+	}
+	
+	effect = 
+	{
+		random_country={
+			limit = {
+					NOT = {	relation = { who = THIS value = -190 }	}
+					vassal_of = THIS
+				}
+			relation = {
+					who = THIS			
+					value = 50
+			}
+			#is_independant= yes
+			country_event = 999993
+			#end_guarantee = THIS					
+			prestige = -20
+							
+		}
+		any_pop={
+			militancy=1
+		} 
+		
+	}
+	ai_will_do = {
+		factor =0
+	}
+}
+DestroyEnemyIndystry = {
+	alert = no
+
+	potential = {
+		war=yes		
+	}
+	allow = {
+		
+		#random_country={			
+		#	war_with = this
+		#	any_owned_province ={controller = { tag = this}}				
+		#
+		#}
+		
+		
+	}
+	
+	effect = 
+	{
+		any_country={	
+			limit ={
+				war_with = this
+				industrial_score = 100
+				any_owned_province ={
+					controller = { tag = this}					
+				 	NOT = {has_province_modifier=Destroyed_industry}
+				}
+			}				
+			#any_state={
+			#limit={controller = { tag = this}}
+			country_event =999979				
+				
+
+			#}
+			THIS={
+				badboy = 1
+				prestige = -10
+			}
+
+		}
+		
+	}
+	ai_will_do = {
+		factor =0.006
+		#modifier = {
+		#	factor = 0.004
+		#	industry_score = 100
+		#}
+		modifier = {
+			factor = 0
+			OR = {
+				badboy=0.8
+				NOT = {prestige=100}
+				is_greater_power = no
+			}
+
+		}
+
+
+	}
+}
+Metropolia_fall = {
+alert = no
+
+		potential = {
+			war=yes	
+		}
+		allow = {
+		
+		}
+		
+		effect = {
+			any_country={
+				limit={
+					war_with = THIS
+					#national_provinces_occupied = 1
+
+					all_core = {
+						OR = {
+							controlled_by=THIS
+							#continent = europe # ????
+							NOT = {owner= {war_with = THIS}}
+							#owner={ alliance_with = THIS}
+						}
+					}
+					
+				}				
+
+			country_event =999984 
+			badboy = 20
+			prestige = -30	
+			}
+			 
+
+			
+
+			
+			
+			
+		}
+		ai_will_do = {
+			factor = 0	
+			
+			modifier = {
+				factor = 0.006
+				AND = {
+					Not = {badboy=0.1}
+					prestige=100
+					NOT = {national_provinces_occupied = 0.05}
+					military_score  =100
+				}
+	
+			}
+			
+		}
+}
+Marionet = {
+	alert = no
+
+	potential = {
+		war=yes		
+	}
+	allow = {
+		
+		#random_country={			
+		#	war_with = this
+		#	any_owned_province ={controller = { tag = this}}				
+		#
+		#}
+	}
+	
+	effect = 
+	{
+		any_country={	
+			limit ={
+				OR = {
+					civilized = yes
+					this = { ai = no}					
+				}
+				NOT={ has_country_modifier = JustCreated }
+				war_with = this
+				any_owned_province ={
+					#AND={ для всех потому что
+						controller = { tag = this}
+						NOT={is_core = this}						
+					#}
+				}
+			}
+		
+				
+						
+			country_event=999985  
+			
+
+		}
+		
+	}
+	ai_will_do = {
+		factor =0.006
+		#modifier = {
+		#	factor = 0.006
+		#	military_score = 30000
+		#
+		#}
+		modifier = {
+			factor = 0
+			OR = {
+				is_greater_power = no
+				badboy=0.8
+				NOT = {prestige=400}
+				national_provinces_occupied = 0.2
+				#
+				#unit_in_battle = no
+				AND={
+					month = 1
+					NOT={month =2}
+				}
+				AND={
+					month = 3
+					NOT={month =4}
+				}
+				AND={
+					month = 5
+					NOT={month =6}
+				}
+				AND={
+					month = 7
+					NOT={month =8}
+				}
+				AND={
+					month = 9
+					NOT={month =10}
+				}
+				AND={
+					month = 10
+					NOT={month =11}
+				}
+				
+				
+			}
+
+		}
+	}
+}
+comi_coup = {
+	alert = no
+
+		potential = {
+		is_ideology_enabled = communist 	
+		NOT ={government =proletarian_dictatorship }
+		invention = dogma_of_mass_action	
+		}
+		allow = {			
+						
+			war_policy = jingoism 
+		}
+		
+		effect = 
+	
+		{
+			# потеря сателитов
+			any_country= {
+	
+				country_event = 999993
+			}			
+			any_country= {
+	
+				country_event = 999992
+			}
+
+			set_country_flag = is_commi
+
+			political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = state_controlled
+			political_reform = underground_parties		
+			government = proletarian_dictatorship
+			nationalize = yes	
+			
+			
+			any_country={							
+				leave_alliance = THIS
+			}
+			any_pop = {
+				limit =	{		
+					OR= {	
+						pop_type = capitalists 
+						pop_type = aristocrats
+						#pop_type = officers
+					}									
+				}
+				pop_type = farmers
+				consciousness = 10
+				militancy = 10
+			}	
+			
+			any_country = {
+				limit =	{
+						government = proletarian_dictatorship
+				}
+				relation = {
+					who = THIS			
+					value = 400
+				}
+				#country_event =499997
+				create_alliance = THIS
+				#guarantee = THIS
+			
+			}
+			any_country = {
+				limit = {
+					NOT ={government = proletarian_dictatorship}
+					}
+				relation = {
+					who = THIS			
+					value = -200
+				}
+			
+			}
+			#проверка, что коми вышел из не коми сферы
+			any_country = {
+				limit =	{
+					government = proletarian_dictatorship
+					sphere_owner ={NOT={government = proletarian_dictatorship}} 
+				}
+				sphere_owner = {
+					diplomatic_influence = {
+					who = THIS
+					value = -200
+					}				
+				}
+			}
+		
+
+			any_pop={
+				limit = {
+						NOT={
+							OR = {		
+								pop_majority_ideology = communist
+								pop_majority_ideology = socialist
+								type = soldiers
+							}	
+						}	
+					}
+				
+				consciousness = 10
+				militancy = 10
+				
+				money = 300				
+			}			
+			add_country_modifier = {
+				name = MustRevolt 
+				duration = 360
+			}			
+			
+						
+		}
+		ai_will_do = {
+			factor =0
+		}
+}
+fashi_coup = {
+	alert = no
+
+		potential = {
+		is_ideology_enabled = fascist
+		NOT ={government = fascist_dictatorship }
+		invention = dogma_of_mass_action	
+		}
+		allow = {			
+						
+			war_policy = jingoism 
+		}
+		
+		effect = 
+		{	political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = underground_parties	
+			government = fascist_dictatorship
+			
+			any_country = {
+				limit = {
+					NOT ={government = fascist_dictatorship }
+				}
+				relation = {
+					who = THIS			
+					value = -200
+				}
+		
+			}		
+
+			any_pop={
+				limit = {
+						NOT={
+							OR = {		
+								pop_majority_ideology = fascist
+								type = soldiers
+							}	
+						}	
+					}
+				
+				consciousness = 10
+				militancy = 10
+				
+				money = 300				
+			}			
+			add_country_modifier = {
+				name = MustRevolt 
+				duration = 360
+			}			
+			
+						
+		}
+		ai_will_do = {
+			factor =0
+		}
+}
+DemandPassage = {
+	alert = no
+
+	potential = {
+		
+	}
+	allow = {
+		
+		
+	}
+	
+	effect = 
+	{
+		random_country={
+			limit = {
+					NOT = {	relation = { who = THIS value = -190 }	}
+					NOT={war_with=THIS}
+					NOT={alliance_with  = THIS}
+					is_vassal = no
+					is_substate = no
+					NOT={in_sphere=THIS}
+			}
+			country_event = 999973										
+			THIS={ badboy=1}
+		}
+		
+		
+	}
+	ai_will_do = {
+		factor =0
+	}
+}
+TheWorldIsToBigForMe = {
+	alert = no
+	potential = {
+		is_secondary_power = yes
+		#part_of_sphere = yes
+		
+	}
+	allow = {
+		
+	}
+	
+	effect = 
+	{
+		prestige = -70
+		any_pop={
+		militancy = -1
+		}
+		
+		
+	}
+	ai_will_do = {
+		factor =0
+	}
+
+}
+
+}

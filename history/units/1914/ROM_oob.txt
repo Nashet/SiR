@@ -1,0 +1,241 @@
+SER={value=190}
+ENG={value=100}
+MON={value=190}
+BEL={value=190}
+LUX={value=190}
+TUR={value=-200}
+BUL={value=-200}
+
+
+leader = {
+name = "Constantine Prezan"
+type = land
+date = "1914.1.1"
+personality = audacious
+background = school_of_firepower
+picture = "personal_constantin_prezan"
+}
+
+leader = {
+name = "Jeremiah Grigorescu"
+type = land
+date = "1914.1.1"
+personality = hellbent
+background = school_of_the_bayonet
+picture = "personal_eremia_grigorescu"
+}
+
+leader = {
+name = "Ion Dragalin"
+type = land
+date = "1914.1.1"
+personality = merciless
+background = brownnoser
+picture = "personal_ion_dragalina"
+}
+
+leader = {
+name = "Alexander Averesku"
+type = land
+date = "1914.1.1"
+personality = competent
+background = priest
+picture = "personal_alexandru_averescu"
+}
+
+leader = {
+name = "Arthur Vaytoyanu"
+type = land
+date = "1914.1.1"
+personality = sharp
+background = old_school
+picture = "personal_artur_vaitoianu"
+}
+
+army = {
+name = "1st-army of Romania"
+location = 664
+regiment = {
+name = "1st Infantry. Division"
+type = infantry
+home = 644
+}
+
+regiment = {
+name = "2nd Infantry. Division"
+type = infantry
+home = 644
+}
+
+regiment = {
+name = "3rd Infantry. Division"
+type = infantry
+home = 665
+}
+
+regiment = {
+name = "4th Infantry. Division"
+type = hussar
+home = 665
+}
+
+regiment = {
+name = "5th Infantry. Division"
+type = infantry
+home = 666
+}
+
+regiment = {
+name = "6th Infantry. Division"
+type = infantry
+home = 666
+}
+
+regiment = {
+name = "7th Infantry. Division"
+type = infantry
+home = 667
+}
+
+regiment = {
+name = "8th Infantry. Division"
+type = infantry
+home = 667
+}
+
+regiment = {
+name = "9th Infantry. Division"
+type = hussar
+home = 668
+}
+
+regiment = {
+name = "10th Infantry. Division"
+type = hussar
+home = 668
+}
+
+regiment = {
+name = "11th Infantry. Division"
+type = hussar
+home = 669
+}
+
+regiment = {
+name = "12th Infantry. Division"
+type = artillery
+home = 669
+}
+
+regiment = {
+name = "13th Infantry. Division"
+type = artillery
+home = 670
+}
+
+regiment = {
+name = "14th Infantry. Division"
+type = artillery
+home = 670
+}
+
+}
+
+army = {
+name = "2n army Romania"
+location = 674
+regiment = {
+name = "15th Infantry. Division"
+type = infantry
+home = 670
+}
+
+regiment = {
+name = "16th Infantry. Division"
+type = infantry
+home = 670
+}
+
+regiment = {
+name = "17th Infantry. Division"
+type = infantry
+home = 671
+}
+
+regiment = {
+name = "18th Infantry. Division"
+type = hussar
+home = 671
+}
+
+regiment = {
+name = "19th Infantry. Division"
+type = infantry
+home = 672
+}
+
+regiment = {
+name = "20th Infantry. Division"
+type = infantry
+home = 672
+}
+
+regiment = {
+name = "21th Infantry. Division"
+type = infantry
+home = 672
+}
+
+regiment = {
+name = "22th Infantry. Division"
+type = hussar
+home = 672
+}
+
+regiment = {
+name = "23rd Infantry. Division"
+type = hussar
+home = 673
+}
+
+regiment = {
+name = "24th Infantry. Division"
+type = hussar
+home = 673
+}
+
+regiment = {
+name = "25th Infantry. Division"
+type = artillery
+home = 674
+}
+
+regiment = {
+name = "26th Infantry. Division"
+type = artillery
+home = 675
+}
+
+regiment = {
+name = "27th Infantry. Division"
+type = artillery
+home = 818
+}
+
+}
+navy = {
+name = "Romanian fleet"
+location = 674
+ship = {
+name = "Yantra"
+type = cruiser
+}
+ship = {
+name = "Bulgaria"
+type = cruiser
+}
+ship = {
+name = "Iskar"
+type = cruiser
+}
+}

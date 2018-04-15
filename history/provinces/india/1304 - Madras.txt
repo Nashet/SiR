@@ -1,0 +1,14 @@
+owner = ENG
+controller = ENG
+add_core = HYD
+add_core = HND
+add_core = MYS
+trade_goods = grain
+life_rating = 35
+colonial = yes
+fort = 1
+1914.1.1 = { 
+owner = ENG
+controller = ENG 
+colonial = yes 
+} 

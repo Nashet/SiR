@@ -1,0 +1,11 @@
+add_core = DJI
+trade_goods = cattle
+life_rating = 15
+
+
+1914.1.1 = { 
+owner = FRA 
+controller = FRA 
+colonial = yes 
+} 
+

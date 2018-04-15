@@ -1,0 +1,13 @@
+owner = SPA
+controller = SPA
+add_core = CUB
+add_core = ULA
+trade_goods = tobacco
+life_rating = 35
+naval_base = 1
+colonial = yes
+
+1914.1.1 = { 
+owner = CUB
+controller = CUB 
+} 

@@ -1,0 +1,13 @@
+owner = IND
+controller = IND
+add_core = MUG
+add_core = IND
+add_core = HND
+trade_goods = cotton
+life_rating = 35
+
+1914.1.1 = { 
+owner = ENG
+controller = ENG 
+colonial = yes 
+} 

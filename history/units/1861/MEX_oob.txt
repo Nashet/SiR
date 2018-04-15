@@ -1,0 +1,24 @@
+
+army = {
+	name = "Army of the East"
+	location = 2146
+	regiment = {
+		name= "1.2. Division"
+		type = infantry
+		home = 2146
+	}
+
+	regiment = {
+		name= "2.2. Division"
+		type = infantry
+		home = 2146
+	}
+
+	regiment = {
+		name= "3.2. Division"
+		type = infantry
+		home = 2146
+	}
+
+}
+

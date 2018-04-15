@@ -1,0 +1,116 @@
+#; X
+ARO; Aro Confederacy;; X
+ARO_ADJ; Aro; X
+ARO_conservative; Eze Aro; X
+ARO_liberal; National Congress; X
+ARO_reactionary; Union-monarchists yunioniststov; X
+ARO_anarcho_liberal; League liberation of the people; X
+ARO_socialist; Equality Party; X
+ARO_communist; Communist Party; X
+ARO_fascist; Harakat al-mahrumin; X
+ASH; Ashanti;; X
+ASH_ADJ; Ashanti; X
+ASH_conservative; National Alliance; X
+ASH_liberal; Democratic Party; X
+ASH_reactionary; traditionalist party; X
+ASH_anarcho_liberal; People's Action Party; X
+ASH_socialist; National People's Party; X
+ASH_communist; Working alternative; X
+ASH_fascist; Pan-African Party; X
+BUG; Buganda;; X
+BUG_ADJ; Bugandian; X
+BUG_conservative; Palace faction allegiance; X
+BUG_liberal; Democratic Alternative; X
+BUG_reactionary; National Liberation Front; X
+BUG_anarcho_liberal; National Liberation Army; X
+BUG_socialist; People's Congress; X
+BUG_communist; Working Party; X
+BUG_fascist; Lord's Resistance Army; X
+CLA; Calabar;; X
+CLA_ADJ; Kalabarian; X
+CLA_conservative; fraction of the King; X
+CLA_liberal; Faction Board; X
+CLA_reactionary; faction leaders; X
+CLA_anarcho_liberal; League liberation of the people; X
+CLA_socialist; National Congress; X
+CLA_communist; Working Party; X
+CLA_fascist; Pan-African Alliance; X
+DAH; Dahomey; X
+DAH_ADJ; Dahomean; X
+DAH_conservative; fraction Ahosu; X
+DAH_liberal; Star Alliance; X
+DAH_reactionary; Imperial Alliance; X
+DAH_anarcho_liberal; Front for Renewal and Development; X
+DAH_socialist; Baath Socialist Party; X
+DAH_communist; Union of Communists of Dahomey; X
+DAH_fascist; Alliance save the empire; X
+DAM; Damagaram;; X
+DAM_ADJ; Damagaramian; X
+DAM_conservative; Palace Party; X
+DAM_liberal; Zaman Lahiya; X
+DAM_reactionary; tribalist party; X
+DAM_anarcho_liberal; Tabbat; X
+DAM_socialist; Tarayya; X
+DAM_communist; Gaskiyya; X
+DAM_fascist; Al-Ikhwan al-Muslimun; X
+DAR; Darfur;; X
+DAR_ADJ; Darfur; X
+DAR_conservative; fraction of the Sultan; X
+DAR_liberal; faction hanky; X
+DAR_reactionary; faction leaders; X
+DAR_anarcho_liberal; movement for freedom and equality; X
+DAR_socialist; Baath Socialist Party; X
+DAR_communist; Working alternative; X
+DAR_fascist; National Congress; X
+MAS; Massino;; X
+MAS_ADJ; Massino; X
+MAS_conservative; Dvortsovaaya Party; X
+MAS_liberal; Reform Party; X
+MAS_reactionary; tribalist party; X
+MAS_anarcho_liberal; party of radical renewal; X
+MAS_socialist; Justice Party; X
+MAS_communist; Equality Party; X
+MAS_fascist; Pan-African Army of Islam; X
+MOS; Mossi;; X
+MOS_ADJ; Mossi; X
+MOS_conservative; Mogo Naba faction; X
+MOS_liberal; Convent of the democratic forces; X
+MOS_reactionary; Tribal partmya; X
+MOS_anarcho_liberal; Union for the Republic; X
+MOS_socialist; Sankaristskaya Party; X
+MOS_communist; People's Congress; X
+MOS_fascist; Movement rebert-sankaristov; X
+MOZ; Mozambique; X
+MOZ_ADJ; Mozambican; X
+MOZ_conservative; Party kabralistov; X
+MOZ_liberal; Party sentyabristov; X
+MOZ_liberal_2; Historical Party; X
+MOZ_liberal_3; Progressive Party; X
+MOZ_liberal_4; Reform Party; X
+MOZ_conservative_2; Renaissance Party; X
+MOZ_liberal_5; Republican Party; X
+MOZ_socialist; Socialist Party; X
+MOZ_liberal_6; revival of the liberal party; X
+MOZ_liberal_7; Democratic Party; X
+MOZ_reactionary; party of the monarchists; X
+MOZ_anarcho_liberal; Radical Party; X
+MOZ_communist; Communist Party; X
+MOZ_fascist; new state; X
+OYO; Oyo;; X
+OYO_ADJ; Oyo; X
+OYO_conservative; Party Alaafina; X
+OYO_liberal; Alliance for Democracy; X
+OYO_reactionary; tribalist party; X
+OYO_anarcho_liberal; Radical Party; X
+OYO_socialist; National Congress; X
+OYO_communist; Communist Party; X
+OYO_fascist; Pan-African Union; X
+SUA; Swaziland;; X
+SUA_ADJ; Swaziland.; X
+SUA_conservative; Palace Party; X
+SUA_liberal; Liberal Party; X
+SUA_reactionary; tribalist party; X
+SUA_anarcho_liberal; Radical Party; X
+SUA_socialist; Democratic Left Party; X
+SUA_communist; Communist faction; X
+SUA_fascist; Swaziland action; X

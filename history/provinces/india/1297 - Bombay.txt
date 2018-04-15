@@ -1,0 +1,14 @@
+owner = ENG
+controller = ENG
+add_core = MUG
+add_core = HND
+trade_goods = grain
+life_rating = 35
+colonial = yes
+fort = 1
+1861.1.1 = { railroad = 3 }
+1914.1.1 = { 
+owner = ENG
+controller = ENG 
+colonial = yes 
+} 

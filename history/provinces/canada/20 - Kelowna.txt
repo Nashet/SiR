@@ -1,0 +1,11 @@
+add_core = CAN
+add_core = COL
+add_core = CSC
+trade_goods = grain
+life_rating = 35
+
+1914.1.1 = { 
+owner = ENG
+controller = ENG
+colonial = yes
+}

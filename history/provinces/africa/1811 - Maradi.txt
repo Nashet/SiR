@@ -1,0 +1,13 @@
+owner = DAM
+controller = DAM
+add_core = DAM
+trade_goods = grain
+life_rating = 30
+
+
+1914.1.1 = { 
+owner = FRA 
+controller = FRA 
+colonial = yes 
+} 
+

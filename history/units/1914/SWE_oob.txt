@@ -1,0 +1,186 @@
+army = {
+name = "Army of Sweden"
+location = 322
+regiment = {
+name = "1st Infantry Division"
+type = guard
+home = 323
+}
+
+regiment = {
+name = "2nd Infantry Division"
+type = guard
+home = 324
+}
+
+regiment = {
+name = "3rd Infantry Division"
+type = guard
+home = 325
+}
+
+regiment = {
+name = "4th Infantry Division"
+type = guard
+home = 326
+}
+
+regiment = {
+name = "5th Infantry Division"
+type = infantry
+home = 327
+}
+
+regiment = {
+name = "6th Infantry Division"
+type = infantry
+home = 328
+}
+
+regiment = {
+name = "7th Infantry Division"
+type = infantry
+home = 329
+}
+
+regiment = {
+name = "1st Dragoon Division"
+type = dragoon
+home = 330
+}
+
+regiment = {
+name = "2nd Dragoon Division"
+type = dragoon
+home = 332
+}
+
+regiment = {
+name = "3rd Dragoon Division"
+type = dragoon
+home = 333
+}
+
+regiment = {
+name = "1 st art division"
+type = artillery
+home = 334
+}
+
+regiment = {
+name = "2nd Division Art"
+type = artillery
+home = 335
+}
+
+}
+
+navy = {
+name = "The fleet of Sweden"
+location = 322
+ship = {
+name = "Karl XIV Johan"
+type = ironclad
+}
+
+ship = {
+name = "Stockholm"
+type = ironclad
+}
+
+ship = {
+name = "Fyuderneslandet"
+type = ironclad
+}
+
+ship = {
+name = "Bran"
+type = ironclad
+}
+
+ship = {
+name = "Dristigeten"
+type = ironclad
+}
+
+ship = {
+name = "Karl XIII"
+type = ironclad
+}
+
+ship = {
+name = "Manligeten"
+type = ironclad
+}
+
+ship = {
+name = "Prince Oscar"
+type = ironclad
+}
+
+ship = {
+name = "Scandinavia"
+type = ironclad
+}
+
+ship = {
+name = "Desiree"
+type = cruiser
+}
+
+ship = {
+name = "Gothenburg"
+type = cruiser
+}
+
+ship = {
+name = "Josephine"
+type = cruiser
+}
+
+ship = {
+name = "Oslo"
+type = cruiser
+}
+
+ship = {
+name = "Prince"
+type = cruiser
+}
+
+}
+
+navy = {
+name = "1st Transport Squadron"
+location = 322
+ship = {
+name = "1st transport flotilla"
+type = steam_transport
+}
+
+ship = {
+name = "2nd transport flotilla"
+type = steam_transport
+}
+
+ship = {
+name = "3rd Transport Flotilla"
+type = steam_transport
+}
+
+ship = {
+name = "4th Transport Flotilla"
+type = steam_transport
+}
+
+ship = {
+name = "5th transport flotilla"
+type = steam_transport
+}
+
+ship = {
+name = "6th transport flotilla"
+type = steam_transport
+}
+
+}

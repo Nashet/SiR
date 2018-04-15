@@ -1,0 +1,14 @@
+owner = SPA
+controller = SPA
+add_core = PHI
+trade_goods = fruit
+life_rating = 30
+colonial = yes
+fort = 1
+naval_base = 1
+
+1914.1.1 = { 
+owner = USA
+controller = USA
+colonial = yes 
+} 

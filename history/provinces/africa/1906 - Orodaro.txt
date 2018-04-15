@@ -1,0 +1,14 @@
+owner = MAS
+controller = MAS
+add_core = MAS
+add_core = MOS
+trade_goods = grain
+life_rating = 35
+
+
+1914.1.1 = { 
+owner = FRA 
+controller = FRA 
+colonial = yes 
+} 
+

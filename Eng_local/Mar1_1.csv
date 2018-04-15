@@ -1,0 +1,52 @@
+ENL; England; X
+TNT; Tuva; X
+BLR; Belarus; X
+KRL; Karelia; X
+KOZ; Cossacks; X
+CAU; Caucasus; X
+KUR; Kurdistan; X
+SYR; Syria; X
+ENL_ADJ; English.; X
+TNT_ADJ; Tuva.; X
+BLR_ADJ; Belarussian.; X
+KRL_ADJ; Karelian.; X
+KOZ_ADJ; Kozatsky.; X
+CAU_ADJ; Caucasus.; X
+KUR_ADJ; Kurdish.; X
+ITL_ADJ; Bulgar.; X
+SYR_ADJ; Syrian.; X
+BLR_conservative; Christian-conservative party; X
+BLR_liberal; the Popular Front; X
+BLR_reactionary; right block; X
+BLR_anarcho_liberal; revolutionary action; X
+BLR_socialist; Hramada; X
+BLR_communist; Communist Party; X
+BLR_fascist; National Socialist Party; X
+KRL_conservative; Pro Karelia; X
+KRL_liberal; National Democratic Alliance; X
+KRL_reactionary; Freedom Party; X
+KRL_anarcho_liberal; Northern Brotherhood; X
+KRL_socialist; Left Front; X
+KRL_communist; New Communist Party; X
+KRL_fascist; National-syndicalist party; X
+CAU_conservative; Unionist Party; X
+CAU_liberal; Democratic Party; X
+CAU_reactionary; party custodians of the world; X
+CAU_anarcho_liberal; Freedom Party; X
+CAU_socialist; Justice Party; X
+CAU_communist; Communist Party; X
+CAU_fascist; Caucasus Emirate; X
+KUR_conservative; Democratic Party; X
+KUR_liberal; Democratic Society Party; X
+KUR_reactionary; traditionalist party; X
+KUR_anarcho_liberal; National Radical Party; X
+KUR_socialist; Freedom and Democracy Congress; X
+KUR_communist; Kurdistan Workers' Party; X
+KUR_fascist; National-syndicalist workers' party; X
+SYR_conservative; Arab Democratic Union; X
+SYR_liberal; National Progressive Front; X
+SYR_reactionary; Islamic moderate party; X
+SYR_anarcho_liberal; Arab Republican Party; X
+SYR_socialist; Baath; X
+SYR_communist; Communist Party; X
+SYR_fascist; Social Nationalist Party; X

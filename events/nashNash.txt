@@ -1,0 +1,4192 @@
+#nash nash nash
+
+
+
+country_event = {
+	id = 999998
+	title = "EVTNAME999998"
+	desc = "EVTDESC999998"
+	picture = "Celebration"
+	is_triggered_only = yes
+#
+
+	major = yes	
+option = {
+	
+	}
+option = {
+	name = "test"
+	
+	USA = {
+		diplomatic_influence = {
+						who = MEX
+						value = 200
+				}
+	}USA = {
+		relation = {
+			who = MEX
+			value = 200
+		}
+	}
+}
+option = {
+	any_country={
+	any_owned = {
+		
+		trade_goods = oil
+	}
+	}
+	26={trade_goods = oil}
+	any_country={
+		all_core ={trade_goods = oil}
+	}
+}
+option = {
+	name = "ProvCalc"
+	
+	TUR = {
+	set_variable = {
+				which = europeProv
+				value = 1
+	}	
+	}
+	#any_country = {
+	RUS = {
+	any_country = {
+	#########
+			set_variable = {
+				which = europeProv
+				value = 0
+			}
+			any_owned = { 
+				limit  = { continent = europe}
+				change_variable = 	{
+					which = europeProv
+					value = 1
+				}
+
+			}
+	#########
+	}
+	}
+	
+}
+option = {
+	name = "test4"
+	
+	
+	random_owned = {
+                                limit = { controlled_by = THIS  }
+                                cavalry = current
+                                cavalry = current
+                                cavalry = current
+                                cavalry = current
+                                cavalry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                                infantry = current
+                        }
+}
+option = {
+	name = "money for pops"
+ 
+	any_country = {
+		any_pop = {
+			money = 10
+		}
+	}
+	
+}
+
+option = {
+	name = " chiChai"
+	
+	any_pop ={
+		religion = Sunni
+	}
+}
+
+
+option = {
+	name = " artisa"
+	any_country = 
+	{
+		limit={
+			capital_scope = {continent = europe}
+		}
+		all_core={
+			limit={
+			NOT = {continent = europe}
+			}
+		remove_core = SPA
+		}	
+		
+	
+	}
+	
+		
+}
+option = {
+	name = " test Demo"
+	
+	government  = democracy
+	
+		political_reform = universal_weighted_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = gerrymandering
+	}	
+option = {
+
+name = " test fashi"
+	enable_ideology = fascist
+	government  = fascist_dictatorship 
+	political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+	}	
+option = {
+	name = " test commi"
+	enable_ideology = communist 
+	government  = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+	}
+option = {
+		name = " All to one"
+		any_country = 
+		{ limit = {national_provinces_occupied = 0.8}
+
+			annex_to = THIS
+		}
+	
+	}    
+option = {
+		name = " All to one"
+		any_country = 
+		{ 
+
+			annex_to = THIS
+		}
+	
+	}    
+	
+	option = {
+		name = " Vostaniye gorcev"
+		any_owned= 
+		{
+			
+		nationalist_rebels = 1
+		}
+	}
+option = {
+		name = " Vostaniye gorcev3"
+		all_core = 
+		{
+			limit = 
+			{
+				militancy = 5
+			}
+		create_revolt = 1
+		}
+	}
+
+option = {
+	name = "afrika"
+		any_owned= 
+		{
+		remove_building= cement_factory 
+		remove_building= railroad 
+		remove_building= naval_base 
+		remove_building= fort 	
+		#local_revolt_risk = 0.2
+		}
+	}
+option = {
+	name = "BB"
+		badboy = -10
+	}
+
+
+option = {
+	change_tag = REB	
+	}
+
+
+}
+
+# установление коми
+country_event = {
+	id = 999990
+	title = "EVTNAME999990"
+	desc = "EVTDESC999990"
+	picture = "Celebration"
+	major = yes	
+	is_triggered_only = yes
+
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		
+		name = "Ok"		
+		# потеря сателитов
+		any_country= {
+			limit={	
+				OR={
+					vassal_of=THIS
+					substate_of=THIS
+				}			
+				
+			}
+			country_event = 999993
+		}	
+		#потеря сферы		
+		any_country= {
+			limit={	
+				sphere_owner ={tag = THIS}
+				
+			}
+			country_event = 999992
+		}
+		# loose aliances
+		any_country={	
+			limit =	{
+				NOT={government = proletarian_dictatorship}			
+			}						
+			leave_alliance = THIS
+		}
+		
+		any_pop = {
+			limit =	{		
+				OR= {	
+					pop_type = capitalists 
+					pop_type = aristocrats
+					pop_type = officers
+				}									
+			}
+			pop_type = farmers
+			consciousness = 10
+			militancy = 10
+		 }	
+		# замирение комми
+		any_country = {
+			limit =	{
+				government = proletarian_dictatorship
+				war_with=THIS
+				ai = yes
+				THIS={ai = yes}
+			}
+			end_war=THIS		
+		}
+		# комми дружба
+		any_country = {
+			limit =	{
+				government = proletarian_dictatorship
+				NOT={war_with=THIS}
+			}
+			create_alliance = this
+			relation = {
+				who = THIS			
+				value = 400
+			}			
+			#guarantee = THIS # doesnot work
+		
+		}
+		#призыв союзников	temporally
+		#any_country = {
+		#	limit =	{
+		#		government = proletarian_dictatorship
+		#		war=yes
+		#		ai = yes			
+		#		alliance_with=THIS
+		#	}
+		#	war = {
+		#		attacker_goal = {
+		#			casus_belli = install_communist_gov_cb
+		#		}
+		#			call_ally = yes
+		#
+		#	badboy=-1
+		#
+		#}
+		
+		any_country = {
+			limit = {
+				NOT ={government = proletarian_dictatorship}
+			}
+			relation = {
+				who = THIS			
+				value = -200
+			}
+		
+		}
+		#проверка, что коми вышел из не коми сферы
+		any_country = {
+			limit =	{				
+				is_sphere_leader_of=THIS				
+				NOT={government = proletarian_dictatorship} 
+			}
+			
+				diplomatic_influence = {
+					who = THIS
+					value = -200
+				}				
+			
+		}
+		# выйти из субстатства и вассалитета
+		release_vassal =THIS
+		# раздача КБ
+		any_country = {
+			limit =	{
+				is_greater_power = yes
+				NOT = {government = proletarian_dictatorship}				
+			}
+			country_event = 999977	
+		}
+		
+		#autowar
+		any_country = {
+			limit =	{
+				is_greater_power = yes
+				is_vassal = no
+				is_substate = no
+				NOT = {government = proletarian_dictatorship}				
+				ai = yes
+				NOT={badboy=0.04}
+				NOT={war_exhaustion = 0.1}
+				war = no
+				military_score  =50
+				#NOT={truce_with =THIS} 
+				#все равно нет союзов
+				#ибо поаторные коми  револты
+				
+			}
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = AntiCommunistIntervention 
+				}				
+				#call_ally = yes
+				call_ally = no # economical depression
+			}
+			country_event = 999974
+			
+		}
+		#set_country_flag = is_commi
+
+		#communist Up
+		add_country_modifier = {
+			name = Revolt_army
+			duration = -1
+		}
+		
+		clr_country_flag = rusHasToRevolt	
+	}
+}
+#универсальный распад
+country_event = {
+	id = 999991
+	title = "EVTNAME999991"
+	desc = "EVTDESC999991"
+	picture = "Celebration"
+	#major = yes
+	
+	
+	is_triggered_only = yes
+	option = {
+		name = "Ok"		
+		all_core={
+			limit =	{
+				is_core = THIS
+				owned_by = FROM	
+				OR={
+					NOT={is_core = FROM}
+					is_core=IRE
+					AND={
+						is_core=POL
+						THIS={tag=POL}
+					}
+					AND={								
+						is_core=KUK
+						NOT={is_core = TIR}	
+					}
+					AND={								
+						is_core=AUS
+						NOT={is_core = TIR}	
+					}
+			
+				}
+					
+			}
+			secede_province = THIS
+		}	
+	}
+	
+	
+}
+#leave soi 
+country_event = {
+	id = 999992
+	title = "EVTNAME999992"
+	desc = "EVTDESC999992"
+	picture = "Celebration"
+	#major = yes	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"	
+		
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}			
+		}
+		
+	}
+	
+	
+}
+#leave  pupet
+country_event = {
+	id = 999993
+	title = "EVTNAME999993"
+	desc = "EVTDESC999993"
+	picture = "Celebration"
+	#major = yes	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"	
+		
+		
+		all_core={
+			limit = {FROM ={is_our_vassal = THIS}}
+			release_vassal = THIS	
+		}
+		
+	}
+	
+	
+}
+# падение боллшевизма без распада
+country_event  = {
+	id = 999994
+	title = "EVTNAME999994"
+	desc = "EVTDESC999994"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		# потеря сателитов
+		any_country= {
+			limit={	
+				OR={
+					vassal_of=THIS
+					substate_of=THIS
+				}			
+				
+			}
+			country_event = 999993
+		}	
+		#потеря сферы		
+		any_country= {
+			limit={	
+				sphere_owner ={tag = THIS}
+				
+			}
+			country_event = 999992
+		}
+		#проверка, что коми вышел из коми сферы
+		any_country = {
+			limit =	{				
+				is_sphere_leader_of=THIS				
+				government = proletarian_dictatorship 
+			}
+			
+				diplomatic_influence = {
+					who = THIS
+					value = -200
+				}				
+			
+		}	
+		any_pop ={
+			limit = {
+				pop_type = slaves			
+			}
+
+			pop_type = farmers					
+		}
+
+#		sphere_owner = {
+#			diplomatic_influence = {
+#			who = THIS
+#			value = -200
+#						}
+#			
+#		}
+		
+		any_country ={
+			limit = {
+				government = proletarian_dictatorship
+			}
+			relation = {
+				who = THIS			
+				value = -200
+			}		
+		}
+
+		any_country={							
+			leave_alliance = THIS
+		}
+
+		#communist Up
+		remove_country_modifier = Revolt_army
+
+		add_country_modifier = {
+	 		name = CommunistLustration
+		        duration = 3650
+		}
+			
+	}
+}
+
+# падение боллшевизма с распаодм
+country_event  = {
+	id = 999995
+	title = "EVTNAME999995"
+	desc = "EVTDESC999995"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		# потеря сателитов
+		any_country= {
+			limit={	
+				OR={
+					vassal_of=THIS
+					substate_of=THIS
+				}			
+				
+			}
+			country_event = 999993
+		}	
+		#потеря сферы		
+		any_country= {
+			limit={	
+				sphere_owner ={tag = THIS}
+				
+			}
+			country_event = 999992
+		}
+		#проверка, что коми вышел из коми сферы
+		any_country = {
+			limit =	{				
+				is_sphere_leader_of=THIS				
+				government = proletarian_dictatorship 
+			}
+			
+				diplomatic_influence = {
+					who = THIS
+					value = -200
+				}				
+			
+		}
+		any_pop =
+		{
+			limit = 
+			{
+			pop_type = slaves			
+			}
+
+		pop_type = farmers					
+		}
+
+
+		any_country ={
+			limit = {
+				government = proletarian_dictatorship
+			}
+			relation = {
+				who = THIS			
+				value = -200
+			}		
+		}
+
+		any_country={							
+			leave_alliance = THIS
+		}
+		
+		any_country={	
+			limit ={
+				NOT = {government = proletarian_dictatorship}				
+				OR = {				
+					exists = yes						
+					NOT = {
+						OR = {
+							tag = GER
+							tag = SCA
+							tag = ITA
+							tag = YUG
+							tag = ROM
+							tag = CZH
+							tag = KUK
+							tag = AUS
+							#tag = HND
+						}
+					}
+					AND = {
+						tag = AUS
+						KUK = {NOT = {exists = yes}}					
+				      	}
+					AND = {
+						tag = KUK
+						AUS = {NOT = {exists = yes}}					
+				      	}
+				}
+			}	
+			
+			country_event=999991
+			
+
+		}
+		# check for empty wars
+		#any_country={
+		#	limit={
+		#		tag=this
+		#		NOT={num_of_cities = 1}
+		#	}
+		#	any_country={end_war=THIS}
+		#}
+
+		#communist Up
+		remove_country_modifier = Revolt_army
+
+		add_country_modifier = {
+	 		name = CommunistLustration
+		        duration = 3650
+		}		
+	}
+}
+# падение фашизма с распаодм
+country_event  = {
+	id = 999996
+	title = "EVTNAME999996"
+	desc = "EVTDESC999996"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		
+		any_pop =
+		{
+			limit = 
+			{
+			pop_type = slaves			
+			}
+
+		pop_type = farmers					
+		}
+
+
+		any_country ={
+			limit = {
+				government = fascist_dictatorship
+			}
+			relation = {
+				who = THIS			
+				value = -200
+			}		
+		}
+
+		any_country={							
+			leave_alliance = THIS
+		}
+		# потеря сателитов
+		any_country= {
+			limit={	
+				OR={
+					vassal_of=THIS
+					substate_of=THIS
+				}			
+				
+			}
+			country_event = 999993
+		}	
+		#потеря сферы		
+		any_country= {
+			limit={	
+				sphere_owner ={tag = THIS}
+				
+			}
+			country_event = 999992
+		}
+		any_country={	
+			limit ={
+				NOT = {government = fascist_dictatorship}				
+				OR = {				
+					exists = yes						
+					NOT = {
+						OR = {
+							tag = GER
+							tag = SCA
+							tag = ITA
+							tag = YUG
+							tag = ROM
+							tag = CZH
+							tag = KUK
+							tag = AUS
+							#tag = HND
+						}
+					}
+					AND = {
+						tag = AUS
+						KUK = {NOT = {exists = yes}}					
+				      	}
+					AND = {
+						tag = KUK
+						AUS = {NOT = {exists = yes}}					
+				      	}
+				}
+			}	
+			
+			country_event=999991
+			
+
+		}
+		remove_country_modifier = Brown_plague	
+
+		add_country_modifier = {
+	 		name = FascistLustration 
+		        duration = 3650
+		}
+
+	}
+}
+# провокации найдены
+province_event = {
+	id = 999988
+
+	title = "EVTNAME999988"
+	desc = ""
+	picture = "Celebration"
+	major = yes	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"	
+			
+		
+	}
+}
+# это случилось
+country_event = {
+	id = 999987	
+	title = "EVTNAME999987"
+	desc = "EVTDESC999987"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"	
+		
+		
+	}
+}
+# марионетка, вызывается из жертвы
+country_event = {
+	id = 999986
+	title = "EVTNAME999986"
+	desc = "EVTDESC999986"
+	picture = "Celebration"
+	#major = yes
+	trigger = {
+		NOT = {tag =  FROM}		
+	}
+	
+	is_triggered_only = yes
+	option = {
+		name = "Ok"
+		#FROM= { country_event = 999993 }	
+		all_core= 
+			{
+			limit = {
+					is_core = THIS
+					owned_by = FROM
+					NOT = {controlled_by = FROM}
+			}
+			secede_province = THIS	
+				
+			# auto clean wmpty war
+			any_country = {	
+				limit = {
+					tag = FROM
+					NOT={num_of_cities = 1}
+				}
+				any_country = {		
+					end_war=FROM
+				}
+			}	
+			#ТЕСТ
+				
+			
+			any_country = {	
+				limit = {
+					tag = FROM	
+					num_of_cities = 1				
+				}
+				casus_belli ={
+					target = THIS
+					type =conquest
+					months = 12
+				}
+				war = {
+					target = this
+					attacker_goal = {
+						casus_belli = conquest
+					}
+					#call_ally = yes
+				}
+				
+			}
+			any_country = {	
+				limit = {
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					this={
+						OR={
+							part_of_sphere = no
+							exists=no
+						}
+					}
+					
+				}
+				diplomatic_influence = {
+						who = this
+						value = 200
+				}	
+				military_access = this
+				#create_vassal = this
+				#release_vassal = this
+				# приводит к багам
+
+				
+			
+				
+			}	
+			# this block will set equal goverment
+			any_country={# commi
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=proletarian_dictatorship 	
+				}
+				THIS={
+					government=proletarian_dictatorship 	
+					political_reform = none_voting
+					political_reform = party_appointed
+					political_reform = no_meeting
+					political_reform = state_press
+					political_reform = state_controlled
+					political_reform = underground_parties		
+					nationalize = yes
+					set_country_flag = is_commi
+				}
+			}
+			any_country={#fashi
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=fascist_dictatorship 	
+				}
+				THIS={
+					government=fascist_dictatorship 	
+					political_reform = none_voting
+					political_reform = party_appointed
+					political_reform = no_meeting
+					political_reform = state_press
+					political_reform = no_trade_unions
+					political_reform = underground_parties		
+				}
+			}
+			any_country={#abs. monarhy
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=absolute_monarchy	
+				}
+				THIS={
+					government=absolute_monarchy	
+					political_reform = none_voting
+					political_reform = party_appointed
+					political_reform = no_meeting
+					political_reform = state_press
+					political_reform = no_trade_unions
+					political_reform = underground_parties
+				}
+			}
+			any_country={#hms_government
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=hms_government	
+				}
+				THIS={
+					government=hms_government	
+					political_reform = universal_weighted_voting
+					political_reform = population_equal_weight
+					political_reform = yes_meeting
+					political_reform = free_press
+					political_reform = non_socialist
+					political_reform = gerrymandering
+				}
+			}
+			any_country={#prussian_constitutionalism
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=prussian_constitutionalism	
+				}
+				THIS={
+					government=prussian_constitutionalism	
+					political_reform = landed_voting
+					political_reform = party_appointed
+					political_reform = yes_meeting
+					political_reform = censored_press
+					political_reform = state_controlled
+					political_reform = gerrymandering
+				}
+			}
+			any_country={#presidential_dictatorship
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=presidential_dictatorship	
+				}
+				THIS={
+					government=presidential_dictatorship
+					political_reform = none_voting
+					political_reform = party_appointed
+					political_reform = no_meeting
+					political_reform = state_press
+					political_reform = no_trade_unions
+					political_reform = underground_parties
+				}
+			}
+			any_country={#demcracy
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=democracy						
+					
+				}
+				THIS={
+					government=democracy	
+					political_reform = universal_weighted_voting
+					political_reform = population_equal_weight
+					political_reform = yes_meeting
+					political_reform = free_press
+					political_reform = non_socialist
+					political_reform = gerrymandering	
+				}
+			}
+			any_country={#bourgeois_dictatorship
+				limit={
+					is_sphere_leader_of=THIS
+					alliance_with = this
+					relation = { who =this  value = 200 }
+					government=bourgeois_dictatorship						
+					
+				}
+				THIS={
+					government=bourgeois_dictatorship	
+					political_reform = none_voting
+					political_reform = party_appointed
+					political_reform = no_meeting
+					political_reform = state_press
+					political_reform = no_trade_unions
+					political_reform = underground_parties	
+				}
+			}
+			############################################################
+			
+		}
+		
+		
+
+	}
+	
+	
+}
+country_event = {
+	id = 999985  # жерта марионетизирования
+	title = "EVTNAME999985"
+	desc = "EVTDESC999985"
+	picture = "Celebration"
+	#major = yes
+	trigger = {
+		NOT = {tag =  FROM}		
+	}
+	
+	is_triggered_only = yes
+	option = {	
+		name = "Ok"	
+		any_country= {
+			limit =	{
+					OR={
+						exists = no
+						AND={
+							has_country_modifier = JustCreated			
+							war_with = THIS
+						}
+					}
+					NOT = {
+						OR = {
+							tag = GER
+							#tag = SCA
+							tag = ITA
+							tag = YUG
+							tag = ROM
+							tag = CZH
+						}
+					}
+					OR = {
+						AND = { 
+							tag = AUS
+							KUK = {NOT = {exists = yes}}					
+			      			}
+						AND = { 
+							tag = KUK
+							AUS = {NOT = {exists = yes}}					
+					      	}
+						AND = {
+							NOT = {tag = AUS}
+							NOT = {tag = KUK}
+						}
+					}
+					any_core = {
+						AND={
+							owned_by= THIS
+							controller = { tag = from }
+							#NOT = { is_core = from } #new не получается
+								
+							#NOT = {tag = FROM}
+						}
+					}
+			}
+			FROM= {
+				#badboy = 1 посмотрим
+				prestige = -10
+			}
+			add_country_modifier = {
+				name = JustCreated
+				duration = 2200
+			}
+			  
+			country_event= 999986
+			
+			create_alliance= from
+			
+			
+
+
+			#is_substate = from
+			#guarantee = from
+			
+			relation = {
+				who = from
+				value = 400
+			}		
+			#
+			
+
+
+
+			THIS= {	
+				add_casus_belli = {
+				        target = FROM
+					type = stop_war
+					months = 24
+				}
+			}
+			
+			
+
+			
+		}	
+
+	}
+	
+	
+}
+# след 3 эвента вызываются из, захват англии
+country_event = {
+	id = 999984  
+	
+	picture = "Celebration"
+	title = "EVTNAME999984"
+	desc = "EVTDESC999984"
+	major = yes
+	trigger = {
+		NOT = {tag =  FROM}
+		 		
+	}
+	
+	is_triggered_only = yes
+	option = {
+		name = "Ok"		
+		any_country= {
+			limit = {
+					exists = no
+					this = {
+						all_core = {controller = { tag = from}}
+					}			
+					any_core = {owned_by= THIS}
+			}
+			country_event= 999983
+			#create_vassal = from
+			#create_alliance= from
+			#guarantee = from
+			
+			#relation = {
+			#	with = from
+			#	value = 400
+			#}		
+			
+			
+		}
+		from={country_event= 999982}
+
+	}
+	
+	
+}
+country_event = {
+	id = 999983
+	
+	picture = "Celebration"
+	title = "EVTNAME999983"
+	desc = "EVTDESC999983"
+	major = yes
+	trigger = {
+		NOT = {tag =  FROM}		
+	}
+	
+	is_triggered_only = yes
+	option = {
+		name = "Ok"
+		#FROM= { country_event = 999993 }	
+		#from={release_vassal=this}
+		#временно
+		all_core= 
+			{
+			limit = 
+				{
+					is_core = THIS
+					owned_by = FROM
+					#NOT = {controlled_by = FROM}
+				}
+			secede_province = THIS			
+
+
+			#FROM = {
+			#	war = {
+			#		target = this
+			#		attacker_goal = {
+			#			casus_belli = conquest
+			#	                country = this
+			#		#call_ally = yes
+			#	}
+			#}
+			
+		
+		}
+		
+		
+		
+		
+
+	}
+	
+	
+}
+
+country_event = {
+	id = 999982	
+	picture = "Celebration"
+	title = "EVTNAME999982"
+	desc = "EVTDESC999982"
+	major = yes
+	trigger = {
+		NOT = {tag =  FROM}		
+	}
+	
+	is_triggered_only = yes
+	option = {	
+		name = "Ok"
+		From = {annex_to =this}	
+		
+		
+
+	}	
+	
+}
+# инициализация common
+country_event = {
+	id = 999989
+	title = "EVTNAME999989"
+	desc = "EVTDESC999989"
+	picture = "Celebration"
+	major = yes
+	
+	mean_time_to_happen = 
+	{
+		days=1
+		
+	}
+	fire_only_once = yes
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		CHI_1082 = { any_pop = { reduce_pop = 0.1 } }
+		CHI_1553  = { any_pop = { reduce_pop = 0.33 } }
+		#EGY_1754= {add_core=TRI}
+		#TRI_1743= {add_core=TRI}
+		#TRI_1739= {add_core=TRI} 
+
+		ALD_1704 =  {add_core=ALD}
+		ALD_1714 = {add_core=ALD}
+		ALD_1718 = {add_core=ALD}
+
+		1689={add_core = MOR}
+		2530={remove_core = IDO}
+
+		ETH_1867 = { add_core = ETH }
+		ETH_1864 = { add_core = ETH }
+		ETH_1854= { add_core = ETH }
+		ENG_2039 = { add_core = ZAN }
+		ENG_2034= { add_core = ZAN }
+		ENG_2029 = { add_core = ZAN }
+		
+		FRA_1931= { add_core = SOK }
+		 FRA_1930= { add_core = SOK }
+		 FRA_1923 = { add_core = SOK }
+		FRA_1816 = { add_core = SOK }
+		
+		#RUS_718 = { add_core = BLR }
+		 #RUS_707 = { add_core = BLR } 
+		#RUS_947 = { add_core = BLR }
+		
+		980 = { add_core = RUS }
+		978 = { add_core = RUS }
+		974 = { add_core = RUS }
+		975 = { add_core = RUS }
+		976 = { add_core = RUS }
+		
+		571={remove_core=BAV}
+		2584={ add_core = BOH}
+		618={ add_core = AUS}
+		517={add_core = SPA}
+		517={remove_core = ENG}
+		#latin union
+		#any_country={
+		#	any_owned={remove_core=ULA}
+		#}
+		#gomindan
+		any_country={
+			any_owned={remove_core=GOM}
+		}
+		#zalessie
+		any_country={
+			any_owned={
+				remove_core=ZLS
+				remove_core=BLK
+			}
+		}
+		RUS={
+			any_owned={
+				limit={	
+					is_core=CAU
+					NOT={is_core=ARM}
+					NOT={is_core=GEO}
+					NOT={is_core=AZB}
+				}
+				add_core=RUS
+			}
+		}
+		#Crimea?
+		#RUS={
+		#	any_owned={
+		#		limit={	is_core=CRI}
+		#		remove_core=RUS
+		#	}
+		#}
+
+		# vanila paland-lituva
+		any_country={
+			any_owned={remove_core=PLC}
+		}	
+		#KOK={any_owned ={add_core=RUS} 	}
+		#KHI={any_owned ={add_core=RUS} 	}		
+		#BUK={any_owned ={add_core=RUS} 	}
+		RUS={
+			casus_belli ={
+				target = KOK
+				type = conquest 
+				months = 1200
+			}		
+			casus_belli ={
+				target = KHI
+				type = conquest 
+				months = 1200
+			}		
+			casus_belli ={
+				target = BUK
+				type = conquest 
+				months = 1200
+			}		
+		}
+
+		1312 = {secede_province=ENG}	
+		
+		594 = {add_core = WUR}
+		EGY_921 = {add_core = ISR}
+		#micronezia
+		2521={remove_core=SPA}
+		2517={remove_core=SPA}
+		2518={remove_core=SPA}
+		
+		#Karelia
+		342={add_core=KRL}
+		341={add_core=KRL}
+		340={add_core=KRL}
+		339={add_core=KRL}
+		321={add_core=FIN}	
+		983={add_core=FIN}	#
+		2587={add_core=FIN}	#
+		995={add_core=FIN}
+		307={add_core=FIN}
+		FRA={
+			any_pop={
+				limit={
+					OR={
+						has_pop_culture =occitan 
+						has_pop_culture = norman 
+						has_pop_culture = burgund 
+						has_pop_culture = picardian 
+						has_pop_culture = occitan 
+					}
+				}
+				reduce_pop=0.25
+			}
+			any_pop={
+				limit={
+					has_pop_culture =french
+					state_scope={is_colonial=no }
+					#has_national_minority = yes
+				}
+				reduce_pop=1.4
+			}
+		}
+		# clearing unions
+		any_country={
+			#limit={NOT={num_of_cities =1}}
+			limit={exists = no}
+			country_event = 999960
+			
+		}
+	}		
+		
+	
+	
+	
+}
+# мета всплытие работает
+country_event = {
+	id = 999981
+	title = "EVTNAME999981"
+	desc = "EVTDESC999981"
+	picture = "Celebration"
+	#major = yes
+	trigger = {
+		ai = yes	
+		OR = {
+			tag = ENG
+			tag = RUS
+			tag = TUR
+			tag = USA
+		}
+	}
+	mean_time_to_happen = 
+	{
+		days=30		
+	}
+	
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		# размножение раов
+		any_country={
+			limit={
+				slavery = yes_slavery				
+			}
+			any_pop ={
+				limit = {
+					pop_type = slaves	
+					NOT={unemployment =0.1}					
+				}				
+			reduce_pop =1.0003
+			}
+		}
+		# далее револьты
+		any_country={
+			limit = {
+				has_country_modifier= MustRevolt
+				government = proletarian_dictatorship
+			}
+			any_pop={
+				limit={
+					NOT={
+							OR = {		
+								pop_majority_ideology = communist
+								pop_majority_ideology = socialist
+								type = soldiers
+							}	
+					}	
+				}
+				consciousness = 10
+				militancy = 10
+				money =10
+			}
+		}		
+		any_country={
+			limit = {
+				has_country_modifier= MustRevolt
+				government = fascist_dictatorship
+			}
+			any_pop={
+				limit={
+					NOT={
+							OR = {		
+								pop_majority_ideology = fascist
+								type = soldiers
+							}	
+					}	
+				}
+				consciousness = 10
+				militancy = 10
+				money =10
+			}
+		}		
+		any_country={
+			limit = {has_country_modifier= provoke_comi }
+			any_pop={
+				limit={					
+							OR = {		
+								pop_majority_ideology = communist
+								pop_majority_ideology = socialist											pop_type = soldiers
+							}	
+						
+				}
+				consciousness = 10
+				militancy = 10	
+				money =10
+			}
+		}		
+		any_country={
+			limit = {has_country_modifier= provoke_liberals }
+			any_pop={
+				limit={					
+							OR = {		
+								pop_majority_ideology = liberal 
+								pop_majority_ideology = anarcho_liberal 										pop_type = soldiers
+							}	
+						
+				}
+				consciousness = 10
+				militancy = 10
+				money =10
+			}
+		}
+
+		any_country={	
+			limit={	
+				OR = {
+					government = fascist_dictatorship
+					government = proletarian_dictatorship
+				}
+			}
+			#common
+			any_state = {
+				limit = 
+				{
+					country = {slavery = yes_slavery}			
+				}
+				is_slave = yes
+			} 
+
+			#commi
+			
+			any_pop ={
+				limit = {
+					country = {government = proletarian_dictatorship}
+					OR= {
+						pop_type = capitalists 
+						pop_type = aristocrats
+						pop_type = officers
+					}						
+				}
+				pop_type = farmers
+				consciousness = 10
+			  	militancy = 10
+			}			
+			any_pop =
+				{
+				limit =	{
+					country = {government = proletarian_dictatorship
+					slavery = yes_slavery}
+					pop_type = farmers					
+				}
+				pop_type = slaves
+				consciousness = 5
+		  	        militancy = 5
+			}
+			#NAzi
+			
+			any_pop =
+			{
+				limit = 
+				{
+					country = {government = fascist_dictatorship
+						slavery = yes_slavery}
+	
+					is_primary_culture = yes
+					is_accepted_culture = yes
+					
+					# просто так логичнее							
+					#NOT = {is_culture_group = this}
+
+					pop_type = slaves
+
+
+				}
+				pop_type = farmers
+				consciousness = -2
+			  	militancy = -2
+			}		
+			any_pop =
+			{
+				limit = 
+				{
+					country = {government = fascist_dictatorship
+						slavery = yes_slavery}
+	
+					is_primary_culture = no
+					is_accepted_culture = no 						
+						#NOT = {is_culture_group = this}
+					NOT ={
+						pop_type = slaves
+						pop_type = soldiers
+						AND = {
+							OR = {
+								pop_type = capitalists
+								pop_type = bureaucrats
+								pop_type = artisans
+
+							}							
+							pop_majority_ideology = fascist
+							militancy = 6
+
+						}
+					}
+				}
+				pop_type = slaves
+				consciousness = 10
+			  	militancy = 10
+			}
+		}
+		#просто рабовведение
+		any_country={
+			limit={
+				AND={
+					NOT={government = proletarian_dictatorship}
+					NOT={government = fascist_dictatorship}
+					slavery = yes_slavery
+				}
+			}
+			any_pop =
+			{
+				limit = 
+				{
+					AND={
+						#OR = {
+							state_scope  = {is_slave = yes}
+						#	state_scope  = {is_colonial = yes}
+						#}
+						OR={
+							is_state_religion=no
+							has_pop_culture = afro_american
+							has_pop_culture = afro_caribbean 
+							has_pop_culture = afro_caribeno 
+							has_pop_culture = afro_brazilian
+							has_pop_culture = afro_antillean
+						}
+	
+						#NOT={pop_majority_religion =THIS}
+						#NOT = { is_culture_group = THIS}
+						# doesnot work somehow
+	
+						is_primary_culture = no
+						is_accepted_culture = no
+						state_scope = {NOT = { continent = europe }}
+						OR={
+							pop_type = farmers
+							pop_type = labourers		
+						}
+					}
+					
+				}
+				pop_type = slaves
+				consciousness = 10
+			  	militancy = 10
+			}
+		}
+		
+
+				
+
+	}		
+		
+	
+	
+	
+}
+
+
+#My статус кво аксепт
+country_event = {
+	id = 999980	
+	picture = "Celebration"
+	title = "EVTNAME999980"
+	desc = "EVTDESC999980"
+	major = yes
+	
+	is_triggered_only = yes
+	option = {	
+		name = "Ok"		
+		any_country={
+			limit = {	
+				war_this = THIS	
+				OR = {
+					alliance_with = FROM
+					substate_of=FROM
+					vassal_of =FROM	
+					in_sphere=FROM
+				}
+			}
+			end_war = THIS
+		}
+		
+
+	}	
+	
+}
+# разруш промы
+country_event = {
+	id = 999979	
+	picture = "Celebration"
+	title = "EVTNAME999979"
+	desc = "EVTDESC999979"
+	#major = yes
+	
+	is_triggered_only = yes
+	option = {	
+		name = "Ok"	
+		any_owned ={
+			limit={controller = { tag = FROM}}
+			craftsmen={
+				pop_type=farmers
+				militancy = 5
+			}
+			add_province_modifier = {
+				name = Destroyed_industry 
+				duration = 400
+			}
+			
+			
+		}		
+
+	}	
+	
+}
+# распад (для cut down)
+country_event  = {
+	id = 999978
+	title = "EVTNAME999978"
+	desc = "EVTDESC999978"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		# потеря сателитов
+		any_country= {
+			limit={	
+				OR={
+					vassal_of=THIS
+					substate_of=THIS
+				}			
+				
+			}
+			country_event = 999993
+		}	
+		#потеря сферы		
+		any_country= {
+			limit={	
+				sphere_owner ={tag = THIS}
+				
+			}
+			country_event = 999992
+		}
+		
+		
+		any_country={	
+			limit ={				
+				OR = {				
+					exists = yes						
+					NOT = {
+						OR = {
+							tag = GER
+							tag = SCA
+							tag = ITA
+							tag = YUG
+							tag = ROM
+							tag = CZH
+							tag = KUK
+							tag = AUS
+							#tag = HND
+						}
+					}
+					AND = {
+						tag = AUS
+						KUK = {NOT = {exists = yes}}					
+				      	}
+					AND = {
+						tag = KUK
+						AUS = {NOT = {exists = yes}}					
+				      	}
+				}
+			}	
+			
+			country_event=999991
+			
+
+		}
+		# no core found
+		any_owned ={
+			limit = {
+				NOT={
+					any_core={					
+						OR={
+							exists = no
+							exists = yes	
+						}
+					}
+				}
+			}
+		secede_province = FROM
+		}
+		
+	}
+}
+# раздача кб
+country_event  = {
+	id = 999977
+	title = "EVTNAME999977"
+	desc = "EVTDESC999977"
+	picture = "Celebration"
+	#major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		FROM={
+			add_casus_belli = {
+				target = THIS
+				type = AntiCommunistIntervention 
+				months = 36
+			}
+		}
+	}
+}
+# nexts is autowar
+# мета всплытие коми работает
+country_event = {
+	id = 999976
+	title = "EVTNAME999976"
+	desc = "EVTDESC999976"
+	picture = "Celebration"
+	#major = yes
+	trigger = {
+		# victim
+
+		#why it was here?
+		#becouse i need it	
+		
+		ai = yes	
+		is_vassal = no
+		is_substate = no
+		NOT={government = proletarian_dictatorship}
+		part_of_sphere = no
+		any_neighbor_country={
+			ai = yes
+			is_vassal = no
+			is_substate = no
+			government = proletarian_dictatorship
+			NOT={badboy=0.4}
+			#NOT={war_exhaustion = 5}
+			#war = no				
+			brigades_compare =5
+			NOT={alliance_with  = THIS}
+			NOT={substate_of=THIS}
+			NOT={vassal_of =THIS}	
+			NOT={in_sphere=THIS}
+			NOT={truce_with =THIS}
+			NOT={war_with=THIS}
+			NOT={national_provinces_occupied = 0.05}
+			
+		}
+		
+		#NOT={
+		#	sphere_owner={			
+		#		government = proletarian_dictatorship				
+		#	}
+		#} 
+		# dont think is it important
+	
+		
+	}
+	mean_time_to_happen = 
+	{
+		months = 6 #was 3		
+	}
+	
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		any_neighbor_country = {
+			limit =	{
+				ai = yes
+				is_vassal = no
+				is_substate = no
+				government = proletarian_dictatorship
+				
+				NOT={badboy=0.4}
+				#NOT={war_exhaustion = 5}
+				#war = no				
+				brigades_compare = 5
+				NOT={alliance_with  = THIS}
+				NOT={substate_of=THIS}
+				NOT={vassal_of =THIS}	
+				NOT={in_sphere=THIS}
+				NOT={truce_with =THIS}
+				NOT={war_with=THIS}
+				NOT={national_provinces_occupied = 0.05}
+			}
+			casus_belli ={
+				target = THIS
+				type = install_communist_gov_cb
+				months = 12
+			}
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = install_communist_gov_cb
+				}				
+				call_ally = yes
+			}			
+			#badboy = 4
+			country_event = 999974
+			
+		}
+	}
+}
+# мета всплытие наци работает
+country_event = {
+	id = 999975
+	title = "EVTNAME999975"
+	desc = "EVTDESC999975"
+	picture = "Celebration"
+	#major = yes
+	trigger = {
+		# victim
+		#why it was here?
+		#becouse i need it	
+		ai = yes 
+		#NOT={government = fascist_dictatorship }
+		part_of_sphere = no
+
+		any_neighbor_country={
+			government = fascist_dictatorship 
+			ai = yes
+			is_vassal = no
+			is_substate = no
+
+			#NOT={badboy=0.8}
+			NOT={war_exhaustion = 5}
+			war = no				
+			brigades_compare = 3
+			NOT={alliance_with  = THIS}
+			NOT={substate_of=THIS}
+			NOT={vassal_of =THIS}	
+			NOT={in_sphere =THIS}
+			NOT={truce_with =THIS}
+		}
+		is_vassal = no
+		is_substate = no
+	}
+	mean_time_to_happen = 
+	{
+		months=3		
+	}
+	
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		any_neighbor_country = {
+			limit =	{
+				ai = yes
+				is_vassal = no
+				is_substate = no
+				government = fascist_dictatorship 
+				#NOT={badboy=0.8}
+				NOT={war_exhaustion = 5}
+				war = no				
+				brigades_compare = 3
+				NOT={alliance_with  = THIS}
+				NOT={substate_of=THIS}
+				NOT={vassal_of =THIS}	
+				NOT={in_sphere =THIS}
+				NOT={truce_with =THIS}
+				
+			}
+			casus_belli ={
+				target = THIS
+				type = LivingSpace
+				months = 12
+			}
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = LivingSpace
+				}				
+				call_ally = yes
+			}			
+			#badboy = -3
+			country_event = 999974
+			
+		}
+	}
+}
+# тупо сообщение о войне
+country_event  = {
+	id = 999974
+	title = "EVTNAME999974"
+	desc = "EVTDESC999974"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		
+	}
+}
+# ультиматум о пропуске войск
+country_event  = {
+	id = 999973
+	title = "EVTNAME999973"
+	desc = "EVTDESC999973"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		#allow
+		name = "EVTOPTA999973"
+		FROM={military_access=THIS}
+		relation = {
+			who = FROM
+			value = 50
+		}
+		ai_chance = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				FROM={NOT={brigades_compare = 3}}
+			} 
+			modifier = {
+				factor = 100
+				FROM={military_access=THIS}
+			} 
+			modifier = {
+				factor = 0
+				 NOT={neighbour = FROM}
+			}
+		}
+	}
+	option = {
+		#refuse
+		name = "EVTOPTB999973"
+		relation = {
+			who = FROM
+			value = 12
+		}
+		add_casus_belli = {
+	        	target = FROM
+			type = humiliate 
+			months = 12
+		}
+		ai_chance = {
+			factor = 2
+			 
+		}
+		
+	}
+}
+# чит
+country_event  = {
+	id = 999972
+	title = "EVTNAME999972"
+	desc = "EVTDESC999972"
+	picture = "Celebration"
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		RUS={
+		enable_ideology = communist 
+		government  = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		country_event = 999990
+		}
+	}
+}
+
+# democracy on marsh
+country_event  = {
+	id = 999971
+	title = "EVTNAME999971"
+	desc = "EVTDESC999971"
+	picture = "Celebration"
+	#major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+			#any_country={	
+			#	limit = {
+			#		AND = {					
+			#			tag = this											#			government = fascist_dictatorship								#
+			#			
+			#		}
+			#	}
+			#	country_event = 999996
+			#}
+			any_country={	
+				limit = {
+					AND = {					
+						tag = this						
+						#government = proletarian_dictatorship
+						has_country_flag = is_commi
+					}
+				}
+				country_event = 999995
+				clr_country_flag= is_commi
+			}
+	}
+}
+# forced to stop war
+country_event  = {
+	id = 999970
+	title = "EVTNAME999970"
+	desc = "EVTDESC999970"
+	picture = "Celebration"
+	#major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+			any_country={
+			limit={
+				war_with= THIS
+				has_country_modifier = JustCreated
+			}
+			end_war=THIS	
+		}
+	}
+}
+# african auto war
+country_event = {
+	id = 999969
+	title = "EVTNAME999969"
+	desc = "EVTDESC999969"
+	picture = "Celebration"
+	#major = yes
+	trigger = {
+		# victim
+		#why it was here?
+		#becouse i need it	
+		ai = yes 
+		#civilized = no
+		is_vassal = no
+		is_substate = no
+		year = 1885
+		NOT={
+			year = 1960			
+		}
+		capital_scope = {
+			continent = africa 
+		}		
+		part_of_sphere = no
+
+		any_neighbor_country={
+		#random_country={
+		#	neighbour = THIS
+			#is_secondary_power =  yes
+			is_greater_power =yes
+			ai = yes
+			NOT={badboy=0.8}
+			NOT={war_exhaustion = 5}
+			war = no				
+			brigades_compare = 2
+			NOT={alliance_with  = THIS}
+			NOT={truce_with =THIS}	
+			NOT={
+				sphere_owner={
+						OR={			
+							alliance_with  = THIS
+							truce_with =THIS					
+						}
+				}
+			}
+			NOT={national_provinces_occupied = 0.05}
+		}
+		
+	}
+	mean_time_to_happen = 
+	{
+		months=12 # 6		
+	}
+	
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		#any_neighbor_country={
+		random_country={
+			
+			limit =	{
+				neighbour = THIS
+				ai = yes
+				is_vassal = no
+				is_substate = no
+				#is_secondary_power = yes
+				is_greater_power =yes
+				#civilized = yes
+
+				#NOT={tag = EGY}
+				#NOT={tag = TUR}
+				#NOT={tag = ORA}
+				#NOT={tag = TRN}
+					
+				NOT={badboy=0.8}
+				NOT={war_exhaustion = 5}
+				war = no				
+				brigades_compare = 2
+				NOT={alliance_with  = THIS}
+				#NOT={substate_of=THIS}
+				#NOT={vassal_of =THIS}	
+				#NOT={in_sphere =THIS}
+				NOT={truce_with =THIS}	
+				NOT={
+					sphere_owner={
+						OR={			
+							alliance_with  = THIS
+							truce_with =THIS					
+						}
+					}
+				}
+				NOT={national_provinces_occupied = 0.05}
+			}
+			
+			#add_casus_belli = {
+			 #       target = THIS
+			#	type = establish_protectorate_casus_belli
+			#	months = 12
+			#}
+			casus_belli ={
+				target = THIS
+				type = establish_protectorate_casus_belli
+				months = 12
+			}
+			
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = establish_protectorate_casus_belli
+				}				
+				#call_ally = yes	
+				# не реалистиччно и GW не дает	
+			}			
+			#badboy = -3
+			country_event = 999974
+			
+		}
+	}
+}
+country_event  = {
+	id = 999967
+	title = "EVTNAME999967"
+	desc = "EVTDESC999967"
+	picture = "Celebration"
+	#major = yes
+	trigger = {		
+		#ai = no 
+		
+			any_owned_province ={
+				OR = {
+					has_province_modifier = convert_colony
+					has_province_modifier = convert_colony_slave 
+				}
+			}		
+		
+	}
+	#mean_time_to_happen = 
+	#{
+	#	months=1		
+	#}
+	#is_triggered_only = yes
+	
+	
+	option = {
+		name = "Ok"
+		any_owned={
+			limit={has_province_modifier = convert_colony }
+			#state_scope={
+			secede_province = NNN
+			add_province_modifier = {
+				name = convert_colony
+				duration = 1000
+			}
+			
+			#}
+		}
+		NNN = {
+			any_owned={
+				limit={ has_province_modifier = convert_colony }
+				#state_scope={
+				
+					secede_province = this				
+				#}
+			}
+		}
+		# еще раз теперь конверт с рабством
+		any_owned={
+			limit={has_province_modifier = convert_colony_slave }
+			#state_scope = {is_slave = yes} #все равно колония
+			secede_province = NNN
+			add_province_modifier = {
+				name = convert_colony_slave 
+				duration = 1000
+			}
+		
+			#commi
+			any_pop ={
+				limit = {
+					country = {government = proletarian_dictatorship}
+					country = { slavery = yes_slavery }
+					OR= {
+						pop_type = capitalists 
+						pop_type = aristocrats
+						pop_type = officers
+					}						
+				}
+				pop_type = farmers
+				consciousness = 10
+			  	militancy = 10
+			}	
+			any_pop =
+			{
+				limit = {
+					country = {government = proletarian_dictatorship}
+					country = { slavery = yes_slavery }
+				
+					pop_type = farmers					
+				}
+				pop_type = slaves
+				consciousness = 5
+			  	militancy = 5
+			}
+			#NAzi
+			# освобождение
+			any_pop ={
+				limit = {
+					country = {government = fascist_dictatorship}
+					country = { slavery = yes_slavery }
+	
+					is_primary_culture = yes
+					is_accepted_culture = yes
+					# простотак логичнее
+					#is_culture_group = this
+					pop_type = slaves				
+				}
+				pop_type = farmers
+				consciousness = -2
+				militancy = -2
+			}
+			any_pop =
+			{
+				limit = 
+				{
+					country = {government = fascist_dictatorship}
+					country = { slavery = yes_slavery }
+	
+					is_primary_culture = no
+					is_accepted_culture = no
+					# простотак логичнее
+					#NOT = {is_culture_group = this}
+					NOT ={
+						pop_type = slaves
+						pop_type = soldiers
+					}						
+				}
+				pop_type = slaves
+				consciousness = 10
+				militancy = 10
+			}
+			#просто рабовведение
+			any_pop = {
+				limit = {
+					AND={
+						country = {NOT={government = proletarian_dictatorship}}
+						country = {NOT={government = fascist_dictatorship}}
+						country = { slavery = yes_slavery }
+						
+						OR={
+							is_state_religion=no
+							has_pop_culture = afro_american
+							has_pop_culture = afro_caribbean 
+							has_pop_culture = afro_caribeno 
+							has_pop_culture = afro_brazilian
+							has_pop_culture = afro_antillean
+						}
+
+						#NOT = {is_culture_group = this}
+						# doesnot work somehow
+		
+						is_primary_culture = no
+						is_accepted_culture = no
+						state_scope = {NOT = { continent = europe }}
+						OR={
+							pop_type = farmers
+							pop_type = labourers		
+						}
+					}
+					
+				}
+				pop_type = slaves
+				consciousness = 10
+		  		militancy = 10
+			}	
+		}
+		NNN = {
+			any_owned={
+				limit={ has_province_modifier = convert_colony_slave }				
+				secede_province = this						
+			}
+		}
+					
+	}
+}
+
+# initialization 1914 . many times 11 doesnot used
+country_event = {
+	id = 999968
+	title = "EVTNAME999968"
+	desc = "EVTDESC999968"
+	picture = "Celebration"
+	#major = yes
+	
+	
+	is_triggered_only = yes
+	option = {
+		name = "Ok"
+		
+		##unite germany
+		#any_country = {
+		#	any_owned={
+		#		limit ={is_core = GER}
+		#		secede_province = PRU
+		#	}	
+		#}		
+		
+		#bosnia
+		TUR={
+			any_owned= {
+				limit = {
+					OR = {
+						region = TUR_788
+						region = TUR_785
+						#province_id = 1469
+					}
+				}
+				secede_province = KUK
+			}
+		}
+		# convert aUs to KUK
+		#AUS= {
+		#	all_core = {
+		#		add_core = KUK
+		#	}			
+		#	add_accepted_culture = hungarian
+		#	change_tag = KUK
+		#	set_country_flag = dual_monarchy_done
+		#}
+
+		any_owned={
+			limit ={is_core = SER}
+			secede_province = SER		
+		}
+		
+		any_owned= {
+			limit = {
+				OR = {						
+					province_id = 674
+					province_id = 818
+				}
+			}
+			secede_province = ROM
+		}		
+		678 = {secede_province = RUS}	
+		#release_vassal = BUL		
+		#release_vassal = BUL
+		BUL = {
+			all_core ={secede_province = BUL}
+		}
+		#release_vassal = ALB
+		#release_vassal = ALB	
+		ALB = {
+			all_core ={secede_province = ALB}
+		}
+		
+		#montenegro		
+		MON_2582 = {secede_province = MON}
+		
+		#greece
+		TUR_832  = {secede_province = GRE}
+		TUR_819   = {secede_province = GRE}
+		TUR_805   = {secede_province = GRE}
+		
+		#papal
+		#PAP = {annex_to = ITA}
+		PAP = {any_owned={secede_province = ITA}}
+		#sardinia - marinesko fix
+		SAR =  {any_owned={secede_province = FRA}}
+		#venetia
+		AUS = {AUS_729 = {secede_province = ITA}}
+		
+		
+		#
+		
+		SWE = {release_vassal = NOR}
+		SWE = {release_vassal = NOR}
+
+###############################################################
+#America
+#united
+		#oregon
+		18={secede_province = ENG}
+		19={secede_province = ENG}
+		20={secede_province = ENG}
+		21={secede_province = ENG}
+
+		80={secede_province = USA}
+		79={secede_province = USA}
+		81={secede_province = USA}
+		82={secede_province = USA}
+		83={secede_province = USA}
+		#CSA =  {any_owned={secede_province = USA}}
+		any_country={
+			limit={	tag=CSA
+				exists=yes
+			}
+			annex_to=USA
+		}
+		RUS={
+			any_owned={
+				limit={continent=north_america}
+				secede_province = USA
+			}
+		}
+###############################################################
+#ASIA
+		# средняяя азия	
+		KOK = {
+			any_owned={
+				secede_province = RUS
+				remove_core = RUS
+			}
+		}
+		KHI = {
+			any_owned={
+				secede_province = RUS
+				remove_core = RUS
+			}
+		}
+		BUK = {
+			any_owned={
+				secede_province = RUS
+				remove_core = RUS
+			}
+		}
+		any_country={ 
+			any_owned={
+				limit = {
+					is_core = HND			
+				}			
+				secede_province = ENG
+			}
+		}
+
+		any_country={ 
+			any_owned={
+				limit = {is_core = KOR}			
+				secede_province = JAP
+			}
+		}
+		1485 = {secede_province = JAP}
+		2562 = {secede_province = JAP}
+		1087 = {secede_province = JAP}
+		1481 = {secede_province = JAP}
+
+		1481 = {secede_province = JAP}
+			# ололо сахалин
+		1086=  {secede_province = RUS}
+		1089=  {secede_province = JAP}
+		1088=  {secede_province = JAP}
+
+		any_country={ 
+			any_owned={
+				limit = {
+					OR={
+						owned_by = DAI
+						owned_by = CAM
+						owned_by = LUA
+					}
+				}			
+				secede_province = FRA
+			}
+		}
+		BUR={any_owned={secede_province = ENG}}
+		#kalat-kashmir
+		1219={secede_province = ENG}
+		1220={secede_province = ENG}
+		1226={secede_province = ENG}
+		1225={secede_province = ENG}
+		1223={secede_province = ENG}
+
+		##1565={secede_province = PRU}
+		##1566={secede_province = PRU}
+		
+		#CHI={any_owned={remove_core=TPG}} let it be
+		HDJ={any_owned={secede_province = TUR}}
+		#heanvly kingdom
+		TPG={any_owned={secede_province = CHI}}
+		
+		GRE_826 ={secede_province = GRE}
+		1211={secede_province = AFG}
+				
+		
+		##Astralia-novo zeland			
+		2511= {secede_province = ENG}
+		ENG_2497 = {secede_province = ENG}
+		ENG_2505 = {secede_province = ENG}
+		2495= {secede_province = ENG}
+		2490= {secede_province = ENG}
+
+		2406= {secede_province = ENG}
+		2244= {secede_province = ENG}
+		
+		
+		ENG_1384  = {secede_province = ENG}
+		BRU_1394   = {secede_province = ENG}
+		# NewGuinea 
+		AST_2528 = {secede_province = ENG}
+				
+		ATJ_1405 ={secede_province = NET}		
+		NET_1423 ={secede_province = NET}
+		1444 ={secede_province = NET}
+		1438 ={secede_province = NET}
+		1442 ={secede_province = NET}
+		##GER_2530 = {secede_province = PRU}
+
+		658={secede_province = USA}
+		SPA={
+			any_owned={
+				limit = {is_core = PHI}			
+				secede_province = USA
+			}
+		}
+############################################################### common
+		#french africa
+
+		#########england
+		1873 = {secede_province = ENG}
+		1874 = {secede_province = ENG}
+		#1875 = {secede_province = ENG}
+		EGY_1746 ={secede_province = ENG}
+		
+		any_owned={
+			limit = {is_core = SAF}			
+			secede_province = ENG
+		}
+		ENG_2074  = { secede_province = ENG }
+		ENG_2068 = { secede_province = ENG }
+		ENG_2014 = { secede_province = ENG }
+		2067 = { secede_province = ENG }
+		
+		FRA_1907 = { secede_province = ENG }
+		1785  = { secede_province = ENG }
+		
+		any_owned={
+			limit = {
+				OR={
+					is_core = KEN 
+					is_core = BUG
+					is_core = SUD
+					is_core = SOK
+				}			
+			}
+			secede_province = ENG
+		}
+		FRA_1808 = { secede_province = FRA }
+		1904 = { secede_province = FRA }
+		#####Italy		
+		any_owned={
+			limit = {is_core = LIV}
+			
+			secede_province = ITA
+		}
+		ENG_1868 = { secede_province = ITA }
+		1851 = { secede_province = ITA }
+		1848 = { secede_province = ITA }
+		1849 = { secede_province = ITA }
+		1850 = { secede_province = ITA }
+		1873 = {secede_province = ENG}
+		1874 = {secede_province = ENG}
+		FRA_1884  = {secede_province = ENG}
+		any_owned={
+			limit = {
+				is_core = EGY
+				owned_by = FRA
+			}			
+			secede_province = ENG
+		}
+		####Others
+	
+		any_owned={
+			limit = {is_core =ETH}
+			
+			secede_province = ETH
+		}	
+		
+
+		SPA_1773 = {secede_province = SPA}
+		SPA_1955 = {secede_province = SPA}
+		MOR_1696 = {secede_province = SPA}
+		
+		MOR_1688 = {secede_province = SPA}
+		POR_2134 = {secede_province = SPA}
+	
+		BEL_1977 = {secede_province = BEL add_core=CNG}
+		BEL_1984 = {	secede_province = BEL	add_core=CNG}
+		BEL_1987 = {	secede_province = BEL add_core=CNG}
+		BEL_1990 = {	secede_province = BEL add_core=CNG	}
+		BEL_1992 = { secede_province = BEL add_core=CNG}
+			
+		ENG_1887 = { secede_province = LIB} 
+		
+
+		######germany
+		##ENG_2078 = { secede_province = PRU }
+		##ENG_2083= { secede_province = PRU }
+		##ENG_1960 = { secede_province = PRU }
+		##ENG_1956 = { secede_province = PRU }
+		##1976 = { secede_province = PRU }
+		##1981 = { secede_province = PRU }
+		##1967 = { secede_province = PRU }
+		##1966 = { secede_province = PRU }
+		##FRA_1914 = { secede_province = PRU }
+
+		
+		any_owned={
+			limit = {is_core = ZAN NOT={is_core=KEN}}
+			
+			secede_province = PRU
+		}
+		############Portugal
+		1877 = { secede_province = POR }
+		1878 = { secede_province = POR }
+		any_owned={
+			limit = {is_core = ANG }			
+			secede_province = POR
+		}	
+		any_owned={
+			limit = {is_core = MOZ }			
+			secede_province = POR
+		}	
+		2066 = { secede_province = ENG }		
+				
+	}		
+		
+	
+	
+	
+}
+# initialization 1914
+country_event = {
+	id = 999966
+	title = "EVTNAME999966"
+	desc = "EVTDESC999966"
+	picture = "Celebration"
+	major = yes
+	
+	mean_time_to_happen = 
+	{
+		days=1
+		
+	}
+	trigger = {
+		year = 1914
+		NOT = {year = 1915}
+		OR={
+			78 = { is_core = LIB}
+			78 = { is_core = BUR}
+		}
+	}
+	fire_only_once = yes
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		great_wars_enabled = yes
+		set_global_flag = great_wars_enabled
+
+		#set_global_flag  = it_is_nashWW
+################################ F L A G S 
+	enable_canal =1
+	369 = { set_province_flag = kiel_canal }
+	enable_canal =2
+	1755 = { set_province_flag = suez_canal }
+	enable_canal =3
+	1723 = { set_province_flag = panama_canal }
+
+	american_civil_war_has_happened=yes
+	
+	brazzaville_formed=yes
+	building_kiel_canal_phase0=yes
+	building_panama_canal_phase1=yes
+	building_suez_canal_dredges=yes
+	germania_werft_has_been_built=yes
+	great_wars_enabled=yes
+	Hold10Olympiad=yes
+	Hold7Olympiad=yes
+	Hold8Olympiad=yes
+	Hold9Olympiad=yes
+	Host10Olympiad=yes
+	Host6Olympiad=yes
+	Host7Olympiad=yes
+	Host8Olympiad=yes
+	Host9Olympiad=yes
+	kiel_canal_global=yes
+
+	marching_on_the_trail_of_tears=yes
+	motala_verkstad_expanded=yes
+	NileDiscovered=yes
+	NorthPoleDiscovered=yes
+	panama_canal_global=yes
+	ruhr_boom_has_happened=yes
+	
+	SouthPoleDiscovered=yes
+	statue_of_liberty_has_been_built=yes
+	suez_canal_global=yes
+	the_walhalla_is_built=yes
+
+
+
+	brazzaville_formed=yes
+	building_panama_canal_dynamite=yes
+	building_panama_canal_malaria=yes
+	building_panama_canal_phase2=yes
+	building_panama_canal_shovel=yes
+	building_panama_canal_slide=yes
+	building_suez_canal_dredges=yes
+	building_suez_canal_phase3=yes
+	germania_werft_has_been_built=yes
+	germany_has_renamed_elsass=yes
+	
+	Hold6Olympiad=yes
+	Hold7Olympiad=yes
+	Hold9Olympiad=yes
+	Host6Olympiad=yes
+	Host7Olympiad=yes
+	Host8Olympiad=yes
+	Host9Olympiad=yes
+	kiel_canal_global=yes
+	marching_on_the_trail_of_tears=yes
+	NileDiscovered=yes
+	NorthPoleDiscovered=yes
+	panama_canal_global=yes
+	ruhr_boom_has_happened=yes
+	russian_vladivostok=yes
+	SouthPoleDiscovered=yes
+	suez_canal_global=yes
+	the_walhalla_is_built=yes
+
+#TEMP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#leaderships
+	any_country={
+		limit={civilized = yes}
+		leadership=200
+	}	
+	any_country={
+		limit={is_greater_power = yes}
+		leadership=200
+	}	
+	FRA = {	
+		set_country_flag = in_great_war
+		add_country_modifier = {
+			name = great_war
+			duration = -1
+		}
+	}
+	GER = {	
+		set_country_flag = in_great_war
+		add_country_modifier = {
+			name = great_war
+			duration = -1
+		}
+	}
+
+
+		#PRU = {country_event = 999968}		
+		#TUR = {country_event = 999968}
+		#FRA = {country_event = 999968}
+		#ITA = {country_event = 999968}				
+		#RUS = {country_event = 999968}
+		#EGY = {country_event = 999968}
+		#NET = {country_event = 999968}
+		#ENG = {country_event = 999968}
+		#JAP = {country_event = 999968}
+		#USA = {country_event = 999968}
+		#CHI = {country_event = 999968}
+		#GRE = {country_event = 999968}
+		
+		
+		#CSA = {annex_to = USA}
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+#prestige
+		#ENG = {prestige = 500}
+		#FRA = {prestige = 450}
+		#RUS = {prestige = 400}
+		#PRU = {prestige = 350}
+		#NGF = {prestige = 350}
+		#GER = {prestige = 350}
+		#USA = {prestige = 300}
+		#KUK = {prestige = 300}
+		#ITA = {prestige = 250}
+		#JAP = {prestige = 200}
+		JAP={civilized =yes}
+		
+		
+	USA = {
+		diplomatic_influence = {
+						who = MEX
+						value = 200
+				}
+	}
+	USA = {
+		diplomatic_influence = {
+						who = MEX
+						value = 200
+				}
+	}
+	USA = {
+		relation = {
+			who = MEX
+			value = 200
+		}
+	}	
+
+		#GER={treasury=400000}
+		
+		
+		
+#ENG = {prestige = 500}
+#ENG = {prestige = 500}
+#ENG = {prestige = 500}
+#ENG = {prestige = 500}
+#ENG = {prestige = 500}
+		#german - beguum fortress
+		573 = {fort = 6}
+		572 = {fort = 6}
+		576 = {fort = 6}
+		587 = {fort = 6}
+		396 = {fort = 6}
+		397 = {fort = 6}
+		398 = {fort = 6}
+		#france - german fortress
+		425 = {fort = 6}
+		427 = {fort = 4}
+		2570 = {fort = 4}
+		401 = {fort = 4}
+
+		549 = {fort = 6}
+		552 = {fort = 4}
+		550 = {fort = 4}
+		
+		412 = {fort = 6}
+		409 = {fort = 6}
+		410 = {fort = 6}
+		405 = {fort = 6}
+		413 = {fort = 6}
+		411 = {fort = 6}
+		414 = {fort = 6}
+		432 = {fort = 6}
+
+		408 = {fort = 4}
+		407 = {fort = 4}
+		428 = {fort = 4}
+
+		433 = {fort = 4}
+		403 = {fort = 4}
+		404 = {fort = 4}
+		399 = {fort = 4}
+		
+		586 = {fort = 4}
+		571 = {fort = 4}
+		574 = {fort = 4}
+		575 = {fort = 4}
+		577 = {fort = 4}
+
+
+		#french - italy
+		433 = {fort = 6}
+		451 = {fort = 6}
+		465 = {fort = 6}
+		454 = {fort = 6}
+		471 = {fort = 6}
+		472 = {fort = 6}
+
+		721 = {fort = 6}
+		720 = {fort = 6}
+		725 = {fort = 6}
+		
+		#Italy - Austria
+		727 = {fort = 6}
+		728 = {fort = 6}
+		730 = {fort = 6}
+		732 = {fort = 6}
+		733 = {fort = 6}
+
+
+		735 = {fort = 6}
+		734 = {fort = 6}
+		615 = {fort = 6}
+		618 = {fort = 6}
+		737 = {fort = 6}
+		736 = {fort = 6}
+
+		#Bulgaria - Turkey
+		
+		830 = {fort = 6}
+		816= {fort = 6}
+		817= {fort = 6}
+		828= {fort = 6}
+		858= {fort = 6}
+		860= {fort = 6}	
+
+		#also Serbia
+		797= {fort = 6}
+		804= {fort = 6}	
+	
+		any_country={
+			limit={OR={tag=RUS tag=SER}}
+			any_owned={
+				limit={
+					any_neighbor_province = {
+						OR={
+							owned_by = KUK
+							owned_by = GER
+						}
+					}
+				}
+				fort = 6
+			}
+		}
+		# rus-GER
+		940= {fort = 6}
+		939= {fort = 6}
+		938= {fort = 6}
+		360= {fort = 6}
+		363= {fort = 6}
+		357= {fort = 6}
+		354= {fort = 6}
+
+		any_country={
+			limit={OR={tag=TUR }}
+			any_owned={
+				limit={
+					any_neighbor_province = {
+						
+							owned_by = RUS
+						
+					}
+				}
+				fort = 4
+			}
+		}
+		any_country={
+			limit={OR={tag=RUS }}
+			any_owned={
+				limit={
+					any_neighbor_province = {
+						
+							owned_by = TUR
+						
+					}
+				}
+				fort = 4
+			}
+		}
+
+		any_country={
+
+			limit={OR={tag=GER tag=KUK}}
+			any_owned={
+				limit={
+					any_neighbor_province = {						
+							owned_by = RUS
+					}
+				}
+				fort = 6
+			}
+		}			
+##############################################
+	#USA = {
+	#	diplomatic_influence = {
+	#					who = MEX
+	#					value = 200
+	#			}
+	#}
+		any_country={
+			end_war= EGY 
+			end_war=KOK 
+			end_war=KHI 
+			end_war=BUK
+			end_war= SAR 
+			end_war=PAP 
+			end_war=KOR
+			end_war=CSA
+			end_war=DAI
+			end_war=CAM
+			end_war=LUA
+			end_war=KAL
+			end_war=HDJ
+			end_war=BUR
+			end_war=TPG
+			end_war=ION
+		}
+##############################POOP change
+		any_country = {
+			limit={
+				civilized= yes
+			}
+			any_pop={	
+				ideology = {
+					factor = 0.3
+					value = socialist
+				}
+				ideology = {
+					factor = 0.06
+					value = communist 
+				}
+			}
+		}
+##############################POOP change
+		RUS={
+			any_pop={reduce_pop=2.5}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4
+			}
+		}
+		GER={
+			any_pop={reduce_pop=1.3}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4 #10
+			}
+			any_pop = {
+				limit = {					
+					type = soldiers
+				}
+				#reduce_pop = 5 #10
+			}
+		}
+		FRA={
+			any_pop={reduce_pop=1.5}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4
+			}
+		}
+		ENG={
+			any_pop={reduce_pop=1.6}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop =4
+			}
+		}
+		KUK={
+			any_pop={reduce_pop=1.5}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop =4
+			}
+		}
+		TUR={
+			any_pop={reduce_pop=2.3}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4
+			}
+		}
+		ITA={
+			any_pop={reduce_pop=1.35}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4
+			}
+		}
+		USA={
+			any_pop={
+				limit={Not={has_pop_culture = native_american}}
+				reduce_pop=5
+			}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4
+			}
+		}
+		#others
+		any_country={
+			limit={
+				capital_scope={continent = europe}
+				NOT={
+					tag = ENG
+					tag = FRA
+					tag = RUS
+					tag = USA
+					tag = KUK
+					tag = TUR
+					tag = GER
+					tag = ITA
+				}
+			}
+			any_pop={reduce_pop=1.5}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4
+			}
+		}
+		any_country={
+			limit={
+				OR={
+					capital_scope={continent = north_america}
+					capital_scope={continent = south_america}
+				}
+				NOT={
+					tag = ENG
+					tag = FRA
+					tag = RUS
+					tag = USA
+					tag = KUK
+					tag = TUR
+					tag = GER
+					tag = ITA
+				}
+			}
+			any_pop={reduce_pop=3}
+			any_pop={
+				limit={type=clergymen}
+				reduce_pop=2
+			}
+			any_pop = {
+				limit = { type=bureaucrats }
+				reduce_pop = 10
+			}
+			any_pop = {
+				limit = {					
+					type = craftsmen
+				}
+				reduce_pop = 4
+			}
+		}
+		#################
+		#core change	
+		FIN={
+			any_owned={
+				remove_core=SWE
+			}
+		}
+		################
+		#from state hood correct work
+		#BUL = {prestige = -360}
+		#ALB = {prestige = -138}
+		
+
+		78 = { remove_core = LIB}
+		78 = { remove_core = BUR}
+		#SER={any_owned={add_core=KUK}}
+		KUK={
+			casus_belli ={
+				target = SER
+				type = conquest 
+				months = 36
+			}
+		}
+		
+	#}	
+
+	USA = {
+		any_owned ={infrastructure  = 3}
+	}
+	MEX = {
+		any_owned ={infrastructure  = 3}
+	}
+	any_country={
+			limit={
+				capital_scope={
+					continent = south_america					
+				}
+			}
+			any_owned ={infrastructure  = 3}
+	}
+	any_country={
+			limit={
+				capital_scope={
+					continent = europe					
+				}
+			}
+			any_owned ={infrastructure  = 2}
+	}
+	ENG = {any_owned ={infrastructure  = 2}}
+	JAP={
+		any_owned ={
+			limit = {is_colonial = no}
+			infrastructure  = 4
+		}
+		any_owned ={
+			limit = {is_colonial = yes}
+			infrastructure  = 2
+		}
+	}
+	RUS={
+		any_owned ={
+			limit = {is_colonial = no}
+			infrastructure  = 1
+		}
+	}
+	KUK={any_owned ={infrastructure  = 1}}
+
+	# TRADE GOODS
+	any_country={
+	all_core = {
+		limit = {
+			OR = {
+				province_id = 1102		# Baku
+				province_id = 1205		# Kizil Arvat
+
+				province_id = 1104
+				province_id = 1186
+				province_id = 1202
+				province_id = 1107
+				province_id = 132
+				province_id = 667
+				province_id = 672
+				province_id = 1168
+				province_id = 110
+				province_id = 89		# Los Angeles
+				province_id = 133		# Austin
+				province_id = 126
+				province_id = 1399		# Palembang
+				province_id = 1055	
+				province_id = 1393		# Brunei
+				province_id = 1401		# Siak
+				province_id = 1425		# Tarakan
+				province_id = 1432
+				province_id = 1335		# Kyaukse
+				province_id = 134		# Dallas
+				province_id = 705		# Przemysl
+				province_id = 1260	
+				province_id = 1086
+				province_id = 129		# Oklahoma City
+				province_id = 1680		# Fez
+				province_id = 2173		# Queretaro
+				province_id = 87		# Monterey
+				province_id = 2162		# Veracruz
+				province_id = 2163		# Tampico
+				province_id = 702		# Lvov
+				province_id = 1397		# Sandakan
+				province_id = 2237		# Trinidad
+				province_id = 2396		# Rawson
+				province_id = 1131		# Ahvaz
+				province_id = 1732		# Ghayran
+				province_id = 1720		# Timimoun
+				province_id = 1167		# Abu Dhabi
+				province_id = 1163		# Qatif
+				province_id = 2270		# Maracaibo
+				province_id = 1170		# Nizwa 
+				province_id = 1132		# Abadan
+				province_id = 26		# Calgary
+			}
+		}
+		trade_goods = oil
+	}
+	}
+}
+}
+# для statehoode correct work #did not used
+# initialization 1914 finaly
+country_event = {
+	id = 999964
+	title = "EVTNAME999964"
+	desc = "EVTDESC999964"
+	picture = "Celebration"
+	major = yes
+	
+	
+	mean_time_to_happen = 
+	{
+		days=1
+		
+	}
+	trigger = { 
+		year = 1914		
+		NOT = {year = 1915}
+		OR={
+			AND={
+				month  = 1
+		#		NOT = {month  = 7}
+				#NOT ={day = 5 } нет ткаой команды
+				78 = { is_core = LIB}
+			}
+			AND={
+				month  = 8
+				#NOT={month  = 0}
+				#NOT ={day = 5 }
+				78 = { is_core = BUR}
+			}
+		}
+		
+	}
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = "Ok"
+
+				
+		
+		
+	}		
+}
+# initialization 1910+
+country_event = {
+	id = 999965
+	title = "EVTNAME999965"
+	desc = "EVTDESC999965"
+	picture = "Celebration"
+	#major = yes
+	# временно
+	
+	mean_time_to_happen = 
+	{
+		days=1
+		
+	}
+	trigger = { 
+		year = 1910	
+		78 = { NOT = {is_core = LIB}}
+
+		78 = { NOT = {is_core = BUR}}
+		# - нужен
+	}
+	fire_only_once = yes
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		ANH = {
+			all_core = { 
+				limit = {NOT={exists = ANH}}
+				remove_core = ANH
+			}
+		}
+	ANH = {
+			all_core = { 
+				limit = {NOT={exists = ANH}}
+				remove_core = ANH
+			}
+		}
+	BRA= {
+			all_core = { 
+				limit = {NOT={exists = BRA}}
+				remove_core = BRA
+			}
+		}
+	BRE= {
+			all_core = { 
+				limit = {NOT={exists = BRE}}
+				remove_core = BRE
+			}
+		}
+	COB = {
+			all_core = { 
+				limit = {NOT={exists = COB}}
+				remove_core = COB
+			}
+		}
+	FRM = {
+			all_core = { 
+				limit = {NOT={exists =FRM}}
+				remove_core = FRM
+			}
+		}
+	HAM = {
+			all_core = { 
+				limit = {NOT={exists = HAM}}
+				remove_core = HAM
+			}
+		}
+	HAN = {
+			all_core = { 
+				limit = {NOT={exists = HAN  }}
+				remove_core = HAN
+			}
+		}
+	
+	HES= {
+			all_core = { 
+				limit = {NOT={exists = HES}}
+				remove_core = HES
+			}
+		}
+	HEK= {
+			all_core = { 
+				limit = {NOT={exists = HEK}}
+				remove_core = HEK
+			}
+		}
+	LIP = {
+			all_core = { 
+				limit = {NOT={exists = LIP}}
+				remove_core = LIP
+			}
+		}
+	LUB= {
+			all_core = { 
+				limit = {NOT={exists = LUB}}
+				remove_core = LUB
+			}
+		}
+	MEC= {
+			all_core = { 
+				limit = {NOT={exists = MEC}}
+				remove_core = MEC
+			}
+		}
+	MEI = {
+			all_core = { 
+				limit = {NOT={exists = MEI }}
+				remove_core = MEI
+			}
+		}
+	NAS= {
+			all_core = { 
+				limit = {NOT={exists = NAS}}
+				remove_core = NAS
+			}
+		}
+	OLD= {
+			all_core = { 
+				limit = {NOT={exists = OLD}}
+				remove_core = OLD
+			}
+		}
+	WEI = {
+			all_core = { 
+				limit = {NOT={exists = WEI }}
+				remove_core = WEI
+			}
+		}
+	NGF = {
+			all_core = { 
+				limit = {NOT={exists = NGF}}
+				remove_core = NGF
+			}
+		}
+	PRU= {
+			all_core = { 
+				limit = {NOT={exists = PRU}}
+				remove_core = PRU
+			}
+		}
+	PMR= {
+			all_core = { 
+				limit = {NOT={exists = PMR}}
+				remove_core = PMR
+			}
+		}
+	#SAX= {
+	#		all_core = { 
+	#			limit = {NOT={exists = SAX}}
+	#			remove_core = SAX
+	#		}
+	#	}
+	#HOL= {
+	#		all_core = { 
+	#			limit = {NOT={exists =HOL}}
+	#			remove_core = HOL
+	#		}
+	#	}
+	
+	
+	
+
+#BAD		= "countries/Baden.txt"
+#BAV		= "countries/Bavaria.txt"
+#DZG		= "countries/Danzig.txt"
+#HOL		= "countries/Holstein.txt"
+#LUX		= "countries/Luxemburg.txt"
+#NGF		= "countries/North German Fed.txt"
+#SAX		= "countries/Saxony.txt"
+#SCH		= "countries/Schleswig.txt"
+#SGF		= "countries/South German Fed.txt"
+#WUR		= "countries/Wurttemberg.txt"
+
+###############################################################
+	TRI={all_core={remove_core = TRI}}
+	}		
+}
+
+# clean up my
+country_event = {
+	id = 999963
+	title = "EVTNAME999963"
+	desc = "EVTDESC999963"
+	picture = "Celebration"
+	
+	
+	mean_time_to_happen = 
+	{
+		months=2
+		
+	}
+	trigger = { 					
+		NOT={government  = proletarian_dictatorship}
+		has_country_modifier = Revolt_army		
+	}
+
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		#communist Up
+		remove_country_modifier = Revolt_army			
+	}		
+}
+
+#annex marionet
+country_event = {
+	id = 999962
+	title = "EVTNAME999962"
+	desc = "EVTDESC999962"
+	picture = "Celebration"
+	major=yes	
+	
+	mean_time_to_happen = 
+	{
+		#months=1
+		#months=1
+		days=5
+		
+	}
+	trigger = { 
+		war = no
+				
+
+		#any_sphere_member={
+		#	has_country_modifier=JustCreated
+		#	war = no		
+		#	OR={
+		#		any_owned_province={is_core =THIS}
+		#		is_culture_group = THIS
+		#	}
+		#	NOT={has_country_modifier=asked_to_annex}	
+		#	neighbour = THIS
+		#	
+		#}
+		any_core ={
+			any_neighbor_province={
+				owner={
+					in_sphere=THIS
+					has_country_modifier=JustCreated
+					war = no		
+					#OR={
+					#	any_owned_province={is_core =THIS}
+					#	is_culture_group = THIS
+					#}
+					NOT={has_country_modifier=asked_to_annex}	
+					NOT={num_of_cities=25}	
+					#new
+					neighbour=THIS
+				}	
+			}
+		}
+		
+		
+			
+		
+	}
+
+	
+	#is_triggered_only = yes
+	option = {# accept annextion
+		name = "OPTA999962"
+		random_country={
+			limit={
+				in_sphere=THIS
+				has_country_modifier=JustCreated
+				war = no
+				any_owned_province={
+					any_neighbor_province={
+						is_core=THIS
+					}				
+				}				
+				NOT={has_country_modifier=asked_to_annex}
+				NOT={num_of_cities=25}	
+				#new
+				neighbour=THIS	
+			}
+			add_country_modifier=
+			{
+				name = asked_to_annex
+				duration = 365
+			}			
+			any_pop={
+				limit={
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 10
+				militancy = 10
+			}
+			annex_to = this
+		}
+		badboy=1
+		ai_chance = {
+			factor = 1						
+		}
+		
+	}		
+	option = {# decline annextion
+		name = "OPTB999962"
+		random_country={
+			limit={
+				in_sphere=THIS
+				has_country_modifier=JustCreated
+				war = no
+				any_owned_province={
+					any_neighbor_province={
+						is_core=THIS
+					}				
+				}				
+				NOT={has_country_modifier=asked_to_annex}
+				NOT={num_of_cities=25}	
+				#new
+				neighbour=THIS	
+				
+			}
+			add_country_modifier=
+			{
+				name = asked_to_annex
+				duration = 365
+			}
+		}
+		ai_chance = {
+			factor = 0			
+			modifier = {
+				factor = 10
+				badboy=0.8 
+			}
+		}		
+		
+		
+	}		
+
+}
+# decolonization
+country_event = {
+	id = 999961
+	title = "EVTNAME999961"
+	desc = "EVTDESC999961"
+	picture = "Celebration"
+	
+	
+	mean_time_to_happen = 
+	{
+		months=1
+		
+	}
+	trigger = { 
+		year = 1946		
+	}
+	major= yes
+	fire_only_once = yes	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		
+		any_country={
+			add_country_modifier=
+			{
+				name = decolonization 
+				duration = -1
+			}				
+		}		
+	}
+}
+# common init to avoid master changes
+country_event = {
+	id = 999960
+	title = "EVTNAME999960"
+	desc = "EVTDESC999960"
+	picture = "Celebration"
+	
+	#major= yes
+	
+	is_triggered_only = yes
+	option = {
+		name = "Ok"		
+		any_country={
+			leave_alliance = THIS
+			diplomatic_influence = {
+				who = this
+				value = -200
+			}	
+		}		
+	}
+}
+# clean up my
+country_event = {
+	id = 999959
+	title = "EVTNAME999959"
+	desc = "EVTDESC999959"
+	picture = "Celebration"
+	
+	
+	mean_time_to_happen = 
+	{
+		months=2
+		
+	}
+	trigger = { 
+		NOT={government  = fascist_dictatorship }
+		has_country_modifier = Brown_plague		
+	}
+
+	
+	#is_triggered_only = yes
+	option = {
+		name = "Ok"
+		remove_country_modifier = Brown_plague		
+	}		
+}
+
+# установление коми
+country_event = {
+	id = 999954
+	title = "EVTNAME999990"
+	desc = "EVTDESC999990"
+	picture = "Celebration"
+	major = yes	
+	is_triggered_only = no
+	
+	trigger = {
+		has_country_flag = rusHasToRevolt
+	}
+
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		
+		name = "Ok"
+
+		#рфспад
+		any_country={	
+			limit ={
+				NOT = {government = proletarian_dictatorship}				
+				OR = {				
+					exists = yes						
+					NOT = {
+						OR = {
+							tag = GER
+							tag = SCA
+							tag = ITA
+							tag = YUG
+							tag = ROM
+							tag = CZH
+							tag = KUK
+							tag = AUS
+							#tag = HND
+						}
+					}
+					AND = {
+						tag = AUS
+						KUK = {NOT = {exists = yes}}					
+				      	}
+					AND = {
+						tag = KUK
+						AUS = {NOT = {exists = yes}}					
+				      	}
+				}
+			}	
+			
+			country_event = 999991
+			
+
+		}
+		
+		# потеря сателитов
+		any_country= {
+			limit={	
+				OR={
+					vassal_of=THIS
+					substate_of=THIS
+				}			
+				
+			}
+			country_event = 999993
+		}	
+		#потеря сферы		
+		any_country= {
+			limit={	
+				sphere_owner ={tag = THIS}
+				
+			}
+			country_event = 999992
+		}
+		# loose aliances
+		any_country={	
+			limit =	{
+				NOT={government = proletarian_dictatorship}			
+			}						
+			leave_alliance = THIS
+		}
+		
+		any_pop = {
+			limit =	{		
+				OR= {	
+					pop_type = capitalists 
+					pop_type = aristocrats
+					pop_type = officers
+				}									
+			}
+			pop_type = farmers
+			consciousness = 10
+			militancy = 10
+		 }	
+		# замирение комми
+		any_country = {
+			limit =	{
+				government = proletarian_dictatorship
+				war_with=THIS
+				ai = yes
+				THIS={ai = yes}
+			}
+			end_war=THIS		
+		}
+		# комми дружба
+		any_country = {
+			limit =	{
+				government = proletarian_dictatorship
+				NOT={war_with=THIS}
+			}
+			create_alliance = this
+			relation = {
+				who = THIS			
+				value = 400
+			}			
+			#guarantee = THIS # doesnot work
+		
+		}
+		#призыв союзников	temporally
+		#any_country = {
+		#	limit =	{
+		#		government = proletarian_dictatorship
+		#		war=yes
+		#		ai = yes			
+		#		alliance_with=THIS
+		#	}
+		#	war = {
+		#		attacker_goal = {
+		#			casus_belli = install_communist_gov_cb
+		#		}
+		#			call_ally = yes
+		#
+		#	badboy=-1
+		#
+		#}
+		
+		any_country = {
+			limit = {
+				NOT ={government = proletarian_dictatorship}
+			}
+			relation = {
+				who = THIS			
+				value = -200
+			}
+		
+		}
+		#проверка, что коми вышел из не коми сферы
+		any_country = {
+			limit =	{				
+				is_sphere_leader_of=THIS				
+				NOT={government = proletarian_dictatorship} 
+			}
+			
+				diplomatic_influence = {
+					who = THIS
+					value = -200
+				}				
+			
+		}
+		# выйти из субстатства и вассалитета
+		release_vassal =THIS
+		# раздача КБ
+		any_country = {
+			limit =	{
+				is_greater_power = yes
+				NOT = {government = proletarian_dictatorship}				
+			}
+			country_event = 999977	
+		}
+		
+		#autowar
+		any_country = {
+			limit =	{
+				is_greater_power = yes
+				is_vassal = no
+				is_substate = no
+				NOT = {government = proletarian_dictatorship}				
+				ai = yes
+				NOT={badboy=0.04}
+				NOT={war_exhaustion = 0.1}
+				war = no
+				military_score  =50
+				#NOT={truce_with =THIS} 
+				#все равно нет союзов
+				#ибо поаторные коми  револты
+				
+			}
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = AntiCommunistIntervention 
+				}				
+				#call_ally = yes
+				call_ally = no # economical depression
+			}
+			country_event = 999974
+			
+		}
+		#set_country_flag = is_commi
+
+		#communist Up
+		add_country_modifier = {
+			name = Revolt_army
+			duration = -1
+		}
+		government=proletarian_dictatorship 	
+					political_reform = none_voting
+					political_reform = party_appointed
+					political_reform = no_meeting
+					political_reform = state_press
+					political_reform = state_controlled
+					political_reform = underground_parties		
+					nationalize = yes
+					set_country_flag = is_commi
+		clr_country_flag = rusHasToRevolt	
+	}
+}

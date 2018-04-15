@@ -1,0 +1,157 @@
+ENG_absolute_monarchy;British Empire;X
+ENG_prussian_constitutionalism;British Empire;X
+ENG_hms_goverment;Great Britain;X
+ENG_democracy;British Federation;X
+ENG_bourgeois_dictatorship;British Federation;X
+ENG_presidential_dictatorship;British Republic;X
+ENG_fascist_dictatorship;British Empire;X
+ENG_proletarian_dictatorship;BFSSR;X
+RUS_absolute_monarchy;Russian Empire;X
+RUS_prussian_constitutionalism;Russian Empire;X
+RUS_hms_goverment;Russia;X
+RUS_democracy;Russian Republic;X
+RUS_bourgeois_dictatorship;Russian Republic;X
+RUS_presidential_dictatorship;Russian Republic;X
+RUS_fascist_dictatorship;Russian State;X
+RUS_proletarian_dictatorship;RSFSR;X
+CSA_absolute_monarchy;Dixie Kingdom;X
+CSA_prussian_constitutionalism;Dixie Kingdom;X
+CSA_hms_goverment;Dixie Kingdom;X
+CSA_democracy;CSA;X
+CSA_bourgeois_dictatorship;CSA;X
+CSA_presidential_dictatorship;CSA;X
+CSA_fascist_dictatorship;CSA;X
+CSA_proletarian_dictatorship;CPRA;X
+TUR_absolute_monarchy;Ottoman Empire;X
+TUR_prussian_constitutionalism;Ottoman Empire;X
+TUR_hms_goverment;Ottoman Empire;X
+TUR_democracy;Turkey;X
+TUR_bourgeois_dictatorship;Turkey;X
+TUR_presidential_dictatorship;Turkey;X
+TUR_fascist_dictatorship;Turkey;X
+TUR_proletarian_dictatorship;PRT;X
+PER_absolute_monarchy;Persia;X
+PER_prussian_constitutionalism;Iran;X
+PER_hms_goverment;Iran;X
+PER_democracy;Persia;X
+PER_bourgeois_dictatorship;Iran;X
+PER_presidential_dictatorship;Iran;X
+PER_fascist_dictatorship;Persia;X
+PER_proletarian_dictatorship;DPRI;X
+KOR_absolute_monarchy;Korea;X
+KOR_prussian_constitutionalism;Korea;X
+KOR_hms_goverment;Korea;X
+KOR_democracy;Korea;X
+KOR_bourgeois_dictatorship;Korea;X
+KOR_presidential_dictatorship;Korea;X
+KOR_fascist_dictatorship;Korea;X
+KOR_proletarian_dictatorship;DPRK;X
+CHI_absolute_monarchy;Qing;X
+CHI_prussian_constitutionalism;Qing;X
+CHI_hms_goverment;Qing;X
+CHI_democracy;China;X
+CHI_bourgeois_dictatorship;China;X
+CHI_presidential_dictatorship;China;X
+CHI_fascist_dictatorship;China;X
+CHI_proletarian_dictatorship;PRC;X
+ICH_absolute_monarchy;Chechnya;X
+ICH_prussian_constitutionalism;Chechnya;X
+ICH_hms_goverment;Chechnya;X
+ICH_democracy;Ichkeria;X
+ICH_bourgeois_dictatorship;Ichkeria;X
+ICH_presidential_dictatorship;Ichkeria;X
+ICH_fascist_dictatorship;Vilayat Nohchiycho;X
+ICH_proletarian_dictatorship;Chechnya;X
+MAD_proletarian_dictatorship;Libertalia;X
+ARB_absolute_monarchy;Chaliphate;X
+ARB_prussian_constitutionalism;Chaliphate;X
+ARB_hms_goverment;Chaliphate;X
+ARB_democracy;Arab Federation;X
+ARB_bourgeois_dictatorship;Arab Federation;X
+ARB_presidential_dictatorship;URA;X
+ARB_fascist_dictatorship;Chaliphate;X
+ARB_proletarian_dictatorship;Arab Jamahiriya ;X
+YAK_absolute_monarchy;Yakutia;X
+YAK_prussian_constitutionalism;Yakutia;X
+YAK_hms_goverment;Yakutia;X
+YAK_democracy;Sakha Republic;X
+YAK_bourgeois_dictatorship;Sakha Republic;X
+YAK_presidential_dictatorship;Sakha Republic;X
+YAK_fascist_dictatorship;Sakha State;X
+YAK_proletarian_dictatorship;PRS;X
+PRI_absolute_monarchy;Tsardom of Far East;X
+PRI_prussian_constitutionalism;Tsardom of Far East;X
+PRI_hms_goverment;Tsardom of Far East;X
+PRI_democracy;Far Eastern Republic;X
+PRI_bourgeois_dictatorship;Far Eastern Republic;X
+PRI_presidential_dictatorship;Far Eastern Republic;X
+PRI_fascist_dictatorship;Far Eastern Empire;X
+PRI_proletarian_dictatorship;Far Eastern Republic;X
+IDF_proletarian_dictatorship;Paris Commune;X
+KAZ_fascist_dictatorship;Alash Orda;X
+CEY_absolute_monarchy;Ceylon;X
+CEY_prussian_constitutionalism;Ceylon;X
+CEY_hms_goverment;Ceylon;X
+CEY_democracy;Sri Lanka;X
+CEY_bourgeois_dictatorship;Sri Lanka;X
+CEY_presidential_dictatorship;Sri Lanka;X
+CEY_fascist_dictatorship;Sri Lanka;X
+CEY_proletarian_dictatorship;Sri Lanka;X
+MUG_absolute_monarchy;Mughal Empire;X
+MUG_prussian_constitutionalism;Mughal Empire;X
+MUG_hms_goverment;Mughal Empire;X
+MUG_democracy;Moghulistan;X
+MUG_bourgeois_dictatorship;Moghulistan;X
+MUG_presidential_dictatorship;Moghulistan;X
+MUG_fascist_dictatorship;Mughal Empire;X
+MUG_proletarian_dictatorship;Mughal Councils;X
+PAP_absolute_monarchy;Papal States;X
+PAP_prussian_constitutionalism;Papal States;X
+PAP_hms_goverment;Papal States;X
+PAP_democracy;Roman Republic;X
+PAP_bourgeois_dictatorship;Roman Republic;X
+PAP_presidential_dictatorship;Vatican City;X
+PAP_fascist_dictatorship;Roman Empire;X
+PAP_proletarian_dictatorship;RCR;X
+BLT_absolute_monarchy;Baltic Duchy;X
+BLT_prussian_constitutionalism;Baltic Duchy;X
+BLT_hms_goverment;Baltic Duchy;X
+BLT_democracy;Baltic Federation;X
+BLT_bourgeois_dictatorship;Baltic Federation;X
+BLT_presidential_dictatorship;Baltic Federation;X
+BLT_fascist_dictatorship;Baltic State;X
+BLT_proletarian_dictatorship;Baltic SSR;X
+DUR_absolute_monarchy;Durrani Empire;X
+DUR_prussian_constitutionalism;Durrani Empire;X
+DUR_hms_goverment;Durrani Empire;X
+DUR_democracy;Durrani;X
+DUR_bourgeois_dictatorship;Durrani;X
+DUR_presidential_dictatorship;Durrani;X
+DUR_fascist_dictatorship;Durrani State;X
+DUR_proletarian_dictatorship;PRD;X
+ULA_absolute_monarchy;Latin American Empire;X
+ULA_prussian_constitutionalism;Latin American Empire;X
+ULA_hms_goverment;Kingdom of Latin America;X
+ULA_democracy;The Union of Latin America;X
+ULA_bourgeois_dictatorship;The Union of Latin America;X
+ULA_presidential_dictatorship;The Union of Latin America;X
+ULA_fascist_dictatorship;Latin American State;X
+ULA_proletarian_dictatorship;ULASR;X
+PBC_absolute_monarchy;New Inca Empire;X
+PBC_prussian_constitutionalism;New Inca Empire;X
+PBC_hms_goverment;New Inca Empire;X
+PBC_democracy;Peru-Bolivia Confederation;X
+PBC_bourgeois_dictatorship;Peru-Bolivia Confederation;X
+PBC_presidential_dictatorship;Peru-Bolivia Confederation;X
+PBC_fascist_dictatorship;New Inca Empire;X
+PBC_proletarian_dictatorship;PBCFSR;X
+LOU_absolute_monarchy;Empire of New France;X
+LOU_prussian_constitutionalism;Empire of New France;X
+LOU_hms_goverment;Kingdom of New France;X
+LOU_democracy;Louisiana;X
+LOU_bourgeois_dictatorship;Louisiana;X
+LOU_presidential_dictatorship;Louisiana;X
+LOU_fascist_dictatorship;Empire of New France;X
+LOU_proletarian_dictatorship;PRL;X
+PBC_ADJ;Peru-Bolivian;X
+PBC;Peru-Bolivian confederation;X

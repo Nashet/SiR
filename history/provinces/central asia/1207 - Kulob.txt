@@ -1,0 +1,13 @@
+owner = BUK
+controller = BUK
+add_core = BUK
+add_core = TRK
+add_core = TAJ
+trade_goods = grain
+life_rating = 35
+
+1914.1.1 = { 
+owner = RUS
+controller = RUS
+colonial = yes 
+} 

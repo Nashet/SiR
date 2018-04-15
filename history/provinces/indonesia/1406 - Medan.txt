@@ -1,0 +1,12 @@
+add_core = IDO
+owner = ATJ
+controller = ATJ
+add_core = ATJ
+trade_goods = tobacco
+life_rating = 30
+
+1914.1.1 = { 
+owner = NET
+controller = NET
+colonial = yes 
+} 

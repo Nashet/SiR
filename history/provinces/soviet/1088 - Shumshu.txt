@@ -1,0 +1,10 @@
+add_core = JAP
+add_core = PRI
+trade_goods = coal
+life_rating = 20
+
+1914.1.1 = { 
+owner = JAP
+controller = JAP 
+colonial = yes 
+} 

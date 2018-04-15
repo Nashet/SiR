@@ -1,0 +1,12 @@
+owner = AUS
+controller = AUS
+add_core = HUN
+add_core = ROM
+add_core = SIE
+trade_goods = fruit
+life_rating = 35
+
+1914.1.1 = { 
+owner = KUK
+controller = KUK
+}

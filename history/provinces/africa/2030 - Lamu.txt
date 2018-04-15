@@ -1,0 +1,14 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+add_core = KEN
+add_core = ZAN
+trade_goods = cattle
+life_rating = 35
+
+
+1914.1.1 = {
+owner = ENG
+controller = ENG
+colonial = yes
+} 

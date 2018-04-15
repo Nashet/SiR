@@ -1,0 +1,13 @@
+owner = DAR
+controller = DAR
+add_core = DAR
+add_core = SUD
+trade_goods = grain
+life_rating = 10
+
+
+1914.1.1 = {
+owner = ENG
+controller = ENG
+colonial = yes
+} 

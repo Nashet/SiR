@@ -1,0 +1,1 @@
+owner = PRGcontroller = PRGadd_core = PRGadd_core = PBCadd_core = BOLadd_core = ARGadd_core = ULAtrade_goods = timberlife_rating = 30

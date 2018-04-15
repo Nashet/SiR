@@ -1,0 +1,13 @@
+owner = DAH
+controller = DAH
+add_core = DAH
+trade_goods = grain
+life_rating = 35
+
+
+1914.1.1 = { 
+owner = FRA 
+controller = FRA 
+colonial = yes 
+} 
+

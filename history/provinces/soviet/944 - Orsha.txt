@@ -1,0 +1,6 @@
+owner = RUS
+controller = RUS
+add_core = BLR
+add_core = ZLS
+trade_goods = grain
+life_rating = 35

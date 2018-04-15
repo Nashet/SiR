@@ -1,0 +1,13 @@
+owner = CLA
+controller = CLA
+add_core = CLA
+add_core = ARO
+trade_goods = coal
+life_rating = 35
+
+
+1914.1.1 = {
+owner = ENG
+controller = ENG
+colonial = yes
+} 

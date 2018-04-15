@@ -1,0 +1,8 @@
+owner = XIN
+controller = XIN
+add_core = CHI
+add_core = XIN
+add_core = UGH
+add_core = TRK
+trade_goods = grain
+life_rating = 35

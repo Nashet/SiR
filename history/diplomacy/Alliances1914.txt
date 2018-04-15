@@ -1,0 +1,145 @@
+#Central Powers
+alliance=
+	{
+		first="GER"
+		second="TUR"
+		end_date="1920.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="GER"
+		second="KUK"
+		end_date="1920.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="TUR"
+		second="KUK"
+		end_date="1920.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="BUL"
+		second="KUK"
+		end_date="1920.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="BUL"
+		second="GER"
+		end_date="1920.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="BUL"
+		second="TUR"
+		end_date="1920.1.1"
+		start_date="1914.1.1"
+	}
+alliance={
+		first="GER"
+		second="ITA"
+		end_date="1920.1.1"
+		start_date="1914.1.1"
+	}
+
+#Entente
+alliance=
+	{
+		first="RUS"
+		second="SER"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="RUS"
+		second="GRE"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="ENG"
+		second="ROM"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="RUS"
+		second="ROM"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="FRA"
+		second="RUS"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="FRA"
+		second="ENG"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+alliance=
+	{
+		first="ENG"
+		second="RUS"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+#nash ((
+alliance=
+	{
+		first="JAP"
+		second="ENG"
+		end_date="2000.1.1"
+		start_date="1914.1.1"
+	}
+
+#nash))
+#British Empire
+#alliance=
+#	{
+#		first="ENG"
+##		end_date="2000.1.1"
+#		start_date="1914.1.1"
+#	}
+#alliance=
+#	{
+#		first="ENG"
+#		second="CAN"
+#		end_date="2000.1.1"
+#		start_date="1914.1.1"
+#	}
+#alliance=
+#	{
+#		first="ENG"
+#		second="YEM"
+#		end_date="2000.1.1"
+#		start_date="1914.1.1"
+#	}
+#alliance=
+#	{
+#		first="ENG"
+#		second="OMA"
+#		end_date="2000.1.1"
+#		start_date="1914.1.1"
+#	}
+#alliance=
+#	{
+#		first="ENG"
+#		second="NZL"
+#		end_date="2000.1.1"
+#		start_date="1914.1.1"
+#	}

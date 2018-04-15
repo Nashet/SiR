@@ -1,0 +1,45 @@
+capital = 995
+primary_culture = karelian
+culture = sami
+religion = orthodox
+government = democracy
+plurality = 0.5
+nationalvalue = nv_liberty
+literacy = 0.11
+civilized = yes
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = state_equal_weight
+vote_franschise = wealth_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = state_controlled
+voting_system = jefferson_method
+political_parties = secret_ballots
+
+# Social Reforms
+wage_reform = low_minimum_wage
+work_hours = ten_hours
+safety_regulations = good_safety
+health_care = good_health_care
+unemployment_subsidies = low_subsidies
+pensions = good_pensions
+school_reforms = low_schools
+
+ruling_party = KRL_liberal
+upper_house = {
+	fascist = 0
+	liberal = 46
+	conservative = 31
+	reactionary = 13
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+1861.1.1 = {
+# Technologies
+
+#Inventions
+}

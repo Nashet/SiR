@@ -1,0 +1,465 @@
+TIB = {
+	value = 100
+	level = 3
+	influence_value = 31
+}
+
+SIA = {
+	value = 100
+	level = 3
+	influence_value = 24
+}
+
+NET = {
+	value = 150
+}
+
+BEL = {
+	value = 200
+}
+
+POR = {
+	value = 100
+}
+ROM = {
+	value = 100
+}
+USA = {
+	value = 150
+}
+PHI = {
+	value = 150
+	level = 4
+	influence_value = 12
+}
+GER = {
+	value = -150
+	
+}
+KUK = {
+	value = -150
+	
+}
+BUL = {
+	value = -150
+}
+TUR = {
+	value = -150
+	influence_value = 43
+}
+#AST = {
+#	level = 4
+#	influence_value = 41
+#}
+#NZL = {
+#	level = 4
+#	influence_value = 32
+#}
+
+leader = {
+name = "Kamio Mitsuomi"
+type = land
+date = "1914.1.1"
+personality = romantic
+background = cavalry_school
+picture = "personal_kamio_mitsuomi"
+}
+
+leader = {
+name = "Yamanashi Handzo"
+type = land
+date = "1914.1.1"
+personality = coolminded
+background = brownnoser
+picture = "personal_yamanashi_hanzo"
+}
+
+leader = {
+name = "Otodzo Yamada"
+type = land
+date = "1914.1.1"
+personality = gallant
+background = artillerist
+picture = "personal_otozo_tamada"
+}
+
+leader = {
+name = "Yamashita Gentaro"
+type = sea
+date = "1914.1.1"
+personality = efficient
+background = school_of_firepower
+picture = "personal_yamashita_gentaro"
+}
+
+leader = {
+name = "Jamaja Tannin"
+type = sea
+date = "1914.1.1"
+personality = inept
+background = cartographer
+picture = "personal_yamaya_tanin"
+}
+
+leader = {
+name = "Yashiro Rokuro"
+type = sea
+date = "1914.1.1"
+personality = expert
+background = yesman
+picture = "personal_yashiro_rokuro"
+}
+
+
+army = {
+	name = "North Army"
+	location = 1649
+	regiment = {
+		name= "1.1/Imperial Army"
+		type = irregular
+		home = 1639
+	}
+
+	regiment = {
+		name= "2.1/Imperial Army"
+		type = irregular
+		home = 1639
+	}
+
+	regiment = {
+		name= "3.1/Imperial Army"
+		type = irregular
+		home = 1639
+	}
+
+	regiment = {
+		name= "1.2/Imperial Army"
+		type = irregular
+		home = 1638
+	}
+
+	regiment = {
+		name= "2.2/Imperial Army"
+		type = irregular
+		home = 1638
+	}
+
+	regiment = {
+		name= "3.2/Imperial Army"
+		type = irregular
+		home = 1638
+	}
+
+	regiment = {
+		name= "1.3/Imperial Army"
+		type = irregular
+		home = 1640
+	}
+
+	regiment = {
+		name= "2.3/Imperial Army"
+		type = irregular
+		home = 1640
+	}
+
+	regiment = {
+		name= "3.3/Imperial Army"
+		type = irregular
+		home = 1640
+	}
+
+	regiment = {
+		name= "1.4/Imperial Army"
+		type = irregular
+		home = 1641
+	}
+
+	regiment = {
+		name= "2.4/Imperial Army"
+		type = irregular
+		home = 1641
+	}
+
+	regiment = {
+		name= "3.4/Imperial Army"
+		type = irregular
+		home = 1641
+	}
+
+	regiment = {
+		name= "1.5/Imperial Army"
+		type = irregular
+		home = 1643
+	}
+
+	regiment = {
+		name= "2.5/Imperial Army"
+		type = irregular
+		home = 1643
+	}
+
+	regiment = {
+		name= "3.5/Imperial Army"
+		type = irregular
+		home = 1643
+	}
+
+	regiment = {
+		name= "1.6/Imperial Army"
+		type = irregular
+		home = 1644
+	}
+
+	regiment = {
+		name= "2.6/Imperial Army"
+		type = irregular
+		home = 1644
+	}
+
+	regiment = {
+		name= "3.6/Imperial Army"
+		type = irregular
+		home = 1644
+	}
+
+	regiment = {
+		name= "1.7/Imperial Army"
+		type = irregular
+		home = 1657
+	}
+
+	regiment = {
+		name= "2.7/Imperial Army"
+		type = irregular
+		home = 1657
+	}
+
+	regiment = {
+		name= "3.7/Imperial Army"
+		type = irregular
+		home = 1657
+	}
+
+	
+
+}
+
+army = {
+	name = "Shikoku Army"
+	location = 1667
+	regiment = {
+		name= "1.23/Imperial Army"
+		type = irregular
+		home = 1674
+	}
+
+	regiment = {
+		name= "2.23/Imperial Army"
+		type = irregular
+		home = 1674
+	}
+
+	regiment = {
+		name= "3.23/Imperial Army"
+		type = irregular
+		home = 1674
+	}
+
+	regiment = {
+		name= "1.24/Imperial Army"
+		type = irregular
+		home = 1675
+	}
+
+	regiment = {
+		name= "2.24/Imperial Army"
+		type = irregular
+		home = 1675
+	}
+
+	regiment = {
+		name= "3.24/Imperial Army"
+		type = irregular
+		home = 1675
+	}
+
+
+}
+
+navy = {
+name = "Imperial Navy"
+location = 1650
+ship = {
+name = "Teibo"
+type = ironclad
+}
+
+ship = {
+name = "Sinsoku"
+type = ironclad
+}
+
+ship = {
+name = "Fuso"
+type = ironclad
+}
+
+ship = {
+name = "Ryuzo Mara"
+type = ironclad
+}
+
+ship = {
+name = "Naniwa"
+type = cruiser
+}
+
+ship = {
+name = "Takachiho"
+type = cruiser
+}
+
+ship = {
+name = "Matsushima"
+type = cruiser
+}
+
+ship = {
+name = "Itsukushima Shrine"
+type = cruiser
+}
+
+ship = {
+name = "Hasidate"
+type = cruiser
+}
+
+ship = {
+name = "Chiyoda"
+type = cruiser
+}
+
+ship = {
+name = "Yaeyama"
+type = cruiser
+}
+
+ship = {
+name = "Yoshino"
+type = cruiser
+}
+
+ship = {
+name = "Hiey"
+type = cruiser
+}
+
+ship = {
+name = "Harun"
+type = cruiser
+}
+
+ship = {
+name = "Kirishima"
+type = cruiser
+}
+
+ship = {
+name = "Chitose"
+type = cruiser
+}
+
+ship = {
+name = "Kasagi"
+type = cruiser
+}
+
+ship = {
+name = "Niitaka"
+type = cruiser
+}
+
+ship = {
+name = "Jura"
+type = cruiser
+}
+
+ship = {
+name = "Keanu"
+type = cruiser
+}
+
+ship = {
+name = "Vokou"
+type = commerce_raider
+}
+
+ship = {
+name = "Hietsu"
+type = commerce_raider
+}
+
+ship = {
+name = "Dzegadzi"
+type = commerce_raider
+}
+
+ship = {
+name = "Oita"
+type = commerce_raider
+}
+
+}
+navy = {
+name = "1st Transport Squadron"
+location = 1650
+ship = {
+name = "1st transport flotilla"
+type = steam_transport
+}
+ship = {
+name = "2nd transport flotilla"
+type = steam_transport
+}
+ship = {
+name = "3rd Transport Flotilla"
+type = steam_transport
+}
+ship = {
+name = "4th Transport Flotilla"
+type = steam_transport
+}
+ship = {
+name = "5th transport flotilla"
+type = steam_transport
+}
+ship = {
+name = "6th transport flotilla"
+type = steam_transport
+}
+ship = {
+name = "7th transport flotilla"
+type = steam_transport
+}
+ship = {
+name = "8th transport flotilla"
+type = steam_transport
+}
+ship = {
+name = "9th transport flotilla"
+type = steam_transport
+}
+ship = {
+name = "10th Transportation flotilla"
+type = steam_transport
+}
+ship = {
+name = "11th Transportation flotilla"
+type = steam_transport
+}
+ship = {
+name = "12th Transportation flotilla"
+type = steam_transport
+}
+
+}

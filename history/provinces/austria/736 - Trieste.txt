@@ -1,0 +1,21 @@
+owner = AUS
+controller = AUS
+add_core = YUG
+add_core = SLO
+add_core = TRE
+add_core = AUS
+trade_goods = grain
+life_rating = 35
+naval_base = 1
+#state_building = {
+#	level = 1
+#	building = liquor_distillery
+#	upgrade = yes
+#}
+1861.1.1 = { railroad = 3 }
+
+1914.1.1 = { 
+owner = KUK 
+controller = KUK 
+add_core = KUK
+remove_core = AUS} 
